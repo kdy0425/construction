@@ -67,22 +67,22 @@
 
 .snb{background-color: #F2F4F8;border-bottom:1px solid #DFE1E6;}
 .snb .inner{max-width:1280px;display:flex;margin:0 auto;}
-.snb .item{position: relative;width:260px;}
+.snb .item{position: relative;min-width:260px;}
 .snb .item:before{content:"";position:absolute;left:0;top:0;width:1px;height:60px;background-color: #DFE1E6;}
 .snb .item:last-child:after{content:"";position:absolute;right:0;top:0;width:1px;height:60px;background-color: #DFE1E6;}
-.snb .item .box > a{display:block;height:60px;color:#444;font-size:16px;font-weight:500;padding:20px 30px;width:260px;position: relative;}
-.snb .item.home{width:60px;}
+.snb .item .box > a{display:block;height:60px;color:#444;font-size:16px;font-weight:500;padding:20px 50px 20px 30px;min-width:260px;position: relative;white-space: nowrap;}
+.snb .item.home{min-width:60px;}
 .snb .item.home > a{display:block;height:58px;min-width:60px;text-indent:-999em;overflow: hidden;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='18.286' viewBox='0 0 16 18.286'%3E%3Cpath id='패스_992' data-name='패스 992' d='M9.731.265a1.14,1.14,0,0,0-1.463,0L1.411,5.98A1.142,1.142,0,0,0,1,6.857V17.143a1.143,1.143,0,0,0,1.143,1.143H6.714V13.714a1.143,1.143,0,0,1,1.143-1.143h2.286a1.143,1.143,0,0,1,1.143,1.143v4.571h4.571A1.143,1.143,0,0,0,17,17.143V6.857a1.142,1.142,0,0,0-.411-.878Z' transform='translate(-1 0.001)' fill='%23444'/%3E%3C/svg%3E%0A");}
 .snb .item.has_child .box > a:after{content:"";display:block;position:absolute;right:25px;top:50%;margin-top:-10px;width:20px;height:20px;background-repeat:no-repeat;background-position:center center;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='btn_dropdown' transform='translate(-596 -150)'%3E%3Crect id='area' width='20' height='20' transform='translate(596 150)' fill='none'/%3E%3Cpath id='패스_993' data-name='패스 993' d='M540.394,162.844l4,4,4-4' transform='translate(62 -4)' fill='none' stroke='%23444' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");}
 .snb .item ul{display:none;background-color: #fff;}
 .snb .item ul li{}
-.snb .item ul li a{display:block;color:#444;padding:15px 30px;font-size:16px;}
+.snb .item ul li a{display:block;color:#444;padding:15px 30px;font-size:16px;white-space: nowrap;}
 .snb .item ul li a:hover{text-decoration: underline;}
 .snb .item.has_child:hover{}
 .snb .item.has_child:hover .box{position:absolute;z-index:50;left:0;top:-1px;width:100%;background-color: #fff;border:1px solid #DFE1E6;box-shadow: 3px 5px 15px rgba(0,0,0,.1);}
 .snb .item.has_child:hover:before,
 .snb .item.has_child:hover:after{display:none;}
-.snb .item.has_child:hover .box > a{padding:15px 24px;background-color: #F2F4F8;width:258px;height:60px;border:5px solid #fff;}
+.snb .item.has_child:hover .box > a{padding:15px 54px 15px 24px;background-color: #F2F4F8;width:calc(100% - 2px);height:60px;border:5px solid #fff;}
 .snb .item.has_child:hover .box > a:after{transform: rotate(-180deg);right:18px;}
 .snb .item:hover ul{display:block;}
 
@@ -198,7 +198,7 @@
 .rt_btns .btn{display:inline-block;min-width:160px;height:50px;text-align: center;padding:15px;font-size:17px;margin-left:8px;vertical-align: middle;border-radius:2px;}
 .rt_btns .btn.md{min-width:120px;height:50px;padding:14px 30px;font-size:17px;font-weight:500;}
 .rt_btns .btn.xs{min-width:90px;height:38px;padding:9px 15px;font-size:15px;}
-.rt_btns .btn.sm{min-width:124px;height:42px;padding:11px 15px;font-size:16px;}
+.rt_btns .btn.sm{min-width:100px;height:42px;padding:11px 20px;font-size:16px;}
 .rt_btns .btn.submit{font-weight:700;background-color: #4F69D2;color:#fff;}
 .rt_btns .btn.sline{font-weight:600;border: 1px solid #4F69D2;color:#4F69D2;}
 .rt_btns .btn.line{font-weight:500;border: 1px solid #666666;color:#222;}
@@ -211,10 +211,12 @@
 .rt_btns .btn:hover span{text-decoration: underline;}
 .rt_btns .devide{display:inline-block;width:1px;height:24px;background-color: #E0E0E0;margin:0 6px 0 14px;vertical-align: middle;}
 .rt_btns.bottom{text-align: right;margin-top:20px;}
-.form_wrap .form_box .i_txt{display:inline-block;line-height:1.4;color:#888;font-size:15px;position: relative;padding-left:23px;background-position: left top 1px;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_info' xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg id='그룹_856' data-name='그룹 856'%3E%3Cg id='타원_81' data-name='타원 81' fill='%23fff' stroke='%23ddd' stroke-width='1'%3E%3Ccircle cx='9' cy='9' r='9' stroke='none'/%3E%3Ccircle cx='9' cy='9' r='8.5' fill='none'/%3E%3C/g%3E%3Cg id='i' transform='translate(0 -0.5)'%3E%3Crect id='사각형_114' data-name='사각형 114' width='2' height='5' rx='0.5' transform='translate(8 8.5)' fill='%23f03520'/%3E%3Ccircle id='타원_77' data-name='타원 77' cx='1' cy='1' r='1' transform='translate(8 5)' fill='%23f03520'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
-.form_wrap .form_box .i_txt strong{color:#222;font-size:16px;font-weight:700;margin-right:8px;vertical-align: top;}
-.form_wrap .form_box .i_txt .devide{display:inline-block;width:1px;height:12px;background-color: #E9E9E9;margin:0 3px;vertical-align: middle;}
-.form_wrap .form_box .i_txt .red{color:#F03520;}
+.i_txt{display:inline-block;line-height:1.4;color:#888;font-size:15px;position: relative;padding-left:23px;background-position: left top 1px;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_info' xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg id='그룹_856' data-name='그룹 856'%3E%3Cg id='타원_81' data-name='타원 81' fill='%23fff' stroke='%23ddd' stroke-width='1'%3E%3Ccircle cx='9' cy='9' r='9' stroke='none'/%3E%3Ccircle cx='9' cy='9' r='8.5' fill='none'/%3E%3C/g%3E%3Cg id='i' transform='translate(0 -0.5)'%3E%3Crect id='사각형_114' data-name='사각형 114' width='2' height='5' rx='0.5' transform='translate(8 8.5)' fill='%23f03520'/%3E%3Ccircle id='타원_77' data-name='타원 77' cx='1' cy='1' r='1' transform='translate(8 5)' fill='%23f03520'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
+.i_txt strong{color:#222;font-size:16px;font-weight:700;margin-right:8px;vertical-align: top;}
+.i_txt .devide{display:inline-block;width:1px;height:12px;background-color: #E9E9E9;margin:0 3px;vertical-align: middle;}
+.i_txt .red{color:#F03520;}
+.i_txt2{line-height:1.4;color:#222;font-size:18px;font-weight:700;position: relative;padding-left:32px;background-position: left top 1px;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_info_import' xmlns='http://www.w3.org/2000/svg' width='24.001' height='23.999' viewBox='0 0 24.001 23.999'%3E%3Crect id='사각형_1915' data-name='사각형 1915' width='23.999' height='23.999' fill='rgba(255,237,237,0)'/%3E%3Cg id='합치기_2' data-name='합치기 2' transform='translate(0.002 0.999)' fill='%23fff'%3E%3Cpath d='M 5.317700386047363 21.95962333679199 L 5.317700386047363 18.55649948120117 L 5.317700386047363 18.27505111694336 L 5.077090263366699 18.1290397644043 C 3.705400228500366 17.29668998718262 2.557610273361206 16.12201118469238 1.757800221443176 14.73202037811279 C 0.9337602853775024 13.29992008209229 0.4982002675533295 11.66420078277588 0.4982002675533295 10.00170040130615 C 0.4982002675533295 4.763440608978271 4.760240077972412 0.5018004179000854 9.999000549316406 0.5018004179000854 L 13.9995002746582 0.5018004179000854 C 19.23776054382324 0.5018004179000854 23.4994010925293 4.763440608978271 23.4994010925293 10.00170040130615 C 23.4994010925293 15.23996067047119 19.23776054382324 19.50160026550293 13.9995002746582 19.50160026550293 L 9.999000549316406 19.50160026550293 C 9.578720092773438 19.50160026550293 9.155680656433105 19.4738597869873 8.741630554199219 19.41915130615234 L 8.530360221862793 19.3912296295166 L 8.363910675048828 19.52429962158203 L 5.317700386047363 21.95962333679199 Z' stroke='none'/%3E%3Cpath d='M 5.817700386047363 20.91975593566895 L 8.384590148925781 18.86763000488281 L 8.807129859924316 18.92346000671387 C 9.199540138244629 18.97531127929688 9.600550651550293 19.00160026550293 9.999000549316406 19.00160026550293 L 13.9995002746582 19.00160026550293 C 18.96206092834473 19.00160026550293 22.9994010925293 14.96426010131836 22.9994010925293 10.00170040130615 C 22.9994010925293 5.039140224456787 18.96206092834473 1.001800417900085 13.9995002746582 1.001800417900085 L 9.999000549316406 1.001800417900085 C 5.035940170288086 1.001800417900085 0.9982002973556519 5.039140224456787 0.9982002973556519 10.00170040130615 C 0.9982002973556519 11.57681083679199 1.410730242729187 13.12630081176758 2.191180229187012 14.48265075683594 C 2.949050188064575 15.79976081848145 4.036680221557617 16.91285133361816 5.336470127105713 17.70158958435059 L 5.817700386047363 17.99360084533691 L 5.817700386047363 20.91975593566895 M 4.817700386047363 22.9995002746582 L 4.817700386047363 18.55649948120117 C 1.928300261497498 16.80317115783691 -0.001799722318537533 13.62779998779297 -0.001799722318537533 10.00170040130615 C -0.001799722318537533 4.478400230407715 4.475700378417969 0.001800405909307301 9.999000549316406 0.001800405909307301 L 13.9995002746582 0.001800405909307301 C 19.52280044555664 0.001800405909307301 23.9994010925293 4.478400230407715 23.9994010925293 10.00170040130615 C 23.9994010925293 15.5241003036499 19.52280044555664 20.00160026550293 13.9995002746582 20.00160026550293 L 9.999000549316406 20.00160026550293 C 9.550640106201172 20.00160026550293 9.108870506286621 19.97202110290527 8.676130294799805 19.91484069824219 L 4.817700386047363 22.9995002746582 Z' stroke='none' fill='%23ddd'/%3E%3C/g%3E%3Cg id='i' transform='translate(11.001 6.947)'%3E%3Crect id='사각형_114' data-name='사각형 114' width='2' height='5' rx='0.5' transform='translate(0 3)' fill='%23f03520'/%3E%3Ccircle id='타원_77' data-name='타원 77' cx='1' cy='1' r='1' fill='%23f03520'/%3E%3C/g%3E%3C/svg%3E%0A");}
+
 .form_wrap .form_box .form_content{}
 .form_wrap .form_box .form_content + .form_content{}
 
@@ -224,6 +226,8 @@
 .form_table{border-top:1px solid #666666;}
 .form_table table{width:100%;border-collapse: collapse;}
 .form_table table thead th{vertical-align: middle;padding: 18px;height:54px;background-color:#F2F7FB;color:#222;font-size:15px;font-weight: 600;border-bottom:1px solid #E9E9E9;text-align: center;}
+.form_table table thead.line th{border-right:1px solid #e9e9e9;}
+.form_table table thead.line tr th:last-child{border-left:0;}
 .form_table table tbody{}
 .form_table table tbody th{vertical-align: middle;padding:15px 8px 15px 23px;background-color:#F2F7FB;color:#222;font-size:15px;font-weight: 600;border-bottom:1px solid #E9E9E9;text-align: left;}
 .form_table table tbody th .req{margin-left:1px;text-indent:-999em;overflow: hidden;width:12px;height:12px;display:inline-block;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.496' height='7.5' viewBox='0 0 8.496 7.5'%3E%3Cg id='그룹_834' data-name='그룹 834' transform='translate(1.12 0.75)'%3E%3Cline id='선_268' data-name='선 268' y2='6' transform='translate(3.128)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='선_269' data-name='선 269' x2='0.866' y2='6.5' transform='translate(5.891 1.234) rotate(65)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='선_270' data-name='선 270' y1='6.5' x2='0.866' transform='translate(6.257 3.981) rotate(115)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E%0A");}
@@ -256,6 +260,7 @@
 .form_table table tbody td .ip_group .unit{margin-left:16px;margin-top:20px;}
 .form_table table tbody td .link:hover{text-decoration: underline;}
 .form_table table tbody tr.bg td{background-color: #FAFAFA;}
+.form_table table tbody tr td.bold{font-weight:700;}
 .form_table.sm table tbody td,
 .form_table.sm table tfoot td{font-size:15px;}
 .form_table .btn1{bordeR:1px solid #666666;background-color: #fff;border-radius: 2px;color:#222;font-size:15px;font-weight:600;text-align: center;height:38px;display:inline-block;padding:9px 16px;}
@@ -323,7 +328,14 @@
 .form_actions .btn{margin-left:6px;display:inline-block;border:1px solid #D0D0D0;padding:9px 16px 9px 34px;color:#222;font-size:15px;font-weight:600;border-radius:2px;background-position: left 12px center;background-repeat: no-repeat;}
 .form_actions .btn.modify{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_del' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cg id='그룹_3340' data-name='그룹 3340' transform='translate(12 12)'%3E%3Cpath id='패스_2175' data-name='패스 2175' d='M1,12a1,1,0,0,0,.242-.03l4-1a1,1,0,0,0,.465-.263l6-6a1,1,0,0,0,0-1.414l-3-3a1,1,0,0,0-1.414,0l-6,6a1,1,0,0,0-.263.464l-1,4A1,1,0,0,0,1,12ZM2.9,7.511,8,2.414,9.586,4l-5.1,5.1-2.114.528L2.9,7.511Z' transform='translate(1 2)' fill='%23222'/%3E%3Crect id='사각형_1904' data-name='사각형 1904' width='14' height='1' transform='translate(1 15)' fill='%23222'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
 .form_actions .btn.remove{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_del' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cg id='타원_82' data-name='타원 82' transform='translate(13 13)' fill='none' stroke='%23222' stroke-width='1.5'%3E%3Ccircle cx='7' cy='7' r='7' stroke='none'/%3E%3Ccircle cx='7' cy='7' r='6.25' fill='none'/%3E%3C/g%3E%3Crect id='사각형_1571' data-name='사각형 1571' width='5' height='2' transform='translate(17.5 19)' fill='%23222'/%3E%3C/g%3E%3C/svg%3E%0A");}
+.form_actions .btn.save{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_del' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cg id='그룹_3340' data-name='그룹 3340' transform='translate(12 12)'%3E%3Crect id='사각형_1904' data-name='사각형 1904' width='14' height='1' transform='translate(1 15)' fill='%23222'/%3E%3Cpath id='패스_6543' data-name='패스 6543' d='M1.438,7.066l2.929,4.145,7.071-6' transform='translate(0.563 -0.211)' fill='none' stroke='%23222' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
 .form_actions .btn:hover{text-decoration: underline;}
+
+.table_bottom{margin-top:12px;display:flex;justify-content:space-between;}
+.table_bottom .l{}
+.table_bottom .r{}
+.table_bottom .table_bunit{margin-top:0;}
+.table_bunit{margin-top:12px;text-align:right;color:#888;}
 
 .i_txt_box{text-align: center;padding:20px;}
 .i_txt_box .i_txt{display: inline-block;}
@@ -410,3 +422,15 @@ background: #4F69D2;background: linear-gradient(180deg, #4F69D2 0%, #465BAC 100%
 .data_linkage .data_linkage_link:hover{text-decoration: underline;}
 .data_linkage .txt_info{margin-top:16px;font-size:14px;font-weight:500;color:#767676;}
 .data_linkage .txt_info strong{color:#444;font-weight:700;}
+
+.gray_text{border-radius: 5px;padding:24px 32px;color:#444444;font-size:15px;word-break: keep-all;background-color: #F9F9F9;}
+.gray_text strong{color:#F03520;}
+.dot{}
+.dot li{padding-left:11px;position: relative;}
+.dot li:before{content:"";position:absolute;left:0;top:3px;width:3px;height:3px;background-color: #222;border-radius:50%;}
+.dot li + li{margin-top:8px;}
+
+.alert_text{width:420px;background-color: #fff;border-radius:10px;padding:25px;box-shadow: 0 2px 20px rgba(68,68,68,.16);position:fixed;left:50%;top:50%;transform: translate(-50%,-50%);z-index:100;text-align: center;word-break: keep-all;}
+.alert_text .text{displaY:inline-block;color:#222;font-size:16px;font-weight:500;position: relative;min-height:20px;}
+.alert_text .text.error{padding-left:28px;background-position:left top 1px;background-repeat:no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_warning' xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg id='그룹_856' data-name='그룹 856'%3E%3Ccircle id='타원_78' data-name='타원 78' cx='9' cy='9' r='9' fill='%23ff2626'/%3E%3Cg id='i'%3E%3Crect id='사각형_114' data-name='사각형 114' width='2' height='5' rx='0.5' transform='translate(8 8)' fill='%23fff'/%3E%3Ccircle id='타원_77' data-name='타원 77' cx='1' cy='1' r='1' transform='translate(8 5)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
+.alert_text .text.ok{padding-left:28px;background-position:left top 1px;background-repeat:no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_check' xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg id='그룹_856' data-name='그룹 856'%3E%3Ccircle id='타원_78' data-name='타원 78' cx='9' cy='9' r='9' fill='%234F69D2'/%3E%3Cg id='i'%3E%3Cpolyline points='4.5 9.5 7.5 11.5 12.5 6.5' style='fill: none; stroke: %23fff; stroke-width: 2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}

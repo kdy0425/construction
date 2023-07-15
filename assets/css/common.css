@@ -115,6 +115,7 @@ button{cursor:pointer;}
 .mgb5 {margin-bottom:5px !important;}
 .mgb10 {margin-bottom:10px !important;}
 .mgb20 {margin-bottom:20px !important;}
+.mgb25 {margin-bottom:25px !important;}
 .mgb30 {margin-bottom:30px !important;}
 .mgb50 {margin-bottom:50px !important;}
 
@@ -184,7 +185,7 @@ input[type="email"]:read-only{background-color: #F9F9F9;color:#222;}
 input[type="text"]::placeholder,
 input[type="password"]::placeholder,
 input[type="tel"]::placeholder,
-input[type="email"]::placeholder{color:#E9E9E9;opacity: 1;}
+input[type="email"]::placeholder{color:#888;opacity: 1;}
 .file_ip{display:inline-block;line-height:36px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;background-color: #F9F9F9;color:#888;font-weight:400;}
 
 textarea{height:150px;width:100%;min-width:100%;max-width:100%;padding:16px;border-radius: 5px;border:1px solid #E9E9E9;}
@@ -248,6 +249,10 @@ label{cursor:pointer;}
 .checkbox input[type="checkbox"]:disabled:checked + .ck_icon{background-color: #E9E9E9;border:0;}
 .labels label{margin:5px 32px 5px 0;}
 .labels label:last-child{margin-right:0;}
+.labels.col4{display:flex;flex-wrap:wrap;}
+.labels.col4 label{width:calc((100% - 60px) / 4);margin:8px 20px 8px 0;}
+.labels.col4 label:nth-child(4n){margin-right:0;}
+.labels.col4 label:nth-child(n+5){margin-top:16px;}
 
 .datepicker{background-repeat: no-repeat;background-position: right 12px center;background-image: url("data:image/svg+xml,%3Csvg id='ico_calendar' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Crect id='area' width='20' height='20' fill='%2300dcff' opacity='0'/%3E%3Cg id='그룹_843' data-name='그룹 843' transform='translate(2.5 2)'%3E%3Cline id='선_40' data-name='선 40' x2='1' transform='translate(3.5 7.5)' fill='none' stroke='%23666' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5'/%3E%3Cline id='선_46' data-name='선 46' x2='1' transform='translate(3.5 10.5)' fill='none' stroke='%23666' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5'/%3E%3Cline id='선_43' data-name='선 43' x2='1' transform='translate(7 7.5)' fill='none' stroke='%23666' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5'/%3E%3Cline id='선_45' data-name='선 45' x2='1' transform='translate(7 10.5)' fill='none' stroke='%23666' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5'/%3E%3Cline id='선_44' data-name='선 44' x2='1' transform='translate(10.5 7.5)' fill='none' stroke='%23666' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5'/%3E%3Cline id='선_47' data-name='선 47' x2='1' transform='translate(10.5 10.5)' fill='none' stroke='%23666' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5'/%3E%3Cline id='선_41' data-name='선 41' y2='4' transform='translate(4)' fill='none' stroke='%23666' stroke-linecap='square' stroke-linejoin='round' stroke-width='2'/%3E%3Cline id='선_42' data-name='선 42' y2='4' transform='translate(11)' fill='none' stroke='%23666' stroke-linecap='square' stroke-linejoin='round' stroke-width='2'/%3E%3Crect id='사각형_1576' data-name='사각형 1576' width='15' height='13' transform='translate(0 2)' fill='none' stroke='%23707070' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");}
 .datepicker:focus{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg data-name='그룹 843'%3E%3Cpath data-name='선 40' transform='translate(6 9.5)' style='stroke-width:1.5px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round' d='M0 0h1'/%3E%3Cpath data-name='선 46' transform='translate(6 12.5)' style='stroke-width:1.5px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round' d='M0 0h1'/%3E%3Cpath data-name='선 43' transform='translate(9.5 9.5)' style='stroke-width:1.5px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round' d='M0 0h1'/%3E%3Cpath data-name='선 45' transform='translate(9.5 12.5)' style='stroke-width:1.5px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round' d='M0 0h1'/%3E%3Cpath data-name='선 44' transform='translate(13 9.5)' style='stroke-width:1.5px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round' d='M0 0h1'/%3E%3Cpath data-name='선 47' transform='translate(13 12.5)' style='stroke-width:1.5px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round' d='M0 0h1'/%3E%3Cpath data-name='패스 72' d='M14 2.5H2A1.566 1.566 0 0 0 .5 4.125v9.75A1.566 1.566 0 0 0 2 15.5h12a1.566 1.566 0 0 0 1.5-1.625v-9.75A1.566 1.566 0 0 0 14 2.5z' transform='translate(2 1.5)' style='stroke-width:2px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round'/%3E%3Cpath data-name='선 41' transform='translate(6.5 2)' style='stroke-width:2px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round' d='M0 0v4'/%3E%3Cpath data-name='선 42' transform='translate(13.5 2)' style='stroke-width:2px;fill:none;stroke:%233c4de2;stroke-linecap:round;stroke-linejoin:round' d='M0 0v4'/%3E%3C/g%3E%3C/svg%3E");}

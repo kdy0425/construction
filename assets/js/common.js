@@ -125,3 +125,13 @@ document.querySelectorAll('.label_control').forEach(function (labelControl) {
 		}
 	});
 });
+
+
+//레이어 text 
+function msgShow(elm, duration){ //선택자, 유지 시간
+    $(elm).fadeIn(function(){
+        setTimeout(function(){
+            $(elm).fadeOut();
+        }, duration);
+    });
+}
