@@ -39,7 +39,7 @@
 .nav_wrap #nav > li > ul{display:none;position:absolute;width:150px;left:50%;top:78px;margin-left:-75px;padding-top:25px;padding-bottom:25px;text-align: center;z-index:50;}
 .nav_wrap #nav > li > ul > li{position:relative;z-index:5;left:50%;transform: translate(-50%,0);}
 .nav_wrap #nav > li > ul > li + li{margin-top:13px;}
-.nav_wrap #nav > li > ul > li a{color:#555;font-size:15px;display:block;white-space: nowrap;}
+.nav_wrap #nav > li > ul > li a{color:#555;font-size:15px;display:block;}
 .nav_wrap #nav > li > ul > li a:hover{color:#4F69D2;}
 .nav_wrap #nav > li:hover > ul{display:block;background-color: #fff;box-shadow: 3px 5px 15px rgba(0,0,0,.1);padding:20px 10px;width:auto;min-width:150px;transform: translate(-50%,0);margin-left:0;}
  .hd_bottom .nav_all_btn{position: absolute;right:50px;top:50%;margin-top:-25px;width:50px;height:50px;border:0;background-color: transparent;text-indent:-999em;overflow: hidden;background-repeat: no-repeat;background-position: center center;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cg id='btn_menu_all' transform='translate(-1810 -75)'%3E%3Crect id='area' width='30' height='30' transform='translate(1810 75)' fill='red' opacity='0'/%3E%3Cg id='ico_menu'%3E%3Cline id='선_1' data-name='선 1' x1='30' transform='translate(1810 83)' fill='none' stroke='%23333' stroke-width='2'/%3E%3Cline id='선_2' data-name='선 2' x1='30' transform='translate(1810 90)' fill='none' stroke='%23333' stroke-width='2'/%3E%3Cline id='선_3' data-name='선 3' x1='15' transform='translate(1825 97)' fill='none' stroke='%23333' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
@@ -48,7 +48,7 @@
 #nav.active > li > ul:before{content:"";display:block;position:absolute;z-index:1;left:50%;top:0;height:110%;width:300vw;margin-left:-150vw;background-color:#eceffb;}
 #nav.active > li > ul > li{position:relative;z-index:10;}
 #nav.active > li > ul > li > a{color:#222;}
-.nav_wrap #nav.active > li:hover > ul{background-color: transparent;box-shadow: 0 0 0 rgba(0,0,0,0);padding-top:25px;padding-bottom:25px;width:150px;margin-left:-75px;min-width:150px;transform: none;}
+.nav_wrap #nav.active > li > ul,.nav_wrap #nav.active > li:hover > ul{background-color: transparent;box-shadow: 0 0 0 rgba(0,0,0,0);padding:25px 0;width:calc(100% + 50px);margin-left:calc(((100% + 50px)/2)*-1);min-width:calc(100% + 50px);transform: none;}
 @media (max-width: 1750px) {
     .hd_inner{padding:0 30px;}
     .hd_bottom #logo{left:30px;}
