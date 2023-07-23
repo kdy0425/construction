@@ -418,64 +418,7 @@
 
                     <div class="form_box">
                         <div class="form_title">
-                            <h3>직원정보</h3>
-                        </div>
-                        <div class="form_content">
-                            <div class="form_table">
-                                <table>
-                                    <colgroup>
-                                        <col style="width:20%;">
-                                        <col style="width:20%;">
-                                        <col style="width:20%;">
-                                        <col style="width:20%;">
-                                        <col style="width:20%;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>기술직</th>
-                                            <th>기능직</th>
-                                            <th>사무직</th>
-                                            <th>고용원(계약직)</th>
-                                            <th>합계</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="right">
-                                        <tr>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" value="50">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" value="10">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" value="5">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" value="0">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" value="65">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form_box">
-                        <div class="form_title">
-                            <h3>기업회생/공동관리</h3>
+                            <h3>업종정보</h3>
                             <div class="r">
                                 <div class="rt_btns">
                                     <a href="javascript:;" class="btn sline sm"><span class="add">등록하기</span></a>
@@ -486,42 +429,141 @@
                             <div class="form_table">
                                 <table>
                                     <colgroup>
-                                        <col style="width:20.3%;">
-                                        <col style="width:15.6%;">
-                                        <col style="width:15.6%;">
-                                        <col style="width:18.8%;">
-                                        <col style="width:17.2%;">
-                                        <col style="width:12.5%;">
+                                        <col style="width:13.3%;">
+                                        <col style="width:20.1%;">
+                                        <col style="width:13.3%;">
+                                        <col style="width:20.1%;">
+                                        <col style="width:13.3%;">
+                                        <col style="width:20.0%;">
                                     </colgroup>
-                                    <thead>
+                                    <tbody>
                                         <tr>
-                                            <th>구분</th>
-                                            <th>개시일</th>
-                                            <th>종결일</th>
-                                            <th>법원명 / 채권은행</th>
-                                            <th>사건번호</th>
-                                            <th>삭제</th>
+                                            <th>업종</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="토목">
+                                                </div>
+                                            </td>
+                                            <th>업종등록번호</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="999999">
+                                                </div>
+                                            </td>
+                                            <th>주력분야</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
                                         </tr>
-                                    </thead>
-                                    <tbody class="center">
                                         <tr>
-                                            <td class="medium">기업회생</td>
-                                            <td class="light">2022.01.01</td>
-                                            <td class="light">2022.01.01</td>
-                                            <td>A법원</td>
-                                            <td class="medium">1234567890</td>
-                                            <td><button type="button" class="btn2"><span class="remove_btn">삭제</span></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="medium">공동관리</td>
-                                            <td class="light">2022.01.01</td>
-                                            <td class="light">2022.01.01</td>
-                                            <td>A법원</td>
-                                            <td class="medium">1234567890</td>
-                                            <td><button type="button" class="btn2"><span class="remove_btn">삭제</span></button></td>
+                                            <th>발급일자</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" class="datepicker select_yymm">
+                                                </div>
+                                            </td>
+                                            <th>취득일자</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" class="datepicker select_yymm">
+                                                </div>
+                                            </td>
+                                            <th>지정일자</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" class="datepicker select_yymm">
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="form_actions">
+                                <a href="javascript:;" class="btn save">저장</a>
+                                <a href="javascript:;" class="btn remove">삭제</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form_box">
+                        <div class="form_title">
+                            <h3>기업회생/공동관리</h3>
+                        </div>
+                        <div class="form_content">
+                            <div class="form_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:13.3%;">
+                                        <col style="width:36.7%;">
+                                        <col style="width:13.3%;">
+                                        <col style="width:36.7%;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>선택</th>
+                                            <td colspan="3">
+                                                <div class="labels">
+                                                    <label class="checkbox"><input type="radio" name="radio5" value="1"><span class="ck_icon"></span>해당없음</label>
+                                                    <label class="checkbox"><input type="radio" name="radio5" value="2"><span class="ck_icon"></span>기업회생</label>
+                                                    <label class="checkbox"><input type="radio" name="radio5"value="3"><span class="ck_icon"></span>공동관리</label>
+                                                </div>
+                                                <script>
+                                                    $('input[name="radio5"]').change(function(){
+                                                        if($('input[name="radio5"]:checked').val() == '1'){
+                                                            $('.radio5_2,.radio5_3').hide();
+                                                        }else if($('input[name="radio5"]:checked').val() == '2'){
+                                                            $('.radio5_3').hide();
+                                                            $('.radio5_2').show();
+                                                        }else if($('input[name="radio5"]:checked').val() == '3'){
+                                                            $('.radio5_2').hide();
+                                                            $('.radio5_3').show();
+                                                        }
+                                                    })
+                                                </script>
+                                            </td>
+                                        </tr>
+                                        <tr class="radio5_2 radio5_3" style="display:none;">
+                                            <th>게시 및 종결일</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" class="datepicker select_yymm">
+                                                    <span class="dash">-</span>
+                                                    <input type="text" class="datepicker select_yymm">
+                                                </div>
+                                            </td>
+                                            <td colspan="2"></td>
+                                        </tr>
+                                        <tr class="radio5_2" style="display:none;">
+                                            <th>법원명</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <th>사건번호</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="radio5_3" style="display:none;">
+                                            <th>채권은행</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td colspan="2"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="form_actions">
+                                <a href="javascript:;" class="btn save">저장</a>
+                                <a href="javascript:;" class="btn remove">삭제</a>
                             </div>
                         </div>
                     </div>

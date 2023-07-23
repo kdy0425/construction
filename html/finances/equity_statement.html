@@ -73,7 +73,7 @@
                                 <li><a href="javascript:;">메뉴명4</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:;" class="active">신인도평가정보</a>
+                        <li><a href="javascript:;">신인도평가정보</a>
                             <ul>
                                 <li><a href="javascript:;">메뉴명1</a></li>
                                 <li><a href="javascript:;">메뉴명2</a></li>
@@ -90,7 +90,7 @@
                                 <li><a href="javascript:;">메뉴명4</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:;">재무제표신고</a>
+                        <li><a href="javascript:;" class="active">재무제표신고</a>
                             <ul>
                                 <li><a href="javascript:;">메뉴명1</a></li>
                                 <li><a href="javascript:;">메뉴명2</a></li>
@@ -135,7 +135,7 @@
             <div class="item home"><a href="javascript:;">홈으로</a></div>
             <div class="item has_child">
                 <div class="box">
-                    <a href="javascript:;">신인도평가정보</a>
+                    <a href="javascript:;">재무제표신고</a>
                     <ul>
                         <li><a href="javascript:;">업체정보</a></li>
                         <li><a href="javascript:;">기술인정보</a></li>
@@ -150,9 +150,9 @@
             </div>       
             <div class="item has_child">
                 <div class="box">
-                    <a href="javascript:;">건설업 통계조사</a>
+                    <a href="javascript:;">이익잉여금</a>
                     <ul>
-                        <li><a href="javascript:;">건설업 통계조사</a></li>
+                        <li><a href="javascript:;">이익잉여금</a></li>
                         <li><a href="javascript:;">메뉴명1</a></li>
                         <li><a href="javascript:;">메뉴명2</a></li>
                         <li><a href="javascript:;">메뉴명3</a></li>
@@ -165,108 +165,88 @@
 	<!-- content -->
     <div class="content_wrap">
         <div id="content">
-            <h2 class="page_title">건설업 통계조사</h2>
+            <h2 class="page_title">재무제표신고</h2>
+
+            <div class="tap_links">
+                <a href="javascript:;">비교표</a>
+                <a href="javascript:;">진단기관</a>
+                <a href="javascript:;">대차대조표</a>
+                <a href="javascript:;">손익계산서</a>
+                <a href="javascript:;">원가명세서</a>
+                <a href="javascript:;" class="active">이익잉여금</a>
+                <a href="javascript:;">기술개발비</a>
+                <a href="javascript:;">현금흐름표</a>
+                <a href="javascript:;">개별완성공사</a>
+            </div>
+
             <form action="">
                 <div class="form_wrap">
                     <div class="form_box">
                         <div class="form_title">
-                            <h3>일반사항 ( 1차신고 )</h3>
+                            <h3>이익잉여금 처분계산서</h3>
+                            <div class="q_tit">
+                                <span class="q">입력 시 주의사항</span>
+                                <div class="q_area">
+                                    <div class="question" style="width:725px;">
+                                        <div class="q_tit">이익잉여금 처분계산서와 타 서류 간 일치해야 하는 항목 목록</div>
+                                        <div class="q_cnt">
+                                            <ul>
+                                                <li>1. 대차대조표의 <strong>미처분이익잉여금</strong> = 이익잉여금처분계산서상의 <strong>미처분이익잉여금</strong></li>
+                                                <li>2. 손익계산서의 <strong>당기순이익</strong> = 이익잉여금처분계산서상의 <strong>당기순이익</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r">
+                                <div class="rt_btns">
+                                    <a href="javascript:;" class="btn line md">홈택스 자료연동 </a>
+                                    <a href="javascript:;" class="btn sline md">엑셀 업로드</a>
+                                    <span class="devide"></span>
+                                    <a href="javascript:;" class="btn submit md">저장</a>
+                                    <a href="javascript:;" class="btn light md">취소</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="form_content">
                             <div class="form_table">
                                 <table>
                                     <colgroup>
                                         <col style="width:170px;">
-                                        <col style="width:257px;">
-                                        <col style="width:170px;">
-                                        <col style="width:257px;">
+                                        <col style="width:470px;">
                                         <col style="width:170px;">
                                         <col>
                                     </colgroup>
                                     <tbody>
                                         <tr>
-                                            <th>상호(한글)</th>
+                                            <th>당기 기간</th>
                                             <td>
                                                 <div class="ip_group">
-                                                    <input type="text">
+                                                    <input type="text" value="" class="datepicker select_yymm">
+                                                    <span class="dash">-</span>
+                                                    <input type="text" value="" class="datepicker select_yymm">
                                                 </div>
                                             </td>
-                                            <th>대표자</th>
+                                            <th>전기 기간</th>
                                             <td>
                                                 <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                            <th>기업형태</th>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <select name="" id="">
-                                                        <option value="">선택</option>
-                                                        <option value="">주식회사</option>
-                                                    </select>
+                                                    <input type="text" value="" class="datepicker select_yymm">
+                                                    <span class="dash">-</span>
+                                                    <input type="text" value="" class="datepicker select_yymm">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>전화번호</th>
+                                            <th>당기처분 예정일</th>
                                             <td>
                                                 <div class="ip_group">
-                                                    <input type="text">
+                                                    <input type="text" value="" class="datepicker select_yymm">
                                                 </div>
                                             </td>
-                                            <th>사업자등록번호</th>
+                                            <th>전기처분 확정일</th>
                                             <td>
                                                 <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                            <th>창설년월</th>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" class="datepicker select_yymm">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>주영업소재지</th>
-                                            <td colspan="3">
-                                                <div class="ip_group">
-                                                    <input type="text" value="서울시 강남구 학동로 100-1" readonly>
-                                                    <button type="button" class="btn1"><span class="ads_btn">주소검색</span></button>
-                                                </div>
-                                            </td>
-                                            <th>상세주소</th>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>자본금<span class="unit">(백만원)</span></th>
-                                            <td colspan="5">
-                                                <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>겸업 타산업</th>
-                                            <td colspan="5">
-                                                <div class="labels col4">
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>제조업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>도소매업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>부동산업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>건설관련 기술 서비스업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>기계장비 임대업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>농림수산업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>광업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>가스, 수도사업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>숙박 및 음식업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>금융 및 보험업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>운수, 창고 및 통신업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>기타사업 서비스업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span> 기타</label>
+                                                    <input type="text" value="" class="datepicker select_yymm">
                                                 </div>
                                             </td>
                                         </tr>
@@ -275,15 +255,90 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="form_btns">
-                    <a href="javascript:;" class="btn submit">저장하기</a>
-                    <a href="javascript:;" class="btn line">취소</a>
+                  
+                    <div class="form_box">
+                        <div class="form_content">
+                            <div class="table_tunit">
+                                (단위 : 원)
+                            </div>
+                            <div class="form_table line">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col style="width:330px;">
+                                        <col style="width:330px;">
+                                    </colgroup> 
+                                    <thead class="line">
+                                        <tr>
+                                            <th>과목</th>
+                                            <th>당기</th>
+                                            <th>전기</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg">
+                                            <td>1.미처분 이익잉여금(결손금)</td>
+                                            <td class="right">0</td>
+                                            <td class="right">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(1)전기이월 미처분이익잉여금(또는 결손금)</td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0" readonly></div></td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(2)회계정책변경의누적효과</td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0" readonly></div></td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(3)전기오류수정</td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0" readonly></div></td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(4)중간배당액</td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0" readonly></div></td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(5)당기순이익(또는 당기순손실)</td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0" readonly></div></td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0"></div></td>
+                                        </tr>
+                                        <tr class="bg">
+                                            <td>2.임의적립금 등의 이입액(결손금 처리액)</td>
+                                            <td class="right">0</td>
+                                            <td class="right">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(1)임의적립금(또는 이입액)</td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0" readonly></div></td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(6)감채적립금</td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0" readonly></div></td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(7)기타</td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0" readonly></div></td>
+                                            <td><div class="ip_group"><input type="text" class="right" value="0"></div></td>
+                                        </tr>
+                                        <tr class="bg">
+                                            <td>4.차기이월 미처분 이익잉여금</td>
+                                            <td class="right">0</td>
+                                            <td class="right">0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
-
     </div>
     <!-- //content -->
 
@@ -364,146 +419,6 @@
         </div>
 	</div>
 </div>
-
-
-
-<!-- 건설기술인 집계표 -->
-<div class="layer_form layer1" style="display:none;">
-    <div class="layer_box">
-        <div class="layer_cnt">
-            <div class="form_wrap">
-                <div class="form_box">
-                    <div class="form_title row">
-                        <h3>건설기술인 집계표</h3>
-                    </div>
-                    <div class="form_content">
-                        <div class="form_table">
-                            <table>
-                                <thead class="line">
-                                    <tr>
-                                        <th rowspan="2">구분</th>
-                                        <th rowspan="2">직무분야</th>
-                                        <th colspan="6">기술등급</th>
-                                        <th colspan="5">국가기술자격</th>
-                                    </tr>
-                                    <tr>
-                                        <th>초급</th>
-                                        <th>중급</th>
-                                        <th>고급</th>
-                                        <th>특급</th>
-                                        <th>없음</th>
-                                        <th>계</th>
-                                        <th>산업기사</th>
-                                        <th>기사</th>
-                                        <th>기능장</th>
-                                        <th>건축사</th>
-                                        <th>기술사</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="center">
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>기계</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>전기전자</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>토목</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>건축</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>광업</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>건축</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button type="button" class="layer_close" onclick="$('.layer1').hide()">닫기</button>
-    </div>
-    <span class="layer_bg" onclick="$('.layer1').hide()"></span>
-</div>
-<!-- //건설기술인 집계표 -->
-
 <script src="../../assets/js/common.js"></script>
 </body>
 </html>	

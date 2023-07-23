@@ -56,7 +56,7 @@
                 <div id="logo"><a href="javascript:;"><span>2023년</span><span>통합실적관리시스템</span></a></div>
                 <div class="nav_wrap">
                     <ul id="nav">
-                        <li><a href="javascript:;" class="active">업체정보</a>
+                        <li><a href="javascript:;">업체정보</a>
                             <ul>
                                 <li><a href="javascript:;">업체정보관리</a></li>
                                 <li><a href="javascript:;">메뉴명1</a></li>
@@ -98,7 +98,7 @@
                                 <li><a href="javascript:;">메뉴명4</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:;">고용평가</a>
+                        <li><a href="javascript:;" class="active">고용평가</a>
                             <ul>
                                 <li><a href="javascript:;">메뉴명1</a></li>
                                 <li><a href="javascript:;">메뉴명2</a></li>
@@ -135,7 +135,7 @@
             <div class="item home"><a href="javascript:;">홈으로</a></div>
             <div class="item has_child">
                 <div class="box">
-                    <a href="javascript:;">업체정보</a>
+                    <a href="javascript:;">고용평가</a>
                     <ul>
                         <li><a href="javascript:;">업체정보</a></li>
                         <li><a href="javascript:;">기술인정보</a></li>
@@ -150,9 +150,9 @@
             </div>       
             <div class="item has_child">
                 <div class="box">
-                    <a href="javascript:;">건설장비 보유현황</a>
+                    <a href="javascript:;">신고서 작성</a>
                     <ul>
-                        <li><a href="javascript:;">건설장비 보유현황</a></li>
+                        <li><a href="javascript:;">신고서 작성</a></li>
                         <li><a href="javascript:;">메뉴명1</a></li>
                         <li><a href="javascript:;">메뉴명2</a></li>
                         <li><a href="javascript:;">메뉴명3</a></li>
@@ -164,16 +164,19 @@
 
 	<!-- content -->
     <div class="content_wrap">
-        <div id="content">
-            <h2 class="page_title">건설장비 보유현황</h2>
+        <div id="content" class="rside_content">
+            <h2 class="page_title">신고서 작성</h2>
             <form action="">
                 <div class="form_wrap">
                     <div class="form_box">
                         <div class="form_title">
-                            <h3>건설장비 목록</h3>
+                            <h3>가산 항목</h3>
                             <div class="r">
                                 <div class="rt_btns">
-                                    <a href="javascript:;" class="btn sline sm"><span class="add">등록하기</span></a>
+                                    <a href="javascript:;" class="btn line"><span class="reset">신고서 초기화</span></a>
+                                    <span class="devide"></span>
+                                    <a href="javascript:;" class="btn submit">저장하기</a>
+                                    <a href="javascript:;" class="btn light">삭제</a>
                                 </div>
                             </div>
                         </div>
@@ -181,73 +184,111 @@
                             <div class="form_table line">
                                 <table>
                                     <colgroup>
-                                        <col style="width:240px;">
-                                        <col style="width:200px;">
-                                        <col style="width:200px;">
-                                        <col style="width:200px;">
-                                        <col style="width:200px;">
-                                        <col>
+                                        <col style="width:18.75%;">
+                                        <col style="width:6.25%;">
+                                        <col style="width:59.375%;">
+                                        <col style="width:15.625%;">
                                     </colgroup>
                                     <thead class="line">
                                         <tr>
-                                            <th>건설기계차대번호</th>
-                                            <th>장비명</th>
-                                            <th>취득구분</th>
-                                            <th>취득일자</th>
-                                            <th>규격</th>
-                                            <th>계약합계</th>
+                                            <th>구분</th>
+                                            <th>신청</th>
+                                            <th>첨부서류</th>
+                                            <th>첨부서류</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>2349724982</td>
-                                            <td>굴삭기</td>
-                                            <td>임대차</td>
-                                            <td>2022.01.01</td>
-                                            <td>100m²</td>
-                                            <td>
-                                                <div class="form_actions">
-                                                    <a href="javascript:;" class="btn modify">수정</a>
-                                                    <a href="javascript:;" class="btn remove">삭제</a>
+                                            <th>가족친화 인증 기업</th>
+                                            <td class="center">
+                                                <label class="checkbox type2 single"><input type="checkbox"><span class="ck_icon"></span></label>
+                                            </td>
+                                            <td>가족친화인증서 사본 (전년도 12월 31일 기준의 유효기간 종료되지 않은 것)</td>
+                                            <td rowspan="4" class="center ip_files">
+                                                <label class="btn3 file_btn">
+                                                    <input type="file" class="file_add" file-type="pdf zip jpg jpeg png ppt pptx excel" file-max-length="5" file-max-size="10" multiple>
+                                                    통합파일 업로드
+                                                </label>
+                                                <div class="file_list">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
+                                            <th>사내근로복지기금</th>
+                                            <td class="center">
+                                                <label class="checkbox type2 single"><input type="checkbox"><span class="ck_icon"></span></label>
+                                            </td>
+                                            <td>관내 지역 고용센터에 제출한 [사내근로복지기금 운영 상황보고서] (지방고용노동관서)<br/>
+                                                * 사내근로복지기금 법인 증빙서류 (법인등기부등본 등)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>선택적 복지제도</th>
+                                            <td class="center">
+                                                <label class="checkbox type2 single"><input type="checkbox"><span class="ck_icon"></span></label>
+                                            </td>
+                                            <td>선택적 복지제도 시행 증빙 (전산관리서비스 제3자위탁 등)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>현장 편의시설 설치</th>
+                                            <td class="center">
+                                                <label class="checkbox type2 single"><input type="checkbox"><span class="ck_icon"></span></label>
                                             </td>
                                             <td>
-                                                <div class="ip_group">
-                                                    <div class="ip_btn_group">
-                                                        <input type="text">
-                                                        <button type="button" class="ip_btn_search">검색</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <select name="" id="">
-                                                        <option value="">임대차</option>
-                                                    </select>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" class="datepicker select_yymm">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text">
-                                                    <span class="unit">단위</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form_actions">
-                                                    <a href="javascript:;" class="btn save">저장</a>
-                                                    <a href="javascript:;" class="btn remove">삭제</a>
+                                                신규 계약(계약금액 1억이상) 건설현장별 편의시설 설치 내역 신고서 및 발주자(감리자)가 확인한 설치 확인서, 설치 사진 등 (현장별 증빙서류 필요)<br/>
+                                                ※ 현장별 편의시설 화장실(남녀), 식당, 탈의실(남녀) 모두 설치하여야 함
+
+                                                <div class="semi_bold mgt25">귀 업체는 2022년도 신규계약 공사중 총계약금액 1억원 이상 현장은 모두 (4)개입니다.<br/>
+                                                (4)개 현장의 모든 편의 시설을 설치한 경우에만 가산 인정됨을 참고하시기 바랍니다.</div>
+
+                                                <div class="form_table type2 line center mgt15">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col style="width:14.286%;">
+                                                            <col style="width:17.143%;">
+                                                            <col style="width:37.143%;">
+                                                            <col style="width:14.286%;">
+                                                            <col style="width:17.143%;">
+                                                        </colgroup>
+                                                        <thead class="line">
+                                                            <tr>
+                                                                <th>구분</th>
+                                                                <th>신고번호</th>
+                                                                <th>공사명</th>
+                                                                <th>발주자명</th>
+                                                                <th>총계약금액</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="center">
+                                                            <tr>
+                                                                <th>1</th>
+                                                                <td>20210003</td>
+                                                                <td>지하철공사 중 건축공사 아파트</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>2</th>
+                                                                <td>20210004</td>
+                                                                <td>건설회관 주차장 공사</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>3</th>
+                                                                <td>20210005</td>
+                                                                <td>상호해외공사</td>
+                                                                <td>해외공사</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>4</th>
+                                                                <td>20210006</td>
+                                                                <td>옥길동 전원주택 차량진입로공사</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </td>
                                         </tr>
@@ -257,9 +298,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="form_btns">
+                    <a href="javascript:;" class="btn submit">가상항목 신청 이동</a>
+                </div>
             </form>
         </div>
 
+        <div class="rside_wrap">
+            <div class="j_status">
+                <div class="item writing pass"><span>신고서작성</span></div>
+                <div class="item cate active"><span>항목신청</span></div>
+                <div class="item payment"><span>확정</span></div>
+                <div class="item print"><span>출력</span></div>
+            </div>
+            <div class="r_cs">
+                <button type="button" class="r_cs_toggle">문의전화</button>
+                <div class="cs_list">
+                    <div class="item">
+                        <span class="tit">문의전화 1</span>
+                        <span class="tel">1500-0001</span>
+                    </div>
+                    <div class="item">
+                        <span class="tit">문의전화 2</span>
+                        <span class="tel">1500-0002</span>
+                    </div>
+                    <div class="item">
+                        <span class="tit">문의전화 3</span>
+                        <span class="tel">1500-0003</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- //content -->
 
@@ -340,7 +409,74 @@
         </div>
 	</div>
 </div>
-
 <script src="../../assets/js/common.js"></script>
+<script>
+//첨부파일
+document.addEventListener('DOMContentLoaded', () => {
+    const inputBoxes = document.querySelectorAll('.ip_files');
+
+    function fileSizeInMB(fileSize) {
+        return fileSize / (1024 * 1024);
+    }
+
+    inputBoxes.forEach(inputBox => {
+        const inputFile = inputBox.querySelector('.file_add');
+        const fileList = inputBox.querySelector('.file_list');
+        const storedFiles = [];
+
+        const updateInputFile = () => {
+            const dataTransfer = new DataTransfer();
+
+            storedFiles.forEach(file => dataTransfer.items.add(file));
+
+            inputFile.files = dataTransfer.files;
+        };
+
+        if (inputFile && fileList) {
+            inputFile.addEventListener('change', (event) => {
+                const files = event.target.files;
+                const allowedTypes = event.target.getAttribute('file-type').split(' ');
+                const maxLength = parseInt(event.target.getAttribute('file-max-length'), 10);
+                const maxSize = parseInt(event.target.getAttribute('file-max-size'), 10);
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    if (allowedTypes.includes(file.type.split('/')[1]) &&
+                        storedFiles.length < maxLength &&
+                        fileSizeInMB(file.size) <= maxSize) {
+
+                        storedFiles.push(file);
+
+                        const fileItem = document.createElement('div');
+                        fileItem.className = 'file-item';
+
+                        const fileName = document.createElement('span');
+                        fileName.className = 'name';
+                        fileName.textContent = file.name;
+                        fileItem.appendChild(fileName);
+
+                        const deleteButton = document.createElement('button');
+                        deleteButton.type = 'button';
+                        deleteButton.textContent = '삭제';
+                        deleteButton.addEventListener('click', () => {
+                            const index = storedFiles.indexOf(file);
+                            if (index > -1) {
+                                storedFiles.splice(index, 1);
+                            }
+                            fileItem.remove();
+                            updateInputFile();
+                        });
+
+                        fileItem.appendChild(deleteButton);
+                        fileList.appendChild(fileItem);
+                        
+                    }
+                }
+
+                updateInputFile();
+            });
+        }
+    });
+});
+</script>
 </body>
 </html>	

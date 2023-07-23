@@ -73,7 +73,7 @@
                                 <li><a href="javascript:;">메뉴명4</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:;" class="active">신인도평가정보</a>
+                        <li><a href="javascript:;">신인도평가정보</a>
                             <ul>
                                 <li><a href="javascript:;">메뉴명1</a></li>
                                 <li><a href="javascript:;">메뉴명2</a></li>
@@ -90,7 +90,7 @@
                                 <li><a href="javascript:;">메뉴명4</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:;">재무제표신고</a>
+                        <li><a href="javascript:;" class="active">재무제표신고</a>
                             <ul>
                                 <li><a href="javascript:;">메뉴명1</a></li>
                                 <li><a href="javascript:;">메뉴명2</a></li>
@@ -135,7 +135,7 @@
             <div class="item home"><a href="javascript:;">홈으로</a></div>
             <div class="item has_child">
                 <div class="box">
-                    <a href="javascript:;">신인도평가정보</a>
+                    <a href="javascript:;">재무제표신고</a>
                     <ul>
                         <li><a href="javascript:;">업체정보</a></li>
                         <li><a href="javascript:;">기술인정보</a></li>
@@ -150,9 +150,9 @@
             </div>       
             <div class="item has_child">
                 <div class="box">
-                    <a href="javascript:;">건설업 통계조사</a>
+                    <a href="javascript:;">진단기관</a>
                     <ul>
-                        <li><a href="javascript:;">건설업 통계조사</a></li>
+                        <li><a href="javascript:;">진단기관</a></li>
                         <li><a href="javascript:;">메뉴명1</a></li>
                         <li><a href="javascript:;">메뉴명2</a></li>
                         <li><a href="javascript:;">메뉴명3</a></li>
@@ -165,12 +165,31 @@
 	<!-- content -->
     <div class="content_wrap">
         <div id="content">
-            <h2 class="page_title">건설업 통계조사</h2>
+            <h2 class="page_title">재무제표신고</h2>
+
+            <div class="tap_links">
+                <a href="javascript:;">비교표</a>
+                <a href="javascript:;" class="active">진단기관</a>
+                <a href="javascript:;">대차대조표</a>
+                <a href="javascript:;">손익계산서</a>
+                <a href="javascript:;">원가명세서</a>
+                <a href="javascript:;">이익잉여금</a>
+                <a href="javascript:;">기술개발비</a>
+                <a href="javascript:;">현금흐름표</a>
+                <a href="javascript:;">개별완성공사</a>
+            </div>
+
             <form action="">
                 <div class="form_wrap">
                     <div class="form_box">
                         <div class="form_title">
-                            <h3>일반사항 ( 1차신고 )</h3>
+                            <h3>결산정보</h3>
+                            <div class="r">
+                                <div class="rt_btns">
+                                    <a href="javascript:;" class="btn submit">저장하기</a>
+                                    <a href="javascript:;" class="btn light">취소</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="form_content">
                             <div class="form_table">
@@ -185,88 +204,163 @@
                                     </colgroup>
                                     <tbody>
                                         <tr>
-                                            <th>상호(한글)</th>
+                                            <th>결산일자<span class="req">필수입력</span></th>
                                             <td>
                                                 <div class="ip_group">
-                                                    <input type="text">
+                                                    <input type="text" value="">
                                                 </div>
                                             </td>
-                                            <th>대표자</th>
+                                            <th>정기결산서</th>
                                             <td>
                                                 <div class="ip_group">
-                                                    <input type="text">
+                                                    <input type="text" value="" class="datepicker select_yymm">
                                                 </div>
                                             </td>
-                                            <th>기업형태</th>
+                                            <th>외부감사 대상여부</th>
                                             <td>
-                                                <div class="ip_group">
-                                                    <select name="" id="">
-                                                        <option value="">선택</option>
-                                                        <option value="">주식회사</option>
-                                                    </select>
+                                                <div class="labels">
+                                                    <label class="checkbox"><input type="radio" name="radio1"><span class="ck_icon"></span>예</label>
+                                                    <label class="checkbox"><input type="radio" name="radio1"><span class="ck_icon"></span>아니오</label>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
+                                            <th>회계 기수<span class="req">필수입력</span></th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                            <th>자체기장 여부</th>
+                                            <td colspan="3">
+                                                <div class="labels">
+                                                    <label class="checkbox"><input type="radio" name="radio2"><span class="ck_icon"></span>예</label>
+                                                    <label class="checkbox"><input type="radio" name="radio2"><span class="ck_icon"></span>아니오</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form_box">
+                        <div class="form_title">
+                            <h3>감사보고서 정보</h3>
+                        </div>
+                        <div class="form_content">
+                            <div class="form_table line">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:170px;">
+                                        <col style="width:470px;">
+                                        <col style="width:170px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>진단 및 감사목적</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                            <th>진단 및 감사목적</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="" class="datepicker select_yymm">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>감사의견</th>
+                                            <td>
+                                                <div class="labels">
+                                                    <label class="checkbox"><input type="radio" name="radio3" value=""><span class="ck_icon"></span>해당없음</label>
+                                                    <label class="checkbox"><input type="radio" name="radio3" value=""><span class="ck_icon"></span>기업회생</label>
+                                                    <label class="checkbox"><input type="radio" name="radio3" value=""><span class="ck_icon"></span>공동관리</label>
+                                                </div>
+                                            </td>
+                                            <th>진단 및 감사일자</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="" class="datepicker select_yymm">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form_box">
+                        <div class="form_title">
+                            <h3>진단기관 정보</h3>
+                        </div>
+                        <div class="form_content">
+                            <div class="form_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:170px;">
+                                        <col style="width:257px;">
+                                        <col style="width:170px;">
+                                        <col style="width:257px;">
+                                        <col style="width:170px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>작성 및 증명기관<span class="req">필수입력</span></th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                            <th>확인자 성명</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="" class="datepicker select_yymm">
+                                                </div>
+                                            </td>
                                             <th>전화번호</th>
                                             <td>
                                                 <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                            <th>사업자등록번호</th>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                            <th>창설년월</th>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" class="datepicker select_yymm">
+                                                    <input type="text" value="">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>주영업소재지</th>
+                                            <th>자격 구분</th>
                                             <td colspan="3">
                                                 <div class="ip_group">
-                                                    <input type="text" value="서울시 강남구 학동로 100-1" readonly>
+                                                    <select name="" id="">
+                                                        <option value="">선택</option>
+                                                        <option value="">회계사</option>
+                                                        <option value="">세무사</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <th>자격관리번호</th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>주소</th>
+                                            <td colspan="3">
+                                                <div class="ip_group">
+                                                    <input type="text" value="서울시 강남구 학동로 100-1 " readonly="">
                                                     <button type="button" class="btn1"><span class="ads_btn">주소검색</span></button>
                                                 </div>
                                             </td>
                                             <th>상세주소</th>
                                             <td>
                                                 <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>자본금<span class="unit">(백만원)</span></th>
-                                            <td colspan="5">
-                                                <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>겸업 타산업</th>
-                                            <td colspan="5">
-                                                <div class="labels col4">
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>제조업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>도소매업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>부동산업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>건설관련 기술 서비스업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>기계장비 임대업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>농림수산업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>광업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>가스, 수도사업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>숙박 및 음식업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>금융 및 보험업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>운수, 창고 및 통신업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span>기타사업 서비스업</label>
-                                                    <label class="checkbox type2"><input type="checkbox"><span class="ck_icon"></span> 기타</label>
+                                                    <input type="text" value="">
                                                 </div>
                                             </td>
                                         </tr>
@@ -276,14 +370,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="form_btns">
-                    <a href="javascript:;" class="btn submit">저장하기</a>
-                    <a href="javascript:;" class="btn line">취소</a>
-                </div>
             </form>
         </div>
-
     </div>
     <!-- //content -->
 
@@ -364,146 +452,6 @@
         </div>
 	</div>
 </div>
-
-
-
-<!-- 건설기술인 집계표 -->
-<div class="layer_form layer1" style="display:none;">
-    <div class="layer_box">
-        <div class="layer_cnt">
-            <div class="form_wrap">
-                <div class="form_box">
-                    <div class="form_title row">
-                        <h3>건설기술인 집계표</h3>
-                    </div>
-                    <div class="form_content">
-                        <div class="form_table">
-                            <table>
-                                <thead class="line">
-                                    <tr>
-                                        <th rowspan="2">구분</th>
-                                        <th rowspan="2">직무분야</th>
-                                        <th colspan="6">기술등급</th>
-                                        <th colspan="5">국가기술자격</th>
-                                    </tr>
-                                    <tr>
-                                        <th>초급</th>
-                                        <th>중급</th>
-                                        <th>고급</th>
-                                        <th>특급</th>
-                                        <th>없음</th>
-                                        <th>계</th>
-                                        <th>산업기사</th>
-                                        <th>기사</th>
-                                        <th>기능장</th>
-                                        <th>건축사</th>
-                                        <th>기술사</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="center">
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>기계</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>전기전자</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>토목</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>건축</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>광업</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>종합</td>
-                                        <td>건축</td>
-                                        <td>1</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>435</td>
-                                        <td>1</td>
-                                        <td>5365</td>
-                                        <td>4</td>
-                                        <td>6</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>8</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button type="button" class="layer_close" onclick="$('.layer1').hide()">닫기</button>
-    </div>
-    <span class="layer_bg" onclick="$('.layer1').hide()"></span>
-</div>
-<!-- //건설기술인 집계표 -->
-
 <script src="../../assets/js/common.js"></script>
 </body>
 </html>	

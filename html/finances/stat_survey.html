@@ -56,7 +56,7 @@
                 <div id="logo"><a href="javascript:;"><span>2023년</span><span>통합실적관리시스템</span></a></div>
                 <div class="nav_wrap">
                     <ul id="nav">
-                        <li><a href="javascript:;" class="active">업체정보</a>
+                        <li><a href="javascript:;">업체정보</a>
                             <ul>
                                 <li><a href="javascript:;">업체정보관리</a></li>
                                 <li><a href="javascript:;">메뉴명1</a></li>
@@ -90,7 +90,7 @@
                                 <li><a href="javascript:;">메뉴명4</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:;">재무제표신고</a>
+                        <li><a href="javascript:;" class="active">재무제표신고</a>
                             <ul>
                                 <li><a href="javascript:;">메뉴명1</a></li>
                                 <li><a href="javascript:;">메뉴명2</a></li>
@@ -135,7 +135,7 @@
             <div class="item home"><a href="javascript:;">홈으로</a></div>
             <div class="item has_child">
                 <div class="box">
-                    <a href="javascript:;">업체정보</a>
+                    <a href="javascript:;">재무제표신고</a>
                     <ul>
                         <li><a href="javascript:;">업체정보</a></li>
                         <li><a href="javascript:;">기술인정보</a></li>
@@ -150,9 +150,9 @@
             </div>       
             <div class="item has_child">
                 <div class="box">
-                    <a href="javascript:;">건설장비 보유현황</a>
+                    <a href="javascript:;">건설업 통계조사</a>
                     <ul>
-                        <li><a href="javascript:;">건설장비 보유현황</a></li>
+                        <li><a href="javascript:;">건설업 통계조사</a></li>
                         <li><a href="javascript:;">메뉴명1</a></li>
                         <li><a href="javascript:;">메뉴명2</a></li>
                         <li><a href="javascript:;">메뉴명3</a></li>
@@ -165,91 +165,150 @@
 	<!-- content -->
     <div class="content_wrap">
         <div id="content">
-            <h2 class="page_title">건설장비 보유현황</h2>
+            <h2 class="page_title">건설업 통계조사 <span class="stit">결산사항 ( 2차신고 )</span></h2>
+
             <form action="">
                 <div class="form_wrap">
                     <div class="form_box">
                         <div class="form_title">
-                            <h3>건설장비 목록</h3>
+                            <h3>1. 종사자 수</h3>
                             <div class="r">
                                 <div class="rt_btns">
-                                    <a href="javascript:;" class="btn sline sm"><span class="add">등록하기</span></a>
+                                    <a href="javascript:;" class="btn submit">저장하기</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="form_content mgt25">
+                            <div class="form_content">
+                                <div class="table_tunit">
+                                    (단위 : 원)
+                                </div>
+                                <div class="form_table line">
+                                    <table>
+                                        <colgroup>
+                                            <col style="">
+                                            <col style="width:260px;">
+                                            <col style="width:260px;">
+                                            <col style="width:260px;">
+                                            <col style="width:260px;">
+                                        </colgroup>
+                                        <thead class="line">
+                                            <tr>
+                                                <th rowspan="2">구분</th>
+                                                <th colspan="3">연말기준 종사자 수</th>
+                                                <th rowspan="2">연감급여 및 임금<br/><span class="red_txt">(천원단위 입력)</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th>남</th>
+                                                <th>여</th>
+                                                <th>합계</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="center">
+                                            <tr>
+                                                <th>상용 사무직</th>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text" readonly><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">원</span></div></td>
+                                            </tr>
+                                            <tr>
+                                                <th>상용 기술자</th>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text" readonly><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">원</span></div></td>
+                                            </tr>
+                                            <tr>
+                                                <th>상용 기능공</th>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text" readonly><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">원</span></div></td>
+                                            </tr>
+                                            <tr>
+                                                <th>자영업자 및 무급</th>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                                <td><div class="ip_group"><input type="text" readonly><span class="unit">명</span></div></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>연간 영업일 수</th>
+                                                <td><div class="ip_group"><input type="text"><span class="unit">개월</span></div></td>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="form_box">
                         <div class="form_content">
+                            <div class="form_title">
+                                <h3>2. 임시 및 일용종사자 수</h3>
+                            </div>
                             <div class="form_table line">
                                 <table>
                                     <colgroup>
-                                        <col style="width:240px;">
-                                        <col style="width:200px;">
-                                        <col style="width:200px;">
-                                        <col style="width:200px;">
-                                        <col style="width:200px;">
-                                        <col>
+                                        <col style="">
+                                        <col style="width:260px;">
+                                        <col style="width:260px;">
+                                        <col style="width:260px;">
+                                        <col style="width:260px;">
                                     </colgroup>
                                     <thead class="line">
                                         <tr>
-                                            <th>건설기계차대번호</th>
-                                            <th>장비명</th>
-                                            <th>취득구분</th>
-                                            <th>취득일자</th>
-                                            <th>규격</th>
-                                            <th>계약합계</th>
+                                            <th rowspan="2">구분</th>
+                                            <th colspan="3">연말기준 종사자 수</th>
+                                            <th rowspan="2">연감급여 및 임금<br/><span class="red_txt">(천원단위 입력)</span></th>
+                                        </tr>
+                                        <tr>
+                                            <th>남</th>
+                                            <th>여</th>
+                                            <th>합계</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="center">
                                         <tr>
-                                            <td>2349724982</td>
-                                            <td>굴삭기</td>
-                                            <td>임대차</td>
-                                            <td>2022.01.01</td>
-                                            <td>100m²</td>
-                                            <td>
-                                                <div class="form_actions">
-                                                    <a href="javascript:;" class="btn modify">수정</a>
-                                                    <a href="javascript:;" class="btn remove">삭제</a>
-                                                </div>
-                                            </td>
+                                            <th>임시 및 일용근무자<br/>(잡부, 인부, 단순노무자 등 포함)</th>
+                                            <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                            <td><div class="ip_group"><input type="text"><span class="unit">명</span></div></td>
+                                            <td><div class="ip_group"><input type="text" readonly><span class="unit">명</span></div></td>
+                                            <td><div class="ip_group"><input type="text"><span class="unit">원</span></div></td>
                                         </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form_box">
+                        <div class="form_content">
+                            <div class="form_title">
+                                <h3>3. 납부 부가가치세  (매출 부가가치세 – 매입 부가가치세 = 총 부가가치세)</h3>
+                            </div>
+                            <div class="form_table line">
+                                <table>
+                                    <colgroup>
+                                        <col style="">
+                                        <col style="width:33.333%;">
+                                        <col style="width:33.333%;">
+                                    </colgroup>
+                                    <thead class="line">
                                         <tr>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <div class="ip_btn_group">
-                                                        <input type="text">
-                                                        <button type="button" class="ip_btn_search">검색</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <select name="" id="">
-                                                        <option value="">임대차</option>
-                                                    </select>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text" class="datepicker select_yymm">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ip_group">
-                                                    <input type="text">
-                                                    <span class="unit">단위</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form_actions">
-                                                    <a href="javascript:;" class="btn save">저장</a>
-                                                    <a href="javascript:;" class="btn remove">삭제</a>
-                                                </div>
-                                            </td>
+                                            <th>매출 부가가치세<br/><span class="red_txt">(천원단위 입력)</span><span class="calc_icon">-</span></th>
+                                            <th>매입 부가가치세<br/><span class="red_txt">(천원단위 입력)</span><span class="calc_icon">=</span></th>
+                                            <th>총 부가가치세</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="center">
+                                        <tr>
+                                            <td><div class="ip_group"><input type="text"><span class="unit">원</span></div></td>
+                                            <td><div class="ip_group"><input type="text"><span class="unit">원</span></div></td>
+                                            <td><div class="ip_group"><input type="text" readonly><span class="unit">원</span></div></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -259,7 +318,6 @@
                 </div>
             </form>
         </div>
-
     </div>
     <!-- //content -->
 
@@ -340,7 +398,6 @@
         </div>
 	</div>
 </div>
-
 <script src="../../assets/js/common.js"></script>
 </body>
 </html>	
