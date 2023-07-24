@@ -623,17 +623,12 @@ background-position: center center;background-repeat: no-repeat;}
 .faq_wrap .item .a:before{content:"A.";width:30px;font-size:22px;font-weight:700;color:#222;position: relative;top:-4px;}
 .faq_wrap .item .q.active:after{transform: rotate(-180deg);}
 
-<div class="faq_wrap">
-<div class="item">
-    <button class="q">교환 또는 반품이 안되는 경우는 어떤 경우인가요?</button>
-    <div class="a">
-        교환 또는 반품이 안되는 경우는 다음과 같습니다.<br/>
+.alert_box{background-color:#fff;border-radius:5px;text-align:center;position:absolute;transform:translate(-50%,-50%);left:50%;top:50%;z-index:10;width:400px;}
+.alert_box .alert_cnt{padding:50px 20px 40px;color:#888888;font-size:14px;}
+.alert_box .alert_cnt .alert_title{color:#222;font-size:22px;font-weight:600;margin-bottom:32px;}
+.alert_box .alert_cnt strong{display:block;font-weight:600;font-size:18px;margin:12px 0;color:#222;}
+.alert_box .alert_btns{display:flex;border-top:1px solid #E9E9E9;}
+.alert_box .alert_btns a{flex: 1 1;color:#767676;font-size:20px;font-weight:500;padding:24px 10px;}
+.alert_box .alert_btns a + a{border-left:1px solid #e9e9e9;}
+.alert_box .alert_btns a strong{color:#222;font-weight:500;}
 
-        1. 고객님의 사용에 인한 상품 훼손한 경우<br/>
-        2. 고객님의 사용에 의해 상품 가치가 현저히 감소한 경우<br/>
-        3. 시간이 경과되어 재판매가 곤란할 정도로 상품등의 가치가 상실된 경우.<br/>
-        4. 복제가 가능한 상품등의 포장을 훼손한 경우<br/>
-        5. 기타, 전자상거래등에서 소비자 보호에 관련 법륭이 정하는 소비자 청약철회 제한에 해당하는 경우<br/>
-        6. 반품요청 가능 기간이 지난경우
-    </div>
-</div>
