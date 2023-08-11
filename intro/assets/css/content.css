@@ -1,0 +1,234 @@
+@charset "utf-8";
+.fs_60 { font-size: max(3.125vw, 60px); }
+.fs_59 { font-size: max(3.0729vw, 59px); }
+.fs_58 { font-size: max(3.0208vw, 58px); }
+.fs_57 { font-size: max(2.9688vw, 57px); }
+.fs_56 { font-size: max(2.9167vw, 56px); }
+.fs_55 { font-size: max(2.8646vw, 55px); }
+.fs_54 { font-size: max(2.8125vw, 54px); }
+.fs_53 { font-size: max(2.7604vw, 53px); }
+.fs_52 { font-size: max(2.7083vw, 52px); }
+.fs_51 { font-size: max(2.6563vw, 51px); }
+.fs_50 { font-size: max(2.6042vw, 50px); }
+.fs_49 { font-size: max(2.5521vw, 49px); }
+.fs_48 { font-size: max(2.5vw, 48px); }
+.fs_47 { font-size: max(2.4479vw, 47px); }
+.fs_46 { font-size: max(2.3958vw, 46px); }
+.fs_45 { font-size: max(2.3438vw, 45px); }
+.fs_44 { font-size: max(2.2917vw, 44px); }
+.fs_43 { font-size: max(2.2396vw, 43px); }
+.fs_42 { font-size: max(2.1875vw, 42px); }
+.fs_41 { font-size: max(2.1354vw, 41px); }
+.fs_40 { font-size: max(2.0833vw, 40px); }
+.fs_39 { font-size: max(2.0313vw, 39px); }
+.fs_38 { font-size: max(1.9792vw, 38px); }
+.fs_37 { font-size: max(1.9271vw, 37px); }
+.fs_36 { font-size: max(1.875vw, 36px); }
+.fs_35 { font-size: max(1.8229vw, 35px); }
+.fs_34 { font-size: max(1.7708vw, 34px); }
+.fs_33 { font-size: max(1.7188vw, 33px); }
+.fs_32 { font-size: max(1.6667vw, 32px); }
+.fs_31 { font-size: max(1.6146vw, 31px); }
+.fs_30 { font-size: max(1.5625vw, 30px); }
+.fs_29 { font-size: max(1.5104vw, 29px); }
+.fs_28 { font-size: max(1.4583vw, 28px); }
+.fs_27 { font-size: max(1.4062vw, 27px); }
+.fs_26 { font-size: max(1.3541vw, 26px); }
+.fs_25 { font-size: max(1.3021vw, 25px); }
+.fs_24 { font-size: max(1.25vw, 24px); }
+.fs_23 { font-size: max(1.1979vw, 23px); }
+.fs_22 { font-size: max(1.1458vw, 22px); }
+.fs_21 { font-size: max(1.0938vw, 21px); }
+.fs_20 { font-size: max(1.0417vw, 20px); }
+.fs_19 { font-size: max(0.9896vw, 19px); }
+.fs_18 { font-size: max(0.9375vw, 18px); }
+.fs_17 { font-size: max(0.8854vw, 17px); }
+.fs_16 { font-size: max(0.8333vw, 16px); }
+.fs_15 { font-size: max(0.7812vw, 15px); }
+.fs_14 { font-size: max(0.7291vw, 14px); }
+.fs_13 { font-size: max(0.6771vw, 13px); }
+.fs_12 { font-size: max(0.625vw, 12px); }
+.fs_11 { font-size: max(0.5729vw, 11px); }
+.fs_10 { font-size: max(0.5208vw, 10px); }
+.fs_9 { font-size: max(0.4688vw, 9px); }
+.fs_8 { font-size: max(0.4167vw, 8px); }
+.fs_7 { font-size: max(0.3646vw, 7px); }
+.fs_6 { font-size: max(0.3125vw, 6px); }
+.fs_5 { font-size: max(0.2604vw, 5px); }
+.fs_4 { font-size: max(0.2083vw, 4px); }
+
+html,body{min-width:1280px;overflow-x:auto;}
+#layout{display:flex;flex-direction: column;min-height:100vh;overflow: hidden;padding: max(2.34375vw, 30px) max(3.125vw, 40px) max(3.64583vw, 46px);background-color: #F1F3F8;}
+#header_h1 {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+/*layout*/
+#header{}
+#header .hd_inner{padding:0 max(1.5625vw, 20px) max(2.34375vw, 30px); display:flex; align-items: center;}
+#header .hd_inner #logo{}
+#header .hd_inner #logo a{font-size: max(1.66667vw, 21px); color:#4835BB; font-weight: 700;}
+#header .hd_inner #logo a span{font-size:max(1.82292vw, 23px); font-weight: 700; vertical-align: baseline;}
+#header .hd_inner .nav_wrap{margin-left:auto;display:flex;align-items: center;}
+#header .hd_inner #nav{display:flex;}
+#header .hd_inner #nav > li{position: relative;}
+#header .hd_inner #nav > li + li:before{content:"";display:block;width:max(3.75px, 0.19531vw);height:max(3.75px, 0.19531vw);position:absolute;left:-max(1.875px, 0.09765vw);top:50%;margin-top:-max(1.875px, 0.09765vw);border-radius: 50%;background-color: #C7CEDE;} 
+#header .hd_inner #nav > li > a{display:block; padding:0 max(2.29167vw, 30px); color:#535563; font-size:max(0.989583vw, 16px); font-weight:600;}
+#header .hd_inner #nav > li > ul{display:none;position:absolute;width:140px;left:50%;top:72.91667px;margin-left:-70px;padding-top:23.4375px;padding-bottom:23.4375px;text-align: center;z-index:50;}
+#header .hd_inner #nav > li > ul > li{position:relative;z-index:5;left:50%;transform: translate(-50%,0);}
+#header .hd_inner #nav > li > ul > li > a{color:#555;font-size:max(14px, 0.72917vw);display:block;}
+#header .hd_inner #nav > li:hover > a{color:#4F69D2;}
+#header .hd_inner #nav > li:hover > ul{display:block;}
+#header .hd_inner #nav > li > ul > li > a:hover{color:#4F69D2;}
+#header .hd_inner .nav_all_btn{margin-left:max(6px, 0.3125vw);width:max(30px, 1.5625vw);height:max(30px, 1.5625vw);border:0;background-color: transparent;text-indent:-999em;overflow: hidden;background-repeat: no-repeat;background-position: center center;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cg id='btn_menu_all' transform='translate(-1810 -75)'%3E%3Crect id='area' width='30' height='30' transform='translate(1810 75)' fill='red' opacity='0'/%3E%3Cg id='ico_menu'%3E%3Cline id='선_1' data-name='선 1' x1='30' transform='translate(1810 83)' fill='none' stroke='%23333' stroke-width='2'/%3E%3Cline id='선_2' data-name='선 2' x1='30' transform='translate(1810 90)' fill='none' stroke='%23333' stroke-width='2'/%3E%3Cline id='선_3' data-name='선 3' x1='15' transform='translate(1825 97)' fill='none' stroke='%23333' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
+#header .hd_inner .nav_all_btn.active{background-size:max(40px, 2.08333vw);background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-x' width='44' height='44' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M18 6l-12 12' /%3E%3Cpath d='M6 6l12 12' /%3E%3C/svg%3E");}
+
+
+#footer{padding:max(2.6042vw, 33px) max(1.5625vw, 20px) 0;}
+#footer .ft_inner{display:flex;align-items: center;}
+#footer .ft_inner .ft_l{}
+#footer .ft_inner .ft_r{margin-left:auto;display:flex;}
+#footer .ft_inner .ft_links{display:flex;}
+#footer .ft_inner .ft_links li{position:relative;}
+#footer .ft_inner .ft_links li + li{margin-left:max(0.9635vw, 12px);padding-left:max(0.9635vw, 12px);}
+#footer .ft_inner .ft_links li + li:before{content:"";displaY:block;position:absolute;left:0;top:50%;margin-top:-0.3646vw;width:1px;height:0.7292vw;background-color: rgba(0,0,0,.2);}
+#footer .ft_inner .ft_links li a{display:block; color:#222; font-size:max(1vw, 14px);}
+#footer .ft_inner .ft_links li a:hover{text-decoration: underline;}
+#footer .ft_inner .ft_links li a strong{font-weight:600;}
+#footer .ft_inner .family_sites{width:13.5417vw;position: relative;}
+#footer .ft_inner .family_sites .family_sites_open{transition:all 0.3s;padding:0 max(1.0938vw, 14px); width:100%; text-align:left; color:#333; background-color:transparent; border:0; font-size:max(0.9375vw, 12px); font-weight:500; height:max(2.8125vw, 36px); border:1px solid #D4D6DE; border-radius:max(0.625vw, 8px);}
+#footer .ft_inner .family_sites .family_sites_open:before{width:max(1.0417vw, 13px); height:max(1.0417vw, 13px); position:absolute; right:max(1.0417vw, 13px); top:50%; transform: translate(0,-50%); transition:all 0.3s; background-size:contain; background-position:center center; background-repeat:no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_dropdown' transform='translate(-220 -19.961)'%3E%3Crect id='area' width='20' height='20' transform='translate(220 19.961)' fill='none'/%3E%3Cpath id='패스_994' data-name='패스 994' d='M540.394,162.844l5,5,5-5' transform='translate(-315.395 -134.883)' fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");}
+#footer .ft_inner .family_sites .family_sites_open.active:before{transform:rotate(180deg);}
+#footer .ft_inner .family_sites .sites{display:none;position:absolute;z-index:1;bottom:36px;left:0;width:100%;box-shadow:0 0 10px rgba(0,0,0,.2);background-color:#fff;border-radius:5px;max-height:350px;overflow-y:auto;}
+#footer .ft_inner .family_sites .sites li{}
+#footer .ft_inner .family_sites .sites li a{display:block;padding:12px 10px;font-size:13px;color:#444;}
+#footer .ft_inner .family_sites .sites li a:hover{background-color: #f1f1f1;;}
+#footer .ft_inner .family_sites .sites li + li{border-top:1px solid #f1f1f1;}
+.to_top{line-height:max(2.8125vw, 36px); text-align:center; margin-left:max(0.3125vw, 4px); width:max(5.7292vw, 73px); height:max(2.8125vw, 36px); color:#fff; border-radius:max(0.625vw, 8px); background-color: #343644; font-size:max(0.9896vw, 13px); font-weight:500; position: relative; transition:all 0.3s;}
+.to_top:after{content:""; display:inline-block; width:max(0.8333vw, 11px); height:max(0.8333vw, 11px); margin-left:max(0.3125vw, 4px); transition:all 0.3s; background-size:contain; background-position:center center; background-repeat:no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg id='btn_goto_top' transform='translate(0 16) rotate(-90)'%3E%3Crect id='area' width='16' height='16' transform='translate(0)' fill='red' opacity='0'/%3E%3Cg id='ico_arrow' transform='translate(2 3)'%3E%3Cpath id='패스_983' data-name='패스 983' d='M0,0,5,5,0,10' transform='translate(6 0)' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cline id='선_312' data-name='선 312' x1='10' transform='translate(0 5.005)' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
+
+.main_content{}
+.main_content .main_box{background-color: #fff;display: block;border-radius:40px;overflow: hidden;}
+.main_content .main_top{display:flex;}
+.main_content .main_top .mt_box{flex:1 1;}
+.main_content .main_top .mt_box + .mt_box{margin-left:20px;}
+.main_content .ev_box{padding:60px;background-color: #ddd;color:#fff;}
+.main_content .ev_box.purple{background-color: #4835BB;}
+.main_content .ev_box.blue{background-color: #2D70E3;}
+.main_content .ev_box.green{background-color: #1BC089;}
+.main_content .ev_box .title{font-size:25px;font-weight:700;margin-bottom:20px;}
+.main_content .ev_box .time{font-family: GmarketSans;}
+.main_content .ev_box .time + .time{margin-top:4px;}
+.main_content .ev_box .time strong{font-size:40px;font-weight:700;vertical-align: baseline;letter-spacing: -0.5px;}
+.main_content .ev_box .time span{font-size:20px;font-weight:500;vertical-align: baseline;}
+.main_content .ev_box p{color:rgba(255,255,255,.6);font-size:18px;font-weight:500;margin-top:25px;line-height:1.5;}
+.main_content .ev_box a.link{display:inline-block;font-size:24px;font-weight:600;margin-top:32px;padding-right:36px;background-position: right center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_arrow' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect id='area' width='32' height='32' fill='red' opacity='0'/%3E%3Cg id='ico_arrow-2' data-name='ico_arrow' transform='translate(4 9)'%3E%3Cline id='선_36' data-name='선 36' x2='23' transform='translate(0 7)' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath id='패스_983' data-name='패스 983' d='M1616.142,1056.654l7,7-7,7' transform='translate(-1599.142 -1056.654)' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");}
+.main_content .ev_box span.link{display:inline-block;font-size:22px;font-weight:500;color:rgba(255,255,255,.5);}
+.main_content .ev_box p + .link{margin-top:32px;}
+.main_content .ev_box .time + .link{margin-top:53px;}
+.main_content .ev_box .img_box{position: relative;height:300px;}
+.main_content .ev_box .img_box .img{width:40px;height:40px;border: 1px solid red;position:absolute;opacity:0;transition: all 0.4s;}
+.main_content .ev_box .img_box .img.l{transform: translateX(-150%);}
+.main_content .ev_box .img_box .img.r{transform: translateX(150%);}
+.main_content .ev_box .img_box .img.t{transform: translateY(-150%);}
+.main_content .ev_box .img_box.active .img{opacity:1;}
+.main_content .ev_box .img_box.active .img.l{transform: translateX(0%);}
+.main_content .ev_box .img_box.active .img.r{transform: translateX(0%);}
+.main_content .ev_box .img_box.active .img.t{transform: translateY(0%);}
+
+.main_content .main_bottom{margin-top:50px;display:flex;}
+.main_content .main_bottom .news_lst{min-width:calc((100% - 60px)/4 * 3 + 40px);max-width:calc((100% - 60px)/4 * 3 + 40px);overflow: hidden;}
+.main_content .main_bottom .main_inquiry{flex:1 1 auto;margin-left:20px;}
+
+<div id="content" class="main_content">
+        <div class="main_top">
+            <div class="main_box mt_box ev_box purple">
+                <div class="title">1차 공사실적 신고</div>
+                <div class="time"><strong>02. 01 - 03. 15</strong></div>
+                <p>마감일 이후로는 접수하실 수 없으므로
+                    신고기간을 반드시 지켜주시기 바랍니다</p>
+                <a href="javascript:;" class="link">신고하기</a>
+            </div>
+            <div class="main_box mt_box ev_box blue">
+                <div class="title">2차 재무제표 신고</div>
+                <div class="time"><strong>04. 01 - 04. 17</strong><span>(법인)</span></div>
+                <div class="time"><strong>05. 01 - 05. 31</strong><span>(개인)</span></div>
+                <span class="link">신고기간이 아닙니다</span>
+            </div>
+            <div class="main_box mt_box ev_box green">
+                <div class="title">고용평가 신청</div>
+                <div class="time"><strong>04. 01 - 04. 17</strong></div>
+                <p>신청기간이 되면 신청서를 작성할 수 있으니
+                    신청 가능 날짜를 확인해 주세요</p>
+                <span class="link">신청기간이 아닙니다</span>
+            </div>
+            <div class="mt_box">
+                <div class="main_box login_box">
+                    <form action="">
+                        <div class="top">
+                            <div class="title">로그인</div>
+                            <div class="login_option">
+                                <label class="checkbox"><input type="radio" name="login_option"><span class="ck_icon"></span>실적신고</label>
+                                <label class="checkbox"><input type="radio" name="login_option"><span class="ck_icon"></span>발주자</label>
+                            </div>
+                        </div>
+                        <div class="login_ip">
+                            <input type="text" placeholder="사업자번호 입력">
+                        </div>
+                        <div class="login_submit">
+                            <button type="submit">로그인</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="main_box ai_search">
+                    <div class="main_banner_slide">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../../assets/images/common/ui-icons_444444_256x240.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_bottom">
+            <div class="news_lst">
+                <div class="title">NEWS</div>
+                <div class="news_slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:;" class="main_box news_lst_box">
+                                    <div class="subject">건설현장 불법행위 대응업무 매뉴얼 및 불법하도급 근절 관련 안내</div>
+                                    <div class="text">
+                                        국토교통부에서 건설현장 불법행위 대응 요령, 신고서 작성 및 타워크레인 조종사의 성실의무 판단기준 등을 수록한 매뉴얼을 제작하여 붙임과 같이 알려드립니다
+                                    </div>
+                                    <div class="date">2023.06.23</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="lst_more">뉴스 더 보기</a>
+            </div>
+
+            <div class="main_inquiry">
+                <div class="title">문의하기</div>
+                <div class="main_box inquiry_box">
+                    <div class="tit">무엇을 도와드릴까요?</div>
+                    <div class="number">1500 - 0000</div>
+                    <div class="info">
+                        <div class="item"><span class="tit">평일</span><span class="cnt">오전 9시 - 오후 6시</span></div>
+                        <div class="item"><span class="tit">토·일요일/공휴일</span><span class="cnt">휴무</span></div>
+                    </div>
+                    <a href="javascript:;" class="all_btn">전체 문의처</a>
+                </div>
+            </div>
+        </div>
