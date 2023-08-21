@@ -201,23 +201,23 @@
 .form_wrap .form_box .form_title.row .i_txt{margin-top:14px;}
 
 .rt_btns{}
-.rt_btns .btn{display:inline-block;min-width:160px;height:50px;text-align: center;padding:15px;font-size:17px;margin-left:8px;vertical-align: middle;border-radius:2px;}
-.rt_btns .btn.md{min-width:120px;height:50px;padding:14px 30px;font-size:17px;font-weight:500;}
+.rt_btns .btn{display:inline-block;min-width:160px;height:50px;text-align: center;padding:15px;font-size:17px;margin-left:1px;vertical-align: middle;border-radius:2px;}
+.rt_btns .btn.md{min-width:65px;height:39px;padding:11px 20px;font-size:14px;font-weight:700;}
 .rt_btns .btn.xs{min-width:90px;height:38px;padding:9px 15px;font-size:15px;}
-.rt_btns .btn.sm{min-width:100px;height:42px;padding:11px 20px;font-size:16px;}
+.rt_btns .btn.sm{min-width:100px;height:39px;padding:10px 20px 9px;font-size:14px;}
 .rt_btns .btn.submit{font-weight:700;background-color: #4F69D2;color:#fff;}
 .rt_btns .btn.sline{font-weight:600;border: 1px solid #4F69D2;color:#4F69D2;}
 .rt_btns .btn.line{font-weight:500;border: 1px solid #666666;color:#222;}
 .rt_btns .btn.light {border: 1px solid #ddd;color:#222;}
 .rt_btns .btn .search{display:inline-block;padding-left:26px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 20 20'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_1825' data-name='사각형 1825' width='20' height='20' transform='translate(777 292)' fill='%23fff'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='마스크_그룹_4' data-name='마스크 그룹 4' transform='translate(-777 -292)' clip-path='url(%23clip-path)'%3E%3Cg id='search_white' transform='translate(781 296)'%3E%3Cpath id='패스_6218' data-name='패스 6218' d='M9.594,14.594a5,5,0,1,0-5-5A5,5,0,0,0,9.594,14.594Z' transform='translate(-4.594 -4.594)' fill='none' stroke='%23222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='패스_6219' data-name='패스 6219' d='M28.5,28.5l-3-3' transform='translate(-16.495 -16.496)' fill='none' stroke='%23222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
 .rt_btns .btn.xs .search{padding-left:22px;}
-.rt_btns .btn .reset{display:inline-block;padding-left:26px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_reflash' transform='translate(-1357 -411)'%3E%3Crect id='area' width='20' height='20' transform='translate(1357 411)' fill='none' opacity='0'/%3E%3Cpath id='패스_1443' data-name='패스 1443' d='M10,3.6A6.389,6.389,0,0,0,4.914,6.114L6.8,8H2V3.2L3.775,4.975A8,8,0,0,1,18,10H16.4A6.4,6.4,0,0,0,10,3.6ZM3.6,10a6.4,6.4,0,0,0,11.486,3.886L13.2,12H18v4.8l-1.775-1.775A8,8,0,0,1,2,10Z' transform='translate(1357 411)'/%3E%3C/g%3E%3C/svg%3E%0A");}
-.rt_btns .btn .add{display:inline-block;padding-left:26px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_plus' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Crect id='area' width='20' height='20' fill='%23f2f2f2' opacity='0'/%3E%3Cg id='_' data-name='+' transform='translate(4.5 4.5)'%3E%3Cline id='선_34' data-name='선 34' y2='11' transform='translate(5.5)' fill='none' stroke='%234f69d2' stroke-width='2'/%3E%3Cline id='선_35' data-name='선 35' y2='11' transform='translate(11 5.5) rotate(90)' fill='none' stroke='%234f69d2' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");}
+.rt_btns .btn .reset{display:inline-block;padding-left:15px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_50_624)'%3E%3Cpath d='M5.6918 2.39937V0.700001L3.64126 1.88L1.58658 3.06416L3.63297 4.25662L5.67937 5.44909V3.75803C7.37365 4.08211 8.65369 5.57373 8.65369 7.36035C8.65369 9.3838 7.01326 11.0292 4.99586 11.0292C2.97846 11.0292 1.34217 9.3838 1.34217 7.36035C1.34217 6.72465 1.50787 6.09725 1.81856 5.5488L0.654515 4.88401C0.227838 5.63606 0 6.49197 0 7.36451C0 10.1275 2.24109 12.3795 5 12.3795C7.75891 12.3795 10 10.1317 10 7.36451C10 4.83831 8.12345 2.74423 5.69594 2.40352L5.6918 2.39937Z' fill='%23222222'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_50_624'%3E%3Crect width='10' height='14' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");}
+.rt_btns .btn .add{display:inline-block;padding-left:15px;background-position: left -4px center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_plus' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Crect id='area' width='20' height='20' fill='%23f2f2f2' opacity='0'/%3E%3Cg id='_' data-name='+' transform='translate(4.5 4.5)'%3E%3Cline id='선_34' data-name='선 34' y2='11' transform='translate(5.5)' fill='none' stroke='%234f69d2' stroke-width='2'/%3E%3Cline id='선_35' data-name='선 35' y2='11' transform='translate(11 5.5) rotate(90)' fill='none' stroke='%234f69d2' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");}
 .rt_btns .btn:hover,
 .rt_btns .btn:hover span{text-decoration: underline;}
-.rt_btns .devide{display:inline-block;width:1px;height:24px;background-color: #E0E0E0;margin:0 6px 0 14px;vertical-align: middle;}
+.rt_btns .devide{display:inline-block;width:1px;margin:0 1px;vertical-align: middle;}
 .rt_btns.bottom{text-align: right;margin-top:20px;}
-.i_txt{display:inline-block;line-height:1.4;color:#888;font-size:15px;position: relative;padding-left:23px;background-position: left top 1px;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_info' xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg id='그룹_856' data-name='그룹 856'%3E%3Cg id='타원_81' data-name='타원 81' fill='%23fff' stroke='%23ddd' stroke-width='1'%3E%3Ccircle cx='9' cy='9' r='9' stroke='none'/%3E%3Ccircle cx='9' cy='9' r='8.5' fill='none'/%3E%3C/g%3E%3Cg id='i' transform='translate(0 -0.5)'%3E%3Crect id='사각형_114' data-name='사각형 114' width='2' height='5' rx='0.5' transform='translate(8 8.5)' fill='%23f03520'/%3E%3Ccircle id='타원_77' data-name='타원 77' cx='1' cy='1' r='1' transform='translate(8 5)' fill='%23f03520'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
+.i_txt{display:inline-block;line-height:1.4;color:#555;font-size:13px;position: relative;padding-left:23px;background-position: left top 1px;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg id='ico_info' xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg id='그룹_856' data-name='그룹 856'%3E%3Cg id='타원_81' data-name='타원 81' fill='%23fff' stroke='%23ddd' stroke-width='1'%3E%3Ccircle cx='9' cy='9' r='9' stroke='none'/%3E%3Ccircle cx='9' cy='9' r='8.5' fill='none'/%3E%3C/g%3E%3Cg id='i' transform='translate(0 -0.5)'%3E%3Crect id='사각형_114' data-name='사각형 114' width='2' height='5' rx='0.5' transform='translate(8 8.5)' fill='%23f03520'/%3E%3Ccircle id='타원_77' data-name='타원 77' cx='1' cy='1' r='1' transform='translate(8 5)' fill='%23f03520'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
 .i_txt strong{color:#222;font-size:16px;font-weight:700;margin-right:8px;vertical-align: top;}
 .i_txt .devide{display:inline-block;width:1px;height:12px;background-color: #E9E9E9;margin:0 3px;vertical-align: middle;}
 .i_txt .red{color:#F03520;}
@@ -234,14 +234,14 @@
 .form_table.nowrap table{table-layout: fixed;}
 .form_table{border-top:1px solid #666666;}
 .form_table table{width:100%;border-collapse: collapse;}
-.form_table table thead th{vertical-align: middle;padding: 15px;height:48px;background-color:#F2F7FB;color:#222;font-size:15px;font-weight: 600;border-bottom:1px solid #E9E9E9;text-align: center;position: relative;}
+.form_table table thead th{vertical-align: middle;padding: 14px;height:43px;background-color:#F2F7FB;color:#222;font-size:13px;font-weight: 600;border-bottom:1px solid #E9E9E9;text-align: center;position: relative;}
 .form_table table thead.line th{border-right:1px solid #e9e9e9;}
 .form_table table thead.line tr th:last-child{border-left:0;}
 .form_table table thead.sm th{border-right:1px solid #e9e9e9;height:42px;padding:5px;}
 .form_table table tbody{}
-.form_table table tbody th{vertical-align: middle;padding:8px 8px 8px 15px;background-color:#F2F7FB;color:#222;font-size:15px;font-weight: 600;border-bottom:1px solid #E9E9E9;text-align: left;}
+.form_table table tbody th{vertical-align: middle;padding:8px 8px 8px 15px;background-color:#F2F7FB;color:#222;font-size:13px;font-weight: 600;border-bottom:1px solid #E9E9E9;text-align: left;}
 .form_table table tbody th .req{margin-left:1px;text-indent:-999em;overflow: hidden;width:12px;height:12px;display:inline-block;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.496' height='7.5' viewBox='0 0 8.496 7.5'%3E%3Cg id='그룹_834' data-name='그룹 834' transform='translate(1.12 0.75)'%3E%3Cline id='선_268' data-name='선 268' y2='6' transform='translate(3.128)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='선_269' data-name='선 269' x2='0.866' y2='6.5' transform='translate(5.891 1.234) rotate(65)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='선_270' data-name='선 270' y1='6.5' x2='0.866' transform='translate(6.257 3.981) rotate(115)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E%0A");}
-.form_table table tbody th .stit{displaY:block;color:#888888;font-size:14px;font-weight:400;margin-top:2px;}
+.form_table table tbody th .stit{displaY:block;color:#666;font-size:12px;font-weight:500;margin-top:2px;}
 .form_table table th .unit{color:#888888;font-size:14px;margin-left:4px;vertical-align: baseline;display:inline-block;}
 .form_table table thead th .red_txt,
 .form_table table tbody th .red_txt,
@@ -252,7 +252,7 @@
 .form_table table tfoot th .stit{displaY:block;color:#888888;font-size:14px;font-weight:400;margin-top:2px;}
 
 .form_table table tbody td,
-.form_table table tfoot td{vertical-align: middle;padding: 8px 12px;color:#222;font-size:16px;border-bottom:1px solid #E9E9E9;height:54px;}
+.form_table table tfoot td{vertical-align: middle;padding: 8px 12px;color:#222;font-size:14px;border-bottom:1px solid #E9E9E9;height:54px;}
 .form_table.line table tbody th{border-right:1px solid #e9e9e9;height:48px;}
 .form_table.line table tbody th.center{padding:8px;}
 .form_table.line table tbody td + td{border-left:1px solid #e9e9e9;}
@@ -260,7 +260,7 @@
 .form_table.line table tfoot th + td{border-left:1px solid #e9e9e9;}
 .form_table.line table tfoot td + td{border-left:1px solid #e9e9e9;}
 .form_table table tbody td .row + .row{margin-top:12px;}
-.form_table table tbody td .ip_group{display:flex;align-items: center;}
+.form_table table tbody td .ip_group{display:flex;align-items: center;position: relative;}
 .form_table table tbody td .ip_group + .ip_group{margin-top:8px;}
 .form_table table tbody td .ip_group .ip_cnt{position: relative;}
 .form_table table tbody td .ip_group select,
@@ -268,11 +268,13 @@
 .form_table table tbody td .ip_group input[type="password"],
 .form_table table tbody td .ip_group input[type="tel"],
 .form_table table tbody td .ip_group input[type="email"],
-.form_table table tbody td .ip_group input[type="email"]{flex:1 1 auto;width:1%;}
+.form_table table tbody td .ip_group input[type="email"]{flex:1 1 auto;width:1%;font-size:14px;}
 .form_table table tbody td .ip_group input.readonly_text,
 .form_table table tbody td .ip_group input.readonly_text:read-only{background-color: #fff;border:0;color:#888;}
 .form_table table tbody td .ip_group > * + *{margin-left:6px;}
+.form_table table tbody td .ip_group.ads > * + input{margin-left:12px;}
 .form_table table tbody td .unit{color:#888888;font-size:14px;margin-left:4px;vertical-align: baseline;}
+.form_table table tbody td .unit2{color:#8F918F;font-size:13px;position:absolute;right:20px;top:50%;height:20px;line-height:20px;margin-top:-10px;}
 .form_table table tbody td .ip_group .unit{margin-left:6px;margin-top:20px;}
 .form_table table tbody td .link:hover{text-decoration: underline;}
 .form_table table tbody tr.bg td{background-color: #FAFAFA;}
@@ -286,9 +288,17 @@
 .form_table.sm table tfoot td{font-size:15px;}
 .form_table.xs table tbody td,
 .form_table.xs table tfoot td{font-size:13px;}
-.form_table .btn1{bordeR:1px solid #666666;background-color: #fff;border-radius: 2px;color:#222;font-size:15px;font-weight:600;text-align: center;height:38px;display:inline-block;padding:9px 16px;}
-.form_table .ads_btn{display:inline-block;padding-left:24px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_search' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cpath id='패스_1429' data-name='패스 1429' d='M10,18.9,5.05,13.95a7,7,0,1,1,9.9,0Zm3.85-6.05a5.444,5.444,0,1,0-7.7,0L10,16.7ZM10,10.556A1.556,1.556,0,1,1,11.556,9,1.556,1.556,0,0,1,10,10.556Z' transform='translate(10 9.55)' fill='%23222'/%3E%3C/g%3E%3C/svg%3E%0A");}
-.form_table .search_btn{display:inline-block;padding-left:24px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_search' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cg id='그룹_835' data-name='그룹 835' transform='translate(11 11)'%3E%3Cpath id='패스_1423' data-name='패스 1423' d='M4.566,4.566,1,1' transform='translate(11.434 11.434)' fill='none' stroke='%23222' stroke-width='2'/%3E%3Ccircle id='타원_42' data-name='타원 42' cx='5.906' cy='5.906' r='5.906' transform='translate(2 2)' fill='none' stroke='%23222' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
+
+.form_table.md table td input[type="text"],
+.form_table.md table td input[type="password"],
+.form_table.md table td input[type="tel"],
+.form_table.md table td input[type="email"],
+.form_table.md table td select,
+.form_table.md table td .file_ip{}
+
+.form_table .btn1{bordeR:1px solid #666666;background-color: #fff;border-radius: 2px;color:#222;font-size:13px;font-weight:600;text-align: center;height:38px;display:inline-block;padding:9px 14px;}
+.form_table .ads_btn{display:inline-block;padding-left:24px;height:18px;line-height:18px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_search' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cpath id='패스_1429' data-name='패스 1429' d='M10,18.9,5.05,13.95a7,7,0,1,1,9.9,0Zm3.85-6.05a5.444,5.444,0,1,0-7.7,0L10,16.7ZM10,10.556A1.556,1.556,0,1,1,11.556,9,1.556,1.556,0,0,1,10,10.556Z' transform='translate(10 9.55)' fill='%23222'/%3E%3C/g%3E%3C/svg%3E%0A");}
+.form_table .search_btn{display:inline-block;padding-left:24px;height:18px;line-height:18px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_search' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cg id='그룹_835' data-name='그룹 835' transform='translate(11 11)'%3E%3Cpath id='패스_1423' data-name='패스 1423' d='M4.566,4.566,1,1' transform='translate(11.434 11.434)' fill='none' stroke='%23222' stroke-width='2'/%3E%3Ccircle id='타원_42' data-name='타원 42' cx='5.906' cy='5.906' r='5.906' transform='translate(2 2)' fill='none' stroke='%23222' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
 .form_table .btn1:hover,
 .form_table .btn1:hover span{text-decoration: underline;}
 
@@ -378,7 +388,12 @@
 .form_actions .btn.modify{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_del' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cg id='그룹_3340' data-name='그룹 3340' transform='translate(12 12)'%3E%3Cpath id='패스_2175' data-name='패스 2175' d='M1,12a1,1,0,0,0,.242-.03l4-1a1,1,0,0,0,.465-.263l6-6a1,1,0,0,0,0-1.414l-3-3a1,1,0,0,0-1.414,0l-6,6a1,1,0,0,0-.263.464l-1,4A1,1,0,0,0,1,12ZM2.9,7.511,8,2.414,9.586,4l-5.1,5.1-2.114.528L2.9,7.511Z' transform='translate(1 2)' fill='%23222'/%3E%3Crect id='사각형_1904' data-name='사각형 1904' width='14' height='1' transform='translate(1 15)' fill='%23222'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
 .form_actions .btn.remove{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_del' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cg id='타원_82' data-name='타원 82' transform='translate(13 13)' fill='none' stroke='%23222' stroke-width='1.5'%3E%3Ccircle cx='7' cy='7' r='7' stroke='none'/%3E%3Ccircle cx='7' cy='7' r='6.25' fill='none'/%3E%3C/g%3E%3Crect id='사각형_1571' data-name='사각형 1571' width='5' height='2' transform='translate(17.5 19)' fill='%23222'/%3E%3C/g%3E%3C/svg%3E%0A");}
 .form_actions .btn.save{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_del' transform='translate(-10 -10)'%3E%3Crect id='area' width='20' height='20' transform='translate(10 10)' fill='%2300dcff' opacity='0'/%3E%3Cg id='그룹_3340' data-name='그룹 3340' transform='translate(12 12)'%3E%3Crect id='사각형_1904' data-name='사각형 1904' width='14' height='1' transform='translate(1 15)' fill='%23222'/%3E%3Cpath id='패스_6543' data-name='패스 6543' d='M1.438,7.066l2.929,4.145,7.071-6' transform='translate(0.563 -0.211)' fill='none' stroke='%23222' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
+.form_actions .btn.normal{padding:9px 14px;}
 .form_actions .btn:hover{text-decoration: underline;}
+
+.btn_sm{display:inline-block;border:1px solid #D0D0D0;padding:8px 14px;color:#222;font-size:13px;font-weight:600;border-radius:2px;}
+.btn_sm:hover{text-decoration: underline;}
+.btn_sm.submit{border:1px solid #5769CF;background-color: #5769CF;color:#fff;}
 
 .table_bottom{margin-top:12px;display:flex;justify-content:space-between;}
 .table_bottom .l{}
@@ -632,3 +647,25 @@ background-position: center center;background-repeat: no-repeat;}
 .alert_box .alert_btns a + a{border-left:1px solid #e9e9e9;}
 .alert_box .alert_btns a strong{color:#222;font-weight:500;}
 
+.gray_center_form{border:1px solid #E9E9E9;background-color: #F7F7F9;padding:30px 0;margin-bottom:20px;text-align: center;}
+.gray_center_form .row{display:flex;align-items: center;width:584px;margin:0 auto;text-align: left;}
+.gray_center_form .row + .row{margin-top:12px;}
+.gray_center_form .row .tit{max-width:85px;min-width:85px;color:#222;font-size:15px;font-weight:600;}
+.gray_center_form .row .cnt{flex:1 1 auto;width:1%;}
+.gray_center_form .row .cnt .ip_group{display:flex;align-items: center;position: relative;}
+.gray_center_form .row .cnt .ip_group + .ip_group{margin-top:8px;}
+.gray_center_form .row .cnt .ip_group .ip_cnt{position: relative;}
+.gray_center_form .row .cnt .ip_group select,
+.gray_center_form .row .cnt .ip_group input[type="text"],
+.gray_center_form .row .cnt .ip_group input[type="password"],
+.gray_center_form .row .cnt .ip_group input[type="tel"],
+.gray_center_form .row .cnt .ip_group input[type="email"],
+.gray_center_form .row .cnt .ip_group input[type="email"]{flex:1 1 auto;width:1%;font-size:14px;height:45px;border:1px solid #666;}
+.gray_center_form .row .cnt .ip_group input.readonly_text,
+.gray_center_form .row .cnt .ip_group input.readonly_text:read-only{background-color: #fff;border:0;color:#888;}
+.gray_center_form .row .cnt .ip_group > * + *{margin-left:6px;}
+.gray_center_form .row .cnt .ip_group.ads > * + input{margin-left:12px;}
+.gray_center_form .row .cnt .unit{color:#888888;font-size:14px;margin-left:4px;vertical-align: baseline;}
+.gray_center_form .row .cnt .unit2{color:#8F918F;font-size:13px;position:absolute;right:20px;top:50%;height:20px;line-height:20px;margin-top:-10px;}
+.gray_center_form .row .cnt .ip_group .unit{margin-left:6px;margin-top:20px;}
+.gray_center_form .i_txt{margin-top:20px;}
