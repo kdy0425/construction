@@ -217,7 +217,7 @@ select::-ms-expand {display:none;}
 .slick-slider .slick-arrow{position:absolute;top:50%;display:inline-block;text-indent:-999em;overflow:hidden;}
 
 label{cursor:pointer;}
-.checkbox{display:inline-block;min-width:24px;min-height:24px;padding-left:32px;padding-top:3px;position:relative;color:#222;}
+.checkbox{display:inline-block;min-width:24px;min-height:24px;padding-left:30px;position:relative;color:#222;}
 .checkbox.lg{color:#444;font-size:18px;}
 .checkbox.lg .ck_icon{top:4px;}
 .checkbox.single{padding-left:24px;}

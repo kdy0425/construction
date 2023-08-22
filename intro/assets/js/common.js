@@ -1,19 +1,47 @@
 //전체 메뉴
-const navAllBtn = document.querySelector('.nav_all_btn');
-const nav = document.querySelector('#nav');
-navAllBtn.addEventListener('click', function () {
-	nav.classList.toggle('active');
-	navAllBtn.classList.toggle('active');
-});
-const body = document.querySelector('body');
-body.addEventListener('click', function (event) {
-	if (event.target.closest('.hd_bottom') || event.target.closest('#nav') || event.target.closest('.nav_all_btn')) {
-		return;
-	}
-	nav.classList.remove('active');
-	navAllBtn.classList.remove('active');
+$(document).ready(function() {
+    $('.nav_all_btn').on('click', function(e) {
+        e.stopPropagation();
+
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+			$('#header').removeClass('active');
+            $('.nav_all').css('display', 'none');
+        } else {
+            $(this).addClass('active');
+			$('#header').addClass('active');
+            $('.nav_all').css('display', 'block');
+        }
+    });
+
+    $('.nav_close').on('click', function(e) {
+        e.stopPropagation(); 
+        $('.nav_all_btn').removeClass('active');
+        $('.nav_all').css('display', 'none');
+    });
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.nav_all, .nav_close, .nav_all_btn').length) {
+            $('.nav_all_btn').removeClass('active');
+            $('.nav_all').css('display', 'none');
+        }
+    });
 });
 
+$(document).ready(function(){
+    $(".nav_cnt > ul > li > a").on("click", function(e) {
+        var currentSubmenu = $(this).next("ul");
+        if(currentSubmenu.length) {
+            e.preventDefault(); 
+            if(currentSubmenu.hasClass("active")) {
+                currentSubmenu.removeClass("active");
+            } else {
+                $(".nav_cnt > ul > li > ul").removeClass("active");
+                currentSubmenu.addClass("active");
+            }
+        }
+    });
+});
 
 //푸터 family sites
 $(".family_sites_open").on("click", function(e) {
