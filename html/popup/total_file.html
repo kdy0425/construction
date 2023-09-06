@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:type"        content="website" />
+<meta property="og:site_name"   content="2023년 통합실적관리시스템" />
+<meta property="og:title"       content="2023년 통합실적관리시스템" />
+<meta property="og:description" content="" />
+<title>통합파일관리 - 2023년 통합실적관리시스템</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/popup.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="popup_layout">
+    <h1 id="header_h1">통합파일관리 - 2023년 통합실적관리시스템</h1>
+    <!-- header -->
+    <div id="header">
+        <h2>통합파일관리</h2>
+        <div class="r">
+            <div class="hd_mb before">
+                <span class="mb_name">트라이언소프트 (123-45-12345)</span>
+                <button type="button" class="mb_change" onclick="$('.hd_mb.after').show();$('.hd_mb.before').hide();"><span>회원변경</span></button>
+            </div>
+
+            <div class="hd_mb after" style="display:none;">
+                <input type="text" class="mb_input" placeholder="사업자번호를 입력해주세요.">
+                <button type="button" class="mb_change"><span>변경</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="aside_wrap">
+        <div id="aside">
+            <ul id="nav">
+                <li><a href="javascript:;">실적신고</a>
+                    <ul>
+                        <li><a href="javascript:;">기성실적신고서</a></li>
+                        <li><a href="javascript:;" class="active">자가건설공사</a></li>
+                        <li><a href="javascript:;">일반업자간 하도급</a></li>
+                        <li><a href="javascript:;">기술자</a></li>
+                        <li><a href="javascript:;">산업환경설비제조실적</a></li>
+                        <li><a href="javascript:;">직접시공분 실적</a></li>
+                        <li><a href="javascript:;">일체형작업발판</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">재무제표신고</a>
+                    <ul>
+                        <li><a href="javascript:;">재무제표신고</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">업체정보</a>
+                    <ul>
+                        <li><a href="javascript:;">신규</a></li>
+                        <li><a href="javascript:;">합병</a></li>
+                        <li><a href="javascript:;">업종추가</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="box_wrap">
+                <div class="box">
+                    <div class="box_title">
+                        <h3>파일업로드 등록</h3>
+                        <div class="r">
+                            <span class="red_txt ">파일당 20MB 이상 업로드 불가</span>
+                        </div>
+                    </div>
+                    <div class="gray_form form_inline">
+                        <form action="">
+                            <div class="row">
+                                <div class="item">
+                                    <div class="tit">관련서류</div>
+                                    <div class="cnt" style="width:179px">
+                                        <select name="" id="">
+                                            <option value="공사비 세부실행내역서">공사비 세부실행내역서</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="file_upload">
+                                    <div class="file_area">
+                                        <span class="file_txt">여기에 파일을 끌어다 놓거나 파일찾기 버튼을 클릭해주세요.</span>
+                                        <div class="file_list">
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면</span><span class="file_size">100KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면_aa</span><span class="file_size">87KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면</span><span class="file_size">100KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면_aa</span><span class="file_size">87KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면</span><span class="file_size">100KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면_aa</span><span class="file_size">87KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면</span><span class="file_size">100KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면_aa</span><span class="file_size">87KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면</span><span class="file_size">100KB</span><button type="button" class="file_remove">삭제</button></div>
+                                            <div class="file"><span class="file_name">20230227~20230904_설계도면</span><span class="file_size">100KB</span><button type="button" class="file_remove">삭제</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="file_btns">
+                                        <label class="file_label"><input type="file" id="fileInput" multiple>파일찾기</label>
+                                        <button type="button" class="upload_btn">업로드</button>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="row">
+                                <div class="file_upload">
+                                    <div class="file_area">
+                                        <span class="file_txt">여기에 파일을 끌어다 놓거나 파일찾기 버튼을 클릭해주세요.</span>
+                                        <div class="file_list" style="">
+                                        </div>
+                                    </div>
+                                    <div class="file_btns">
+                                        <label class="file_label"><input type="file" id="fileInput" multiple>파일찾기</label>
+                                        <button type="button" class="upload_btn">업로드</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                               document.addEventListener('DOMContentLoaded', () => {
+                                    const inputBoxes = document.querySelectorAll('.file-ip-box');
+
+                                    function fileSizeInMB(fileSize) {
+                                        return fileSize / (1024 * 1024);
+                                    }
+
+                                    inputBoxes.forEach(inputBox => {
+                                        const inputFile = inputBox.querySelector('#fileInput');
+                                        const fileList = inputBox.querySelector('.file_list');
+                                        const storedFiles = [];
+
+                                        const updateInputFile = () => {
+                                            const dataTransfer = new DataTransfer();
+
+                                            storedFiles.forEach(file => dataTransfer.items.add(file));
+
+                                            inputFile.files = dataTransfer.files;
+                                        };
+
+                                        if (inputFile && fileList) {
+                                            inputFile.addEventListener('change', (event) => {
+                                                const files = event.target.files;
+                                                const allowedTypes = event.target.getAttribute('file-type').split(' ');
+                                                const maxLength = parseInt(event.target.getAttribute('file-max-length'), 10);
+
+                                                for (let i = 0; i < files.length; i++) {
+                                                    const file = files[i];
+                                                    if (allowedTypes.includes(file.type.split('/')[1]) &&
+                                                        storedFiles.length < maxLength &&
+
+                                                        storedFiles.push(file);
+
+                                                        const fileItem = document.createElement('div');
+                                                        fileItem.className = 'file-item';
+
+                                                        const fileName = document.createElement('span');
+                                                        fileName.className = 'name';
+                                                        fileName.textContent = file.name;
+                                                        fileItem.appendChild(fileName);
+
+                                                        const deleteButton = document.createElement('button');
+                                                        deleteButton.type = 'button';
+                                                        deleteButton.textContent = '삭제';
+                                                        deleteButton.addEventListener('click', () => {
+                                                            const index = storedFiles.indexOf(file);
+                                                            if (index > -1) {
+                                                                storedFiles.splice(index, 1);
+                                                                updateInputFile();
+                                                            }
+                                                            fileItem.remove();
+                                                        });
+
+                                                        fileItem.appendChild(deleteButton);
+                                                        fileList.appendChild(fileItem);
+                                                }
+
+                                                updateInputFile();
+                                            });
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <div class="row_txt">파일업로드 대상목록 (업로드 가능한 파일 : pdf, hwp, doc, docx, xls, xlsx, ppt, ptx, txt, png, jpg, jpeg, gif)</div>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <div class="list_wrap">
+                        <div class="list_search form_inline">
+                            <form action="">
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="tit">관련서류</div>
+                                        <div class="cnt" style="width:179px">
+                                            <select name="" id="">
+                                                <option value="">공사비 세부실행내역서</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="tit">신고년도</div>
+                                        <div class="cnt" style="width:109px">
+                                            <select name="" id="">
+                                                <option value="">2023</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn_search"><span>검색</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="list_top">
+                            <div class="l">
+                                <div class="lt_total">총 <strong>56</strong>건</div>
+                            </div>
+                            <div class="r">
+                                <div class="lt_sort">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                    </select>
+                                </div>
+                                <div class="lt_btns">
+                                    <button type="button" class="btn_down"><span>전체 다운로드</span></button>
+                                    <button type="button" class="btn_excel"><span>목록엑셀다운</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt_list">
+                            <table>
+                                <colgroup>
+                                    <col style="width:63px;">
+                                    <col style="width:230px;">
+                                    <col>
+                                    <col style="width:83px;">
+                                    <col style="width:83px;">
+                                    <col style="width:185px;">
+                                    <col style="width:153px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>분류</th>
+                                        <th>파일명</th>
+                                        <th>음량</th>
+                                        <th>파일유형</th>
+                                        <th>등록일시</th>
+                                        <th>가능</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="center">
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //content -->
+</div>
+
+</body>
+</html>	

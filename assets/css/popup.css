@@ -1,0 +1,184 @@
+@import url('./notosanskorean.css');
+#popup_layout *{font-family: "Noto Sans Korean";}
+#popup_layout #header{height:56px;background-color: #5F76AC;color:#fff;border:0;display:flex;padding:12px 50px 12px 20px;align-items: center;}
+#popup_layout #header h2{color:#fff;font-size:20px;font-weight: 700;}
+#popup_layout #header .r{margin-left:auto;}
+#popup_layout #header .hd_mb{display:flex;align-items: center;}
+#popup_layout #header .hd_mb .mb_name{color:#fff;font-weight: 500;font-size:12px;}
+#popup_layout #header .hd_mb .mb_change{margin-left: 8px;height:32px;border-radius: 3px;background-color: #2E4882;color:#fff;font-size:12px;font-weight:700;border:0;width:90px;}
+#popup_layout #header .hd_mb .mb_change span{display: inline-block;padding-left:17px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12C4.45556 12 3.11667 11.4917 1.98333 10.475C0.85 9.45833 0.2 8.18889 0.0333333 6.66667H1.4C1.55556 7.82222 2.06944 8.77778 2.94167 9.53333C3.81389 10.2889 4.83333 10.6667 6 10.6667C7.3 10.6667 8.40278 10.2139 9.30833 9.30833C10.2139 8.40278 10.6667 7.3 10.6667 6C10.6667 4.7 10.2139 3.59722 9.30833 2.69167C8.40278 1.78611 7.3 1.33333 6 1.33333C5.23333 1.33333 4.51667 1.51111 3.85 1.86667C3.18333 2.22222 2.62222 2.71111 2.16667 3.33333H4V4.66667H0V0.666667H1.33333V2.23333C1.9 1.52222 2.59167 0.972222 3.40833 0.583333C4.225 0.194444 5.08889 0 6 0C6.83333 0 7.61389 0.158333 8.34167 0.475C9.06944 0.791667 9.70278 1.21944 10.2417 1.75833C10.7806 2.29722 11.2083 2.93056 11.525 3.65833C11.8417 4.38611 12 5.16667 12 6C12 6.83333 11.8417 7.61389 11.525 8.34167C11.2083 9.06944 10.7806 9.70278 10.2417 10.2417C9.70278 10.7806 9.06944 11.2083 8.34167 11.525C7.61389 11.8417 6.83333 12 6 12Z' fill='white'/%3E%3C/svg%3E%0A");}
+#popup_layout #header .hd_mb .mb_change:hover span{text-decoration: underline;}
+#popup_layout #header .hd_mb .mb_input{width:187px;height:32px;border-radius:3px;padding-left:10px;border:0;background-color: #395088;color:#fff;font-size:12px;}
+#popup_layout #header .hd_mb .mb_input::placeholder{color:#A6B4D7;opacity: 1;}
+#popup_layout #header .hd_mb.after .mb_change{background-color: #253660;}
+
+#popup_layout .aside_wrap{display:flex;height:calc(100vh - 56px);}
+#popup_layout #aside{min-width:185px;max-width:185px;background-color: #253150;color:#fff;overflow-y: auto;height:100%;}
+#popup_layout #aside #nav{}
+#popup_layout #aside #nav > li{padding:22px 10px;border-bottom:1px solid #38486C;}
+#popup_layout #aside #nav > li > a{display:block;padding:0 10px;color:#fff;font-size:15px;font-weight: 700;color:#EBE7E7;}
+#popup_layout #aside #nav > li > ul{margin-top:8px;}
+#popup_layout #aside #nav > li > ul > li{}
+#popup_layout #aside #nav > li > ul > li a{display:block;font-size:13px;font-weight:500;color:#959EB4;padding:6px 10px;}
+#popup_layout #aside #nav > li > ul > li a.active{padding-right:20px;color:#fff;font-weight: 700;background-position: right 10px center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='7' height='9' viewBox='0 0 7 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8L5 4.5L1 1' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");}
+#popup_layout #aside #nav > li > ul > li a:hover{color:#fff;}
+
+#popup_layout #content{flex:1 1 auto;width:1%;padding:30px 50px;background-color: #fff;overflow-y:auto;height:100%;}
+#popup_layout .box_wrap{}
+#popup_layout .box_wrap .box{}
+#popup_layout .box_wrap .box + .box{margin-top:35px;}
+#popup_layout .box_wrap .box .box_title{display: flex;align-items: center;margin-bottom:10px;}
+#popup_layout .box_wrap .box .box_title h3{color:#222;font-size:14px;font-weight:500;}
+#popup_layout .box_wrap .box .box_title .l{}
+#popup_layout .box_wrap .box .box_title .r{margin-left:auto;}
+#popup_layout .box_wrap .red_txt{color:#E72E2E;font-size:12px;}
+#popup_layout .gray_form{padding:20px 30px 25px;border: 1px solid #D2D9E0;background-color:#F3F5F8;}
+#popup_layout .form_inline{}
+#popup_layout .form_inline .row{display: flex;}
+#popup_layout .form_inline .row + .row{margin-top:10px;}
+#popup_layout .form_inline .row .item{display:flex;align-items: center;}
+#popup_layout .form_inline .row .item + .item{margin-left:30px;}
+#popup_layout .form_inline .row .item .tit{padding:0 10px 0 9px;position: relative;color:#222;font-size:12px;font-weight: 500;}
+#popup_layout .form_inline .row .item .tit::before{content:"";position: absolute;left:0;top:50%;margin-top:-1px;width:3px;height: 3px;background-color: #222;border-radius: 50%;}
+#popup_layout .form_inline .row .item .cnt{flex:1 1 auto;}
+#popup_layout .form_inline .row .item .cnt select,
+#popup_layout .form_inline .row .item .cnt input[type="text"],
+#popup_layout .form_inline .row .item .cnt input[type="password"],
+#popup_layout .form_inline .row .item .cnt input[type="tel"],
+#popup_layout .form_inline .row .item .cnt input[type="email"]{width:100%;}
+#popup_layout .form_inline .row .btn_search{margin-left:10px;}
+
+#popup_layout .form_inline .row_txt{coloR:#42454B;font-size:12px;margin-top:10px;}
+#popup_layout select{height:32px;border-radius: 3px;padding-left:10px;color:#222;font-size:12px;background-position:right 10px center;background-image: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L4.5 5L8 1' stroke='%2342454B' stroke-width='2'/%3E%3C/svg%3E%0A");}
+#popup_layout .file_upload{display:flex;width:100%;}
+#popup_layout .file_upload .file_area{flex:1 1 auto;width:1%;background-color: #fff;border: 1px solid #D2D9E0;}
+#popup_layout .file_upload .file_area .file_txt{display:flex;align-items: center;justify-content: center;height:91px;color:#8B949D;font-size:13px;}
+#popup_layout .file_upload .file_btns{width:75px;margin-left:6px;display:flex;display:flex;flex-direction: column;}
+#popup_layout .file_upload .file_btns .file_label,
+#popup_layout .file_upload .file_btns button{display:block;border-radius:3px;color:#fff;font-size:12px;font-weight: 700;border:0;background-color: #A1ADCA;height:32px;overflow: hidden;text-align: center;}
+#popup_layout .file_upload .file_btns .file_label{line-height:32px;}
+#popup_layout .file_upload .file_btns .file_label input{position:absolute;left:-999999em;}
+#popup_layout .file_upload .file_btns .upload_btn{flex:1 1 auto;margin-top:4px;background-color: #4B73D5;}
+#popup_layout .file_upload .file_btns .file_label:hover,
+#popup_layout .file_upload .file_btns button:hover{text-decoration: underline;}
+#popup_layout .file_upload .file_area .file_list{height:91px;padding:2px 30px;overflow-y: auto;}
+#popup_layout .file_upload .file_area .file_list .file{display:flex;color:#42454B;font-size:12px;}
+#popup_layout .file_upload .file_area .file_list .file + .file{margin-top:2px;}
+#popup_layout .file_upload .file_area .file_list .file .file_name{margin-right: auto;max-width: 500px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#popup_layout .file_upload .file_area .file_list .file .file_size{}
+#popup_layout .file_upload .file_area .file_list .file .file_remove{margin-left:25px;width:40px;height:22px;border:0;border-radius: 3px;background-color: #CF7A73;color:#fff;font-size:11px;}
+#popup_layout .file_upload .file_area .file_list .file .file_remove:hover{text-decoration: underline;}
+
+#popup_layout .btn_search{height:32px;border-radius: 3px;border:1px solid #475474;color:#fff;background-color:#475474;font-size:12px;font-weight: 700;padding:0 18px;}
+#popup_layout .btn_search span{display:inline-block;padding-left:17px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.67934 5.21467C8.67934 7.4043 6.9043 9.17934 4.71467 9.17934C2.52504 9.17934 0.75 7.4043 0.75 5.21467C0.75 3.02504 2.52504 1.25 4.71467 1.25C6.9043 1.25 8.67934 3.02504 8.67934 5.21467Z' stroke='white' stroke-width='1.5'/%3E%3Cpath d='M7.85742 8.35777L11.0005 11.5009' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A");}
+#popup_layout .btn_down{height:32px;border-radius: 3px;border:1px solid #446BCB;color:#446BCB;background-color:#fff;font-size:12px;font-weight: 500;padding:0 15px;}
+#popup_layout .btn_down span{display:inline-block;padding-left:17px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='11' height='13' viewBox='0 0 11 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12H11V13H0V12Z' fill='%23446BCB'/%3E%3Cpath d='M5 0.5H6V9.5H5V0.5Z' fill='%23446BCB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.667969 5.87371L1.33233 5.1263L5.50015 8.83102L9.66797 5.1263L10.3323 5.87371L5.50015 10.169L0.667969 5.87371Z' fill='%23446BCB'/%3E%3C/svg%3E%0A");}
+#popup_layout .btn_excel{height:32px;border-radius: 3px;border:1px solid #538F50;color:#538F50;background-color:#fff;font-size:12px;font-weight: 500;padding:0 15px;}
+#popup_layout .btn_excel span{display:inline-block;padding-left:17px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='13' height='15' viewBox='0 0 13 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4.92816L7.20837 9.75575' stroke='%23538F50'/%3E%3Cpath d='M7.20898 4.92816L4.00062 9.75575' stroke='%23538F50'/%3E%3Cpath d='M10.1786 2.5H12.4C12.4552 2.5 12.5 2.54477 12.5 2.6V11.4C12.5 11.4552 12.4552 11.5 12.4 11.5H10' stroke='%23538F50'/%3E%3Cpath d='M1 2.01402V11.9306C1 11.9791 1.03473 12.0206 1.08243 12.0291L9.67419 13.5623C9.73548 13.5733 9.79175 13.5262 9.79175 13.4639V7.08333V0.699788C9.79175 0.638534 9.73718 0.591676 9.67663 0.600938L1.08488 1.91517C1.03606 1.92264 1 1.96463 1 2.01402Z' stroke='%23538F50'/%3E%3C/svg%3E%0A");}
+#popup_layout .btn1{border:1px solid #C5CDD4;background-color: #F3F5F8;border-radius: 3px;height: 25px;padding:0 10px;color:#222;font-size:11px;}
+#popup_layout .btn2{border:1px solid #D2D9E0;background-color: #fff;border-radius: 3px;height: 25px;padding:0 10px;color:#42454B;font-size:11px;}
+#popup_layout .btn_search:hover span,
+#popup_layout .btn_down:hover span,
+#popup_layout .btn_excel:hover span,
+#popup_layout .btn1:hover,
+#popup_layout .btn2:hover{text-decoration: underline;}
+
+#popup_layout .list_wrap{}
+#popup_layout .list_wrap .list_search{padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #E0E7EE;}
+#popup_layout .list_wrap .list_top{display: flex;align-items: center;margin-bottom:10px;}
+#popup_layout .list_wrap .list_top .l{display:flex;}
+#popup_layout .list_wrap .list_top .r{margin-left:auto;display:flex;}
+#popup_layout .list_wrap .list_top .lt_total{font-size:12px;color:#222;}
+#popup_layout .list_wrap .list_top .lt_total strong{font-weight:700;color: #446BCB;}
+#popup_layout .list_wrap .list_top .lt_sort{display:inline-block;}
+#popup_layout .list_wrap .list_top .lt_sort select{width:160px;}
+#popup_layout .list_wrap .list_top .lt_btns{margin-left:10px;}
+#popup_layout .list_wrap .list_top .lt_btns button{}
+#popup_layout .pt_list{}
+
+.pt_list{border-top:1px solid #454545;}
+.pt_list table{width:100%;border-collapse: collapse;}
+.pt_list table thead th{vertical-align: middle;padding: 14px;height:43px;background-color:#F3F5F8;color:#42454B;font-size:12px;font-weight: 500;border-bottom:1px solid #E0E7EE;border-right:1px solid #E0E7EE;text-align: center;position: relative;height:42px;padding:5px;}
+.pt_list table thead tr th:last-child{border-left:0;}
+.pt_list table tbody th{vertical-align: middle;padding:8px 8px 8px 15px;background-color:#F3F5F8;color:#222;font-size:12px;font-weight: 500;border-bottom:1px solid #E0E7EE;text-align: left;}
+.pt_list table tbody th .req{margin-left:1px;text-indent:-999em;overflow: hidden;width:12px;height:12px;display:inline-block;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.496' height='7.5' viewBox='0 0 8.496 7.5'%3E%3Cg id='그룹_834' data-name='그룹 834' transform='translate(1.12 0.75)'%3E%3Cline id='선_268' data-name='선 268' y2='6' transform='translate(3.128)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='선_269' data-name='선 269' x2='0.866' y2='6.5' transform='translate(5.891 1.234) rotate(65)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='선_270' data-name='선 270' y1='6.5' x2='0.866' transform='translate(6.257 3.981) rotate(115)' fill='none' stroke='%23ff5d5d' stroke-linecap='round' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E%0A");}
+.pt_list table tbody th .stit{displaY:block;color:#666;font-size:12px;font-weight:500;margin-top:2px;}
+.pt_list table tbody td{vertical-align: middle;padding: 8px 15px;color:#42454B;font-size:12px;border-bottom:1px solid #E0E7EE;height:45px;}
+.pt_list table tbody th{border-right:1px solid #E0E7EE;height:48px;}
+.pt_list table tbody.center{text-align: center;}
+.pt_list table tbody th.center{padding:8px;}
+.pt_list table tbody td.center{text-align: center;}
+.pt_list table tbody td.left{text-align:left;}
+.pt_list table tbody th.left{text-align: left;}
+.pt_list table tbody td + td{border-left:1px solid #E0E7EE;}
+.pt_list table tbody td + th{border-left:1px solid #E0E7EE;}
+.pt_list table tfoot th + td{border-left:1px solid #E0E7EE;}
+.pt_list table tfoot td + td{border-left:1px solid #E0E7EE;}
+
+list_top
+<div class="box_wrap">
+                <div class="box">
+                    <div class="box_title">
+              
+            
+                <div class="box">
+                    <div class="list_wrap">
+                        <div class="list_search form_inline">
+                            <form action="">
+                                <div class="item">
+                                    <div class="tit">관련서류</div>
+                                    <div class="cnt">
+                                        <select name="" id="">
+                                            <option value="">공사비 세부실행내역서</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">신고년도</div>
+                                    <div class="cnt">
+                                        <select name="" id="">
+                                            <option value="">2023</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn_search"><span>검색</span></button>
+                            </form>
+                        </div>
+                       
+                        <div class="pt_list">
+                            <table>
+                                <colgroup>
+                                    <col style="width:90px;">
+                                    <col style="width:160px;">
+                                    <col style="width:160px;">
+                                    <col style="width:160px;">
+                                    <col>
+                                    <col style="width:140px;">
+                                </colgroup>
+                                <thead class="line">
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>분류</th>
+                                        <th>파일명</th>
+                                        <th>음량</th>
+                                        <th>파일유형</th>
+                                        <th>등록일시</th>
+                                        <th>가능</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="center">
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="left">자기건설공사/설계도면</td>
+                                        <td class="left">20230027~29_설계도면</td>
+                                        <td>3mb</td>
+                                        <td>PDF</td>
+                                        <td>2023-09-04 16:12:16</td>
+                                        <td>
+                                            <button type="button" class="btn1">다운로드</button>
+                                            <button type="button" class="btn2">삭제</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>

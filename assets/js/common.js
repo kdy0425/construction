@@ -1,9 +1,14 @@
 //전체 메뉴
 const navAllBtn = document.querySelector('.nav_all_btn');
+const navCloseBtn = document.querySelector('.nav_close');
 const nav = document.querySelector('#nav');
 navAllBtn.addEventListener('click', function () {
 	nav.classList.toggle('active');
 	navAllBtn.classList.toggle('active');
+});
+navCloseBtn.addEventListener('click', function () {
+	nav.classList.remove('active');
+	navAllBtn.classList.remove('active');
 });
 const body = document.querySelector('body');
 body.addEventListener('click', function (event) {
