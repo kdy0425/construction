@@ -96,7 +96,7 @@
                             </div>
                             <!-- <div class="row">
                                 <div class="file_upload">
-                                    <div class="file_area">
+                                    <div class="file_area" id="fileArea">
                                         <span class="file_txt">여기에 파일을 끌어다 놓거나 파일찾기 버튼을 클릭해주세요.</span>
                                         <div class="file_list">
                                             <div class="file"><span class="file_name">20230227~20230904_설계도면</span><span class="file_size">100KB</span><button type="button" class="file_remove">삭제</button></div>
@@ -112,7 +112,7 @@
                                         </div>
                                     </div>
                                     <div class="file_btns">
-                                        <label class="file_label"><input type="file" id="fileInput" multiple>파일찾기</label>
+                                        <input type="file" class="file_input" file-type="pdf hwp doc docx xls xlsx ppt ptx txt png jpg jpeg gif" file-max-size="20" multiple>
                                         <button type="button" class="upload_btn">업로드</button>
                                     </div>
                                 </div>
@@ -120,87 +120,171 @@
 
                             <div class="row">
                                 <div class="file_upload">
-                                    <div class="file_area">
+                                    <div class="file_area" id="fileArea">
                                         <span class="file_txt">여기에 파일을 끌어다 놓거나 파일찾기 버튼을 클릭해주세요.</span>
-                                        <div class="file_list" style="">
+                                        <div class="file_list" style="display:none;">
                                         </div>
                                     </div>
                                     <div class="file_btns">
-                                        <label class="file_label"><input type="file" id="fileInput" multiple>파일찾기</label>
+                                        <label class="file_label">
+                                            <input type="file" class="file_input" file-type="pdf hwp doc docx xls xlsx ppt ptx txt png jpg jpeg gif" file-max-size="20" multiple>
+                                            파일찾기
+                                        </label>
                                         <button type="button" class="upload_btn">업로드</button>
                                     </div>
                                 </div>
                             </div>
-                            <script>
-                               document.addEventListener('DOMContentLoaded', () => {
-                                    const inputBoxes = document.querySelectorAll('.file-ip-box');
-
-                                    function fileSizeInMB(fileSize) {
-                                        return fileSize / (1024 * 1024);
-                                    }
-
-                                    inputBoxes.forEach(inputBox => {
-                                        const inputFile = inputBox.querySelector('#fileInput');
-                                        const fileList = inputBox.querySelector('.file_list');
-                                        const storedFiles = [];
-
-                                        const updateInputFile = () => {
-                                            const dataTransfer = new DataTransfer();
-
-                                            storedFiles.forEach(file => dataTransfer.items.add(file));
-
-                                            inputFile.files = dataTransfer.files;
-                                        };
-
-                                        if (inputFile && fileList) {
-                                            inputFile.addEventListener('change', (event) => {
-                                                const files = event.target.files;
-                                                const allowedTypes = event.target.getAttribute('file-type').split(' ');
-                                                const maxLength = parseInt(event.target.getAttribute('file-max-length'), 10);
-
-                                                for (let i = 0; i < files.length; i++) {
-                                                    const file = files[i];
-                                                    if (allowedTypes.includes(file.type.split('/')[1]) &&
-                                                        storedFiles.length < maxLength &&
-
-                                                        storedFiles.push(file);
-
-                                                        const fileItem = document.createElement('div');
-                                                        fileItem.className = 'file-item';
-
-                                                        const fileName = document.createElement('span');
-                                                        fileName.className = 'name';
-                                                        fileName.textContent = file.name;
-                                                        fileItem.appendChild(fileName);
-
-                                                        const deleteButton = document.createElement('button');
-                                                        deleteButton.type = 'button';
-                                                        deleteButton.textContent = '삭제';
-                                                        deleteButton.addEventListener('click', () => {
-                                                            const index = storedFiles.indexOf(file);
-                                                            if (index > -1) {
-                                                                storedFiles.splice(index, 1);
-                                                                updateInputFile();
-                                                            }
-                                                            fileItem.remove();
-                                                        });
-
-                                                        fileItem.appendChild(deleteButton);
-                                                        fileList.appendChild(fileItem);
-                                                }
-
-                                                updateInputFile();
-                                            });
-                                        }
-                                    });
-                                });
-                            </script>
-
                             <div class="row_txt">파일업로드 대상목록 (업로드 가능한 파일 : pdf, hwp, doc, docx, xls, xlsx, ppt, ptx, txt, png, jpg, jpeg, gif)</div>
                         </form>
+                        <script>
+                       // 첨부파일
+                                function formatFileSize(fileSize) {
+                                    if (fileSize < 1024) {
+                                        return fileSize + ' B';
+                                    } else if (fileSize < 1024 * 1024) {
+                                        return (fileSize / 1024).toFixed(2) + ' KB';
+                                    } else if (fileSize < 1024 * 1024 * 1024) {
+                                        return (fileSize / (1024 * 1024)).toFixed(2) + ' MB';
+                                    } else {
+                                        return (fileSize / (1024 * 1024 * 1024)).toFixed(2) + ' GB';
+                                    }
+                                }
+
+                                document.addEventListener('DOMContentLoaded', () => {
+                            const fileArea = document.getElementById('fileArea');
+                            const inputFile = document.querySelector('.file_input');
+                            const fileList = document.querySelector('.file_list');
+                            const storedFiles = [];
+
+                            function fileSizeInMB(fileSize) {
+                                return fileSize / (1024 * 1024);
+                            }
+
+                            function updateFileCountMessage() {
+                                if (storedFiles.length === 0) {
+                                    fileArea.querySelector('.file_txt').style.display = 'block';
+                                    fileList.style.display = 'none';
+                                } else {
+                                    fileArea.querySelector('.file_txt').style.display = 'none';
+                                    fileList.style.display = 'block';
+                                }
+                            }
+
+                            const allowedTypes = inputFile.getAttribute('file-type').split(' ');
+                            const maxSize = parseInt(inputFile.getAttribute('file-max-size'), 10);
+
+                            inputFile.addEventListener('change', (event) => {
+                                const files = event.target.files;
+
+                                for (let i = 0; i < files.length; i++) {
+                                    const file = files[i];
+                                    if (allowedTypes.includes(file.type.split('/')[1]) &&
+                                        fileSizeInMB(file.size) <= maxSize) {
+
+                                        storedFiles.push(file);
+
+                                        const fileItem = document.createElement('div');
+                                        fileItem.className = 'file';
+
+                                        const fileName = document.createElement('span');
+                                        fileName.className = 'file_name';
+                                        fileName.textContent = file.name;
+                                        fileItem.appendChild(fileName);
+
+                                        const fileSizeElement = document.createElement('span');
+                                        fileSizeElement.className = 'file_size';
+                                        fileSizeElement.textContent = formatFileSize(file.size);
+                                        fileItem.appendChild(fileSizeElement);
+
+                                        const deleteButton = document.createElement('button');
+                                        deleteButton.type = 'button';
+                                        deleteButton.textContent = '삭제';
+                                        deleteButton.className = 'file_remove';
+
+                                        deleteButton.addEventListener('click', () => {
+                                            const index = storedFiles.indexOf(file);
+                                            if (index > -1) {
+                                                storedFiles.splice(index, 1);
+                                                updateFileCountMessage();
+                                            }
+                                            fileItem.remove();
+                                        });
+
+                                        fileItem.appendChild(deleteButton);
+                                        fileList.appendChild(fileItem);
+                                    }
+                                }
+
+                                updateFileCountMessage();
+                            });
+
+                            fileArea.addEventListener('dragenter', (event) => {
+                                event.preventDefault();
+                                fileArea.classList.add('file_dragover');
+                            });
+
+                            fileArea.addEventListener('dragover', (event) => {
+                                event.preventDefault();
+                                fileArea.classList.add('file_dragover');
+                            });
+
+                            fileArea.addEventListener('dragleave', (event) => {
+                                event.preventDefault();
+                                fileArea.classList.remove('file_dragover');
+                            });
+
+                            fileArea.addEventListener('drop', (event) => {
+                                event.preventDefault();
+                                fileArea.classList.remove('file_dragover');
+
+                                const files = event.dataTransfer.files;
+
+                                for (let i = 0; i < files.length; i++) {
+                                    const file = files[i];
+                                    if (allowedTypes.includes(file.type.split('/')[1]) &&
+                                        fileSizeInMB(file.size) <= maxSize) {
+
+                                        storedFiles.push(file);
+
+                                        const fileItem = document.createElement('div');
+                                        fileItem.className = 'file';
+
+                                        const fileName = document.createElement('span');
+                                        fileName.className = 'file_name';
+                                        fileName.textContent = file.name;
+                                        fileItem.appendChild(fileName);
+
+                                        const fileSizeElement = document.createElement('span');
+                                        fileSizeElement.className = 'file_size';
+                                        fileSizeElement.textContent = formatFileSize(file.size);
+                                        fileItem.appendChild(fileSizeElement);
+
+                                        const deleteButton = document.createElement('button');
+                                        deleteButton.type = 'button';
+                                        deleteButton.textContent = '삭제';
+                                        deleteButton.className = 'file_remove';
+
+                                        deleteButton.addEventListener('click', () => {
+                                            const index = storedFiles.indexOf(file);
+                                            if (index > -1) {
+                                                storedFiles.splice(index, 1);
+                                                updateFileCountMessage();
+                                            }
+                                            fileItem.remove();
+                                        });
+
+                                        fileItem.appendChild(deleteButton);
+                                        fileList.appendChild(fileItem);
+                                    }
+                                }
+
+                                updateFileCountMessage();
+                            });
+                        });
+                        </script>
                     </div>
                 </div>
-            
+
                 <div class="box">
                     <div class="list_wrap">
                         <div class="list_search form_inline">

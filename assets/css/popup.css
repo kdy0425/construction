@@ -52,6 +52,8 @@
 #popup_layout select{height:32px;border-radius: 3px;padding-left:10px;color:#222;font-size:12px;background-position:right 10px center;background-image: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L4.5 5L8 1' stroke='%2342454B' stroke-width='2'/%3E%3C/svg%3E%0A");}
 #popup_layout .file_upload{display:flex;width:100%;}
 #popup_layout .file_upload .file_area{flex:1 1 auto;width:1%;background-color: #fff;border: 1px solid #D2D9E0;}
+#popup_layout .file_upload .file_area.file_dragover{border:1px dashed #777;background-color:#f1f1f1;}
+#popup_layout .file_upload .file_area.file_dragover .file_txt{color:#222;}
 #popup_layout .file_upload .file_area .file_txt{display:flex;align-items: center;justify-content: center;height:91px;color:#8B949D;font-size:13px;}
 #popup_layout .file_upload .file_btns{width:75px;margin-left:6px;display:flex;display:flex;flex-direction: column;}
 #popup_layout .file_upload .file_btns .file_label,
@@ -114,71 +116,3 @@
 .pt_list table tbody td + th{border-left:1px solid #E0E7EE;}
 .pt_list table tfoot th + td{border-left:1px solid #E0E7EE;}
 .pt_list table tfoot td + td{border-left:1px solid #E0E7EE;}
-
-list_top
-<div class="box_wrap">
-                <div class="box">
-                    <div class="box_title">
-              
-            
-                <div class="box">
-                    <div class="list_wrap">
-                        <div class="list_search form_inline">
-                            <form action="">
-                                <div class="item">
-                                    <div class="tit">관련서류</div>
-                                    <div class="cnt">
-                                        <select name="" id="">
-                                            <option value="">공사비 세부실행내역서</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="tit">신고년도</div>
-                                    <div class="cnt">
-                                        <select name="" id="">
-                                            <option value="">2023</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <button type="button" class="btn_search"><span>검색</span></button>
-                            </form>
-                        </div>
-                       
-                        <div class="pt_list">
-                            <table>
-                                <colgroup>
-                                    <col style="width:90px;">
-                                    <col style="width:160px;">
-                                    <col style="width:160px;">
-                                    <col style="width:160px;">
-                                    <col>
-                                    <col style="width:140px;">
-                                </colgroup>
-                                <thead class="line">
-                                    <tr>
-                                        <th>번호</th>
-                                        <th>분류</th>
-                                        <th>파일명</th>
-                                        <th>음량</th>
-                                        <th>파일유형</th>
-                                        <th>등록일시</th>
-                                        <th>가능</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="center">
-                                    <tr>
-                                        <td>1</td>
-                                        <td class="left">자기건설공사/설계도면</td>
-                                        <td class="left">20230027~29_설계도면</td>
-                                        <td>3mb</td>
-                                        <td>PDF</td>
-                                        <td>2023-09-04 16:12:16</td>
-                                        <td>
-                                            <button type="button" class="btn1">다운로드</button>
-                                            <button type="button" class="btn2">삭제</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
