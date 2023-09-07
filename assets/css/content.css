@@ -38,7 +38,7 @@
 .nav_wrap #nav > li:hover > a:before{content:"";display:block;width:40px;height:5px;background-color: #222;position:absolute;bottom:0;left:50%;margin-left:-20px;}
 .nav_wrap #nav > li:hover .li_child{display:block;}
 .nav_wrap #nav > li > ul{display:none;}
-.nav_wrap #nav .li_child{display:none;position:absolute;z-index:10;left:50%;top:78px;transform: translate(-50%, 0);width:230px;border:1px solid #666;background-color: #fff;box-shadow: 0 4px 2px rgba(0,0,0,.2);padding:20px 10px;}
+.nav_wrap #nav .li_child{display:none;position:absolute;z-index:10;left:50%;top:78px;transform: translate(-50%, 0);width:180px;border:1px solid #666;background-color: #fff;box-shadow: 0 4px 2px rgba(0,0,0,.2);padding:20px 10px;}
 .nav_wrap #nav .li_child ul{}
 .nav_wrap #nav .li_child ul li{}
 .nav_wrap #nav .li_child ul li a{display:block;padding:11px 15px;color:#333;font-size:14px;font-weight:500;}
