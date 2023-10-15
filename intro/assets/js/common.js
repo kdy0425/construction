@@ -62,3 +62,12 @@ $('.to_top').click(function(){
 	$('html, body').animate({scrollTop:0}, 'slow');
 	return false;
 });
+
+//웹메뉴얼 tap
+$(document).on("click", ".pop_taps_btn a", function () {
+	let tap_index = $(this).index();
+	$('.pop_taps_btn a').removeClass('active');
+	$(this).addClass('active');
+	$('.pop_taps_cnt .tap_box').hide();
+	$('.pop_taps_cnt .tap_box').eq(tap_index).show();
+});

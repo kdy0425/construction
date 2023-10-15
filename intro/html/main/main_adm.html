@@ -149,46 +149,63 @@
 	<!-- content -->
     <div id="content" class="main_content">
         <div class="main_top">
-            <a href="#" class="main_box mt_box ev_box purple">
-                <div class="title">1차 공사실적 신고</div>
-                <div class="time"><strong>02.01 - 03.15</strong></div>
-                <p>마감일 이후로는 접수하실 수 없으므로
-                    신고기간을 반드시 지켜주시기 바랍니다</p>
-                <span class="link">신고하기</span>
-                <div class="img_box">
-                    <span class="img t"><img src="../../assets/images/ev_box_pur_img2.png" alt=""></span>
-                    <span class="img l"><img src="../../assets/images/ev_box_pur_img1.png" alt=""></span>
-                    <span class="img r"><img src="../../assets/images/ev_box_pur_img3.png" alt=""></span>
-                </div>
-            </a>
+            <div class="main_box mt_box ev_box purple">
+                <a href="javascript:;" class="link_box">
+                    <div class="title">1차 공사실적 신고</div>
+                    <div class="time"><strong>02.01 - 03.15</strong></div>
+                    <p>마감일 이후로는 접수하실 수 없으므로
+                        신고기간을 반드시 지켜주시기 바랍니다</p>
+                    <span class="link">신고하기</span>
+                    <div class="img_box">
+                        <span class="img t"><img src="../../assets/images/ev_box_pur_img2.png" alt=""></span>
+                        <span class="img l"><img src="../../assets/images/ev_box_pur_img1.png" alt=""></span>
+                        <span class="img r"><img src="../../assets/images/ev_box_pur_img3.png" alt=""></span>
+                    </div>
+                </a>
+                <a href="javascript:;" class="use_link" onclick="openPopup('800', './pop_use_report.html')">이용안내</a>
+            </div>
             <div class="main_box mt_box ev_box blue">
-                <div class="title">2차 재무제표 신고</div>
-                <div class="time"><strong>04.01 - 04.17</strong><span>(법인)</span></div>
-                <div class="time"><strong>05.01 - 05.31</strong><span>(개인)</span></div>
-                <span class="link disabled">신고기간이 아닙니다</span>
-                <div class="img_box">
-                    <span class="img r"><img src="../../assets/images/ev_box_blue_img2.png" alt=""></span>
-                    <span class="img l"><img src="../../assets/images/ev_box_blue_img1.png" alt=""></span>
+                <div class="link_box">
+                    <div class="title">2차 재무제표 신고</div>
+                    <div class="time"><strong>04.01 - 04.17</strong><span>(법인)</span></div>
+                    <div class="time"><strong>05.01 - 05.31</strong><span>(개인)</span></div>
+                    <span class="link disabled">신고기간이 아닙니다</span>
+                    <div class="img_box">
+                        <span class="img r"><img src="../../assets/images/ev_box_blue_img2.png" alt=""></span>
+                        <span class="img l"><img src="../../assets/images/ev_box_blue_img1.png" alt=""></span>
+                    </div>
                 </div>
+                <a href="javascript:;" class="use_link" onclick="openPopup('800', './pop_use_report.html')">이용안내</a>
             </div>
             <div class="main_box mt_box ev_box green">
-                <div class="title">고용평가 신청</div>
-                <div class="time"><strong>04.01 - 04.17</strong></div>
-                <p>신청기간이 되면 신청서를 작성할 수 있으니
-                    신청 가능 날짜를 확인해 주세요</p>
-                <span class="link disabled">신고기간이 아닙니다</span>
-                <div class="img_box">
-                    <span class="img l"><img src="../../assets/images/ev_box_green_img1.png" alt=""></span>
-                    <span class="img r"><img src="../../assets/images/ev_box_green_img2.png" alt=""></span>
-                    <span class="img t"><img src="../../assets/images/ev_box_green_img3.png" alt=""></span>
+                <div class="link_box">
+                    <div class="title">고용평가 신청</div>
+                    <div class="time"><strong>04.01 - 04.17</strong></div>
+                    <p>신청기간이 되면 신청서를 작성할 수 있으니
+                        신청 가능 날짜를 확인해 주세요</p>
+                    <span class="link disabled">신고기간이 아닙니다</span>
+                    <div class="img_box">
+                        <span class="img l"><img src="../../assets/images/ev_box_green_img1.png" alt=""></span>
+                        <span class="img r"><img src="../../assets/images/ev_box_green_img2.png" alt=""></span>
+                        <span class="img t"><img src="../../assets/images/ev_box_green_img3.png" alt=""></span>
+                    </div>
                 </div>
+                <a href="javascript:;" class="use_link" onclick="openPopup('800', './pop_use_appraisal.html')">이용안내</a>
             </div>
             <div class="mt_box">
                 <div class="main_box login_box">
                     <!-- 관리자 로그인 -->
                     <form action="">
                         <div class="top">
-                            <div class="title">로그인</div>
+                            <div class="title">
+                                로그인
+                                <div class="tooltip">
+                                    <button type="button">팁</button>
+                                    <div class="tip_cnt">
+                                        모르는게 있으면 다 물어보세요. 모르는게 있으면 다 물어보세요.모르는게 있으면 다 물어보세요.모르는게 있으면 다 물어보세요.모르는게 있으면 다 물어보세요.모르는게 있으면 다 물어보세요.모르는게 있으면 다 물어보세요.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="login_ip_wrap">
                             <div class="login_ip">
@@ -378,9 +395,8 @@
         <div class="ft_inner">
             <div class="ft_l">
                 <ul class="ft_links">
-                    <li><a href="javascript:;"><strong>개인정보처리방침</strong></a></li>
-                    <li><a href="javascript:;">이용안내</a></li>
-                    <li><a href="javascript:;">FAQ</a></li>
+                    <li><a href="javascript:;" onclick="openPopup('800', './pop_privacy.html')"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="javascript:;" onclick="openPopup('1040', './pop_manual.html')">FAQ</a></li>
                 </ul>
             </div>
             <div class="ft_r">
@@ -402,24 +418,81 @@
         </div>
 	</div>
 </div>
+
+
+
+<!-- 모바일 이용안내, 개인정보처리방침, faq 팝업-->
+<div class="layer_form" style="display:none;">
+    <div class="layer_box2">
+        <div class="layer_cnt"></div>
+        <button class="layer_close" type="button" onclick="closePopup()">닫기</button>
+    </div>
+    <span class="layer_bg" onclick="closePopup()"></span>
+</div>
+
 <script src="../../assets/js/common.js"></script>
 <script>
-$(window).on("load", function () {
-    let imgBoxes = $('.main_box .img_box');
-    let currentIndex = 0;
-    function addActiveClassToImgBox() {
-        if (currentIndex >= imgBoxes.length) {
-            return; 
+    //이용안내 팝업 오픈
+    function openPopup(width, url) {
+        var maxWidth = 1200;
+        var maxHeight = window.innerHeight;
+        var height = maxHeight;
+        var top = 0;
+    
+        if (window.innerWidth <= maxWidth) {
+            // 브라우저 가로값이 1200px 이하일 때 레이어팝업
+            document.querySelector(".layer_form").style.display = "block";
+            $('html,body').css('overflow-y', 'hidden');
+    
+            // 타켓 페이지의 내용을 가져와서 layer_cnt에 삽입
+            var layerCnt = document.querySelector(".layer_cnt");
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Body 내용만 추출
+                    var bodyContent = xhr.responseText.match(/<body>([\s\S]*?)<\/body>/i);
+                    if (bodyContent && bodyContent.length >= 2) {
+                        layerCnt.innerHTML = bodyContent[1];
+                    }
+    
+                    //팝업  css head 추가  개발시 경로 확인
+                    var cssLink = document.createElement("link");
+                    cssLink.rel = "stylesheet";
+                    cssLink.type = "text/css";
+                    cssLink.href = "../../assets/css/popup_content.css";
+                    document.head.appendChild(cssLink);
+                }
+            };
+            xhr.send();
+        } else {
+            // 브라우저 가로값이 1200px 이상일 때 윈도우팝업
+            window.open(url, '', 'width=' + width + ', height=' + height + ', top=' + top + ', left=0');
         }
-        let delay = currentIndex === 0 ? 300 : 500;
-        setTimeout(function() {
-            $(imgBoxes[currentIndex]).addClass('active'); 
-            currentIndex++;
-            addActiveClassToImgBox(); 
-        }, delay); 
     }
-    addActiveClassToImgBox(); 
-});
-</script>
+    function closePopup() {
+        $('html,body').css('overflow-y', 'auto');
+    
+        document.querySelector(".layer_form").style.display = "none";
+        document.querySelector(".layer_cnt").innerHTML = ''; // 내용 초기화
+    }
+    
+    $(window).on("load", function () {
+        let imgBoxes = $('.main_box .img_box');
+        let currentIndex = 0;
+        function addActiveClassToImgBox() {
+            if (currentIndex >= imgBoxes.length) {
+                return; 
+            }
+            let delay = currentIndex === 0 ? 300 : 500;
+            setTimeout(function() {
+                $(imgBoxes[currentIndex]).addClass('active'); 
+                currentIndex++;
+                addActiveClassToImgBox(); 
+            }, delay); 
+        }
+        addActiveClassToImgBox(); 
+    });
+    </script>
 </body>
 </html>
