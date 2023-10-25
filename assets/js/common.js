@@ -53,7 +53,7 @@ $('.r_cs_toggle').click(function(){
 	$('.cs_list').slideToggle();
 });
 
-let elementPosition = 360;
+let elementPosition = 275;
 $(window).scroll(function() {
 	if ($(window).scrollTop() >= elementPosition - 40) { 
 		$('.rside_wrap').addClass('fixed');
