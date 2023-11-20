@@ -25,17 +25,17 @@
 #header .hd_inner .nav_all_btn.active{background-size:40px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-x' width='44' height='44' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M18 6l-12 12' /%3E%3Cpath d='M6 6l12 12' /%3E%3C/svg%3E");}
 
 #footer{padding:50px 30px 0;}
-#footer .ft_inner{display:flex;align-items: center;}
+#footer .ft_inner{display:flex;align-items: end;}
 #footer .ft_inner .ft_l{}
-#footer .ft_inner .ft_r{margin-left:auto;display:flex;}
+#footer .ft_inner .ft_r{margin-left:auto;display:flex;align-items: end;}
 #footer .ft_inner .ft_links{display:flex;}
 #footer .ft_inner .ft_links li{position:relative;}
 #footer .ft_inner .ft_links li + li{margin-left:18px;padding-left:18px;}
 #footer .ft_inner .ft_links li + li:before{content:"";displaY:block;position:absolute;left:0;top:50%;margin-top:-6px;width:1px;height:12px;background-color: rgba(0,0,0,.2);}
-#footer .ft_inner .ft_links li a{display:block; color:#222; font-size:18px;}
+#footer .ft_inner .ft_links li a{display:block; color:#222; font-size:18px;padding:10px 0;}
 #footer .ft_inner .ft_links li a:hover{text-decoration: underline;}
 #footer .ft_inner .ft_links li a strong{font-weight:700;}
-#footer .ft_inner .family_sites{width:260px;position: relative;}
+#footer .ft_inner .family_sites{width:260px;position: relative;margin-left:10px;}
 #footer .ft_inner .family_sites .family_sites_open{transition:all 0.3s;padding:0 21px; width:100%; text-align:left; color:#333; background-color:transparent; border:0; font-size:18px; font-weight:500; height:54px; border:1px solid #D4D6DE; border-radius:12px;}
 #footer .ft_inner .family_sites .family_sites_open:before{content:"";width:20px; height:20px; position:absolute; right:20px; top:50%; margin-top:-10px; transition:all 0.3s; background-size:contain; background-position:center center; background-repeat:no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='ico_dropdown' transform='translate(-220 -19.961)'%3E%3Crect id='area' width='20' height='20' transform='translate(220 19.961)' fill='none'/%3E%3Cpath id='패스_994' data-name='패스 994' d='M540.394,162.844l5,5,5-5' transform='translate(-315.395 -134.883)' fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");}
 #footer .ft_inner .family_sites .family_sites_open.active:before{transform:rotate(180deg);}
@@ -43,6 +43,10 @@
 #footer .ft_inner .family_sites .sites li{}
 #footer .ft_inner .family_sites .sites li a{display:block;padding:14px 10px;font-size:16px;color:#444;}
 #footer .ft_inner .family_sites .sites li a:hover{background-color: #f1f1f1;;}
+#footer .ft_inner .ft_banner{}
+#footer .ft_inner .ft_banner a{}
+#footer .ft_inner .ft_banner img{}
+
 .to_top{line-height:54px; text-align:center; margin-left:6px; width:110px; height:54px; color:#fff; border-radius:12px; background-color: #343644; font-size:19px; font-weight:500; position: relative; transition:all 0.3s;}
 .to_top:after{content:""; position:relative;top:0;display:inline-block; width:16px; height:16px; margin-left:6px; transition:all 0.3s; background-size:contain; background-position:center center; background-repeat:no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg id='btn_goto_top' transform='translate(0 16) rotate(-90)'%3E%3Crect id='area' width='16' height='16' transform='translate(0)' fill='red' opacity='0'/%3E%3Cg id='ico_arrow' transform='translate(2 3)'%3E%3Cpath id='패스_983' data-name='패스 983' d='M0,0,5,5,0,10' transform='translate(6 0)' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cline id='선_312' data-name='선 312' x1='10' transform='translate(0 5.005)' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");transition: all 0.3s;}
 .to_top:hover:after{top:-5px;}
