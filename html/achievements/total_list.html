@@ -164,7 +164,7 @@
 
 	<!-- content -->
     <div class="content_wrap">
-        <div id="content" class="rside_content">
+        <div id="content">
             <h2 class="page_title">종합 실적신고</h2>
             <div class="form_wrap">
                 <div class="form_box">
@@ -341,31 +341,94 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="rside_wrap">
-            <div class="j_status">
-                <div class="item writing active"><span>작성중</span></div>
-                <div class="item confirmed"><span>확정</span></div>
-                <div class="item payment"><span>결제</span></div>
-                <div class="item print"><span>출력</span></div>
-                <div class="item comp"><span>접수완료</span></div>
-            </div>
-            <div class="r_cs">
-                <button type="button" class="r_cs_toggle">문의전화</button>
-                <div class="cs_list">
-                    <div class="item">
-                        <span class="tit">문의전화 1</span>
-                        <span class="tel">1500-0001</span>
+                <div class="form_box">
+                    <div class="form_title">
+                        <h3>기성실적 신고 목록 </h3>
+                        <div class="r">
+                            <div class="rt_btns">
+                                <a href="javascript:;" class="btn sline sm" onclick="$('.layer1').show();"><span class="add">등록하기</span></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <span class="tit">문의전화 2</span>
-                        <span class="tel">1500-0002</span>
-                    </div>
-                    <div class="item">
-                        <span class="tit">문의전화 3</span>
-                        <span class="tel">1500-0003</span>
+                    <div class="form_content">
+                        <div class="form_table group_line">
+                            <table>
+                                <colgroup>
+                                    <col style="width:51px;">
+                                    <col style="width:102px;">
+                                    <col style="width:190px;">
+                                    <col style="width:101px;">
+                                    <col style="width:101px;">
+                                    <col>
+                                    <col style="width:89px;">
+                                    <col style="width:128px;">
+                                    <col style="width:102px;">
+                                    <col style="width:87px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">선택</th>
+                                        <th rowspan="2">신고번호</th>
+                                        <th>업종</th>
+                                        <th colspan="3">공사명</th>
+                                        <th>계약일자</th>
+                                        <th>당년도 계약액</th>
+                                        <th>발주자 승인여부</th>
+                                        <th rowspan="2">등록일자</th>
+                                    </tr>
+                                    <tr>
+                                        <th>공종세분류</th>
+                                        <th>공사유형</th>
+                                        <th>도급구분</th>
+                                        <th>발주자명</th>
+                                        <th>준공일자</th>
+                                        <th>당년도 기성액</th>
+                                        <th>발주자 승인일시</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="center">
+                                    <tr>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right medium">0</td>
+                                        <td class="medium">승인</td>
+                                        <td rowspan="2" class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align_left">기타토목시설</td>
+                                        <td>신설</td>
+                                        <td>원도급</td>
+                                        <td>국가철도공단</td>
+                                        <td class="light">2023.12.31</td>
+                                        <td class="align_right medium">0</td>
+                                        <td class="medium">2023.11.14<br/>00:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right medium">0</td>
+                                        <td class="medium">승인</td>
+                                        <td rowspan="2" class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align_left">기타토목시설</td>
+                                        <td>신설</td>
+                                        <td>원도급</td>
+                                        <td>국가철도공단</td>
+                                        <td class="light">2023.12.31</td>
+                                        <td class="align_right medium">0</td>
+                                        <td class="medium">2023.11.14<br/>00:00:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
