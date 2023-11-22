@@ -352,11 +352,11 @@
                         </div>
                     </div>
                     <div class="form_content">
-                        <div class="form_table group_line">
+                        <div class="form_table group_line bg_even tr_cursor tr_hover_line"> <!-- 전체라인(group_line), 3.4 7.8 11.12 bg(bg_even), tr:hover 커서이미지(tr_cursor), 2개씩 hover bg 효과(tr_hover_line) -->
                             <table>
                                 <colgroup>
                                     <col style="width:51px;">
-                                    <col style="width:102px;">
+                                    <col style="width:110px;">
                                     <col style="width:190px;">
                                     <col style="width:101px;">
                                     <col style="width:101px;">
@@ -389,12 +389,12 @@
                                 </thead>
                                 <tbody class="center">
                                     <tr>
-                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
-                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3"></label></td>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox" onchange="check_bg_even(this);"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput disabled"><span>2023-0-888</label></td>
                                         <td class="align_left">토목공사업</td>
-                                        <td colspan="3" class="align_left">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
                                         <td class="light">2023.06.09</td>
-                                        <td class="align_right medium">0</td>
+                                        <td class="align_right">0</td>
                                         <td class="medium">승인</td>
                                         <td rowspan="2" class="light">2023.11.12</td>
                                     </tr>
@@ -404,16 +404,16 @@
                                         <td>원도급</td>
                                         <td>국가철도공단</td>
                                         <td class="light">2023.12.31</td>
-                                        <td class="align_right medium">0</td>
+                                        <td class="align_right">0</td>
                                         <td class="medium">2023.11.14<br/>00:00:00</td>
                                     </tr>
                                     <tr>
-                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
-                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3"></label></td>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox" onchange="check_bg_even(this);"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput disabled"><span>2023-0-888</label></td>
                                         <td class="align_left">토목공사업</td>
-                                        <td colspan="3" class="align_left">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
                                         <td class="light">2023.06.09</td>
-                                        <td class="align_right medium">0</td>
+                                        <td class="align_right">0</td>
                                         <td class="medium">승인</td>
                                         <td rowspan="2" class="light">2023.11.12</td>
                                     </tr>
@@ -423,11 +423,156 @@
                                         <td>원도급</td>
                                         <td>국가철도공단</td>
                                         <td class="light">2023.12.31</td>
-                                        <td class="align_right medium">0</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">2023.11.14<br/>00:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox" onchange="check_bg_even(this);"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3" style="width:26px;"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td rowspan="2" class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align_left">기타토목시설</td>
+                                        <td>신설</td>
+                                        <td>원도급</td>
+                                        <td>국가철도공단</td>
+                                        <td class="light">2023.12.31</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">2023.11.14<br/>00:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox" onchange="check_bg_even(this);"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3" style="width:26px;" value="999"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td rowspan="2" class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align_left">기타토목시설</td>
+                                        <td>신설</td>
+                                        <td>원도급</td>
+                                        <td>국가철도공단</td>
+                                        <td class="light">2023.12.31</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">2023.11.14<br/>00:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox" onchange="check_bg_even(this);"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3" style="width:26px;" value="999"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td rowspan="2" class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align_left">기타토목시설</td>
+                                        <td>신설</td>
+                                        <td>원도급</td>
+                                        <td>국가철도공단</td>
+                                        <td class="light">2023.12.31</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">2023.11.14<br/>00:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox" onchange="check_bg_even(this);"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3" style="width:26px;" value="999"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td rowspan="2" class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align_left">기타토목시설</td>
+                                        <td>신설</td>
+                                        <td>원도급</td>
+                                        <td>국가철도공단</td>
+                                        <td class="light">2023.12.31</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">2023.11.14<br/>00:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox" onchange="check_bg_even(this);"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3" style="width:26px;" value="999"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td rowspan="2" class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align_left">기타토목시설</td>
+                                        <td>신설</td>
+                                        <td>원도급</td>
+                                        <td>국가철도공단</td>
+                                        <td class="light">2023.12.31</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">2023.11.14<br/>00:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><label class="checkbox single"><input type="checkbox" onchange="check_bg_even(this);"><span class="ck_icon"></span></label></td>
+                                        <td rowspan="2"><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3" style="width:26px;" value="999"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td rowspan="2" class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align_left">기타토목시설</td>
+                                        <td>신설</td>
+                                        <td>원도급</td>
+                                        <td>국가철도공단</td>
+                                        <td class="light">2023.12.31</td>
+                                        <td class="align_right">0</td>
                                         <td class="medium">2023.11.14<br/>00:00:00</td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <script>
+                                //체크박스 bg active
+                                function check_bg_even(ck){
+                                    var currentTr = $(ck).closest('tr');
+                                    var nextTr = currentTr.next('tr');
+                                    if ($(ck).prop('checked')) {
+                                        currentTr.add(nextTr).addClass('active');
+                                    } else {
+                                        currentTr.add(nextTr).removeClass('active');
+                                    }
+                                }
+
+                                //2개씩 hover효과
+                                $(document).ready(function() {
+                                    $('.tr_hover_line tbody tr').hover(
+                                        function() {
+                                            var currentIndex = $(this).index();
+                                            if (currentIndex % 2 != 1) {
+                                                $(this).addClass('tr_hover_line_hover');
+                                                $(this).next('tr').addClass('tr_hover_line_hover');
+                                            } else {
+                                                $(this).addClass('tr_hover_line_hover');
+                                                $(this).prev('tr').addClass('tr_hover_line_hover');
+                                            }
+                                        },
+                                        function() {
+                                            $('.tr_hover_line tbody tr').removeClass('tr_hover_line_hover');
+                                        }
+                                    );
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
