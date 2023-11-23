@@ -576,6 +576,109 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="form_box">
+                    <div class="form_title">
+                        <h3>기성실적 신고 목록 </h3>
+                        <div class="r">
+                            <div class="rt_btns">
+                                <a href="javascript:;" class="btn sline sm" onclick="$('.layer1').show();"><span class="add">등록하기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_content">
+                        <div class="form_table group_line bg_one tr_cursor tr_hover_line_one"> <!-- 전체라인(group_line), 3.4 7.8 11.12 bg(bg_even), tr:hover 커서이미지(tr_cursor), 2개씩 hover bg 효과(tr_hover_line) -->
+                            <table>
+                                <colgroup>
+                                    <col style="width:51px;">
+                                    <col style="width:110px;">
+                                    <col style="width:190px;">
+                                    <col style="width:101px;">
+                                    <col style="width:101px;">
+                                    <col>
+                                    <col style="width:89px;">
+                                    <col style="width:128px;">
+                                    <col style="width:102px;">
+                                    <col style="width:87px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">선택</th>
+                                        <th rowspan="2">신고번호</th>
+                                        <th>업종</th>
+                                        <th colspan="3">공사명</th>
+                                        <th>계약일자</th>
+                                        <th>당년도 계약액</th>
+                                        <th>발주자 승인여부</th>
+                                        <th rowspan="2">등록일자</th>
+                                    </tr>
+                                    <tr>
+                                        <th>공종세분류</th>
+                                        <th>공사유형</th>
+                                        <th>도급구분</th>
+                                        <th>발주자명</th>
+                                        <th>준공일자</th>
+                                        <th>당년도 기성액</th>
+                                        <th>발주자 승인일시</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="center">
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="checkbox" onchange="check_bg_one(this);"><span class="ck_icon"></span></label></td>
+                                        <td><label class="input_spaninput disabled"><span>2023-0-888</label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="checkbox" onchange="check_bg_one(this);"><span class="ck_icon"></span></label></td>
+                                        <td><label class="input_spaninput disabled"><span>2023-0-888</label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="checkbox" onchange="check_bg_one(this);"><span class="ck_icon"></span></label></td>
+                                        <td><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3" style="width:26px;" value="999"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td class="light">2023.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="checkbox" onchange="check_bg_one(this);"><span class="ck_icon"></span></label></td>
+                                        <td><label class="input_spaninput"><span>2023-0-</span><input type="text" maxlength="3" style="width:26px;" value="999"></label></td>
+                                        <td class="align_left">토목공사업</td>
+                                        <td colspan="3" class="align_left medium">태백선 예미~백산 등 31개소 재해예방시설 설치공사</td>
+                                        <td class="light">2023.06.09</td>
+                                        <td class="align_right">0</td>
+                                        <td class="medium">승인</td>
+                                        <td class="light">2023.11.12</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <script>
+                                //체크박스 bg active
+                                function check_bg_one(ck){
+                                    var currentTr = $(ck).closest('tr');
+                                    if ($(ck).prop('checked')) {
+                                        currentTr.addClass('active');
+                                    } else {
+                                        currentTr.removeClass('active');
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
