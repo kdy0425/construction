@@ -40,9 +40,10 @@
 .hd_bottom #logo a{color:#222;font-size:20px;font-weight:700;}
 .hd_bottom #logo span{display:block;}
 .nav_wrap{max-width:1280px;margin:0 auto;height:80px;}
-.nav_wrap #nav{display:flex;justify-content: space-between;height:100%;}
+.nav_wrap #nav{display:flex;justify-content: center;height:100%;}
 .nav_wrap #nav > li{position: relative;}
-.nav_wrap #nav > li > a{display:block;padding:28px 0 26px;color:#222;font-size:22px;font-weight:600;position: relative;height:100%;}
+.nav_wrap #nav > li + li{margin-left:18px;}
+.nav_wrap #nav > li > a{display:block;padding:28px 0 26px;color:#222;font-size:22px;font-weight:600;position: relative;height:100%;white-space:nowrap;}
 .nav_wrap #nav > li > a.active{color: #4F69D2;}
 .nav_wrap #nav > li:hover > a:before{content:"";display:block;width:40px;height:5px;background-color: #222;position:absolute;bottom:0;left:50%;margin-left:-20px;}
 .nav_wrap #nav > li:hover .li_child{display:block;}
@@ -86,7 +87,6 @@
     .hd_inner{padding:0 30px;}
     .hd_bottom #logo{left:30px;}
     .hd_bottom .nav_all_btn{right:20px;}
-    .nav_wrap #nav{justify-content: center;}
     .nav_wrap #nav > li + li{margin-left:18px;}
     .nav_wrap #nav > li > a{font-size:18px;}
     .nav_wrap #nav > li:hover > a:before{bottom:-3px;}
@@ -343,13 +343,9 @@
 .form_table.xs table tfoot td{font-size:13px;}
 .form_table.hover_bg tbody tr:hover{background-color: rgba(243, 246, 255, 1);}
 .form_table.group_line{position:relative;}
-.form_table.group_line table{border-right:1px solid #e9e9e9;}
 .form_table.group_line thead tr th{border-left:1px solid #e9e9e9;padding-left:3px;padding-right:3px;}
 .form_table.group_line tbody tr td{border-left:1px solid #e9e9e9;padding:4px 10px;height:42px;}
-.form_table.group_line:before,
-.form_table.group_line:after{content:"";display:block;width:1px;height:100%;background-color:#fff;position:absolute;top:0;z-index:6;}
-.form_table.group_line:before{left:0;}
-.form_table.group_line:after{right:0;}
+.form_table.group_line:before{left:0;content:"";display:block;width:1px;height:100%;background-color:#fff;position:absolute;top:0;z-index:6;}
 .form_table.group_line table{position:relative;z-index:5;}
 
 .input_spaninput{display:flex;border:1px solid #ccc;height:38px;padding:0 8px;cursor:text;background-color: #fff;}
