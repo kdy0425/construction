@@ -539,7 +539,10 @@ crossorigin="anonymous"></script>
 					<td></td>
 					<td></td>
 					<td></td>
-					<td class="link"><a href="javascript:;" onclick="window.open('./popup/join_layer.html', '통합파일관리', 'width=1387,height=835,left=50,top=50');">join_layer.html</a></td>
+					<td class="link">
+						<!-- indow height 에서 -50값으로 팝업띄우기  -->
+						<a href="javascript:;" onclick="window.open('./popup/join_layer.html', '통합파일관리', 'width=1387,height=' + window.innerHeight + ',left=0,top=10');">join_layer.html</a>
+					</td>
 					<td class="date">2023-10-25</td>
 					<td class="work"></td>
 					<td class="etc"></td>
@@ -548,8 +551,8 @@ crossorigin="anonymous"></script>
 		</table>
 	</div>
 </div>
-
 <script type="text/javascript">
+	console.log(window.innerHeight)
 	$(function () {
 		$(".tab_menu li a").click(function () {
 			$(".tab_menu li a").removeClass("active");
