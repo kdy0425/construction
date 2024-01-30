@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1380"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<link rel="icon" type="image/svg+xml" href="">
+<meta name="title"  content="2023년 통합실적관리시스템" />
+<meta name="author" content="" />
+<meta name="keywords"    content="">
+<meta name="description" content="">
+<meta property="og:url"         content="" />
+<meta property="og:type"        content="website" />
+<meta property="og:site_name"   content="2023년 통합실적관리시스템" />
+<meta property="og:title"       content="2023년 통합실적관리시스템" />
+<meta property="og:description" content="" />
+<title>2023년 통합실적관리시스템</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">2023년 통합실적관리시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+        <div class="hd_top">
+            <div class="hd_inner clearfix">
+                <div class="t_links">
+                    <div class="item"><a href="javascript:;">대한건설협회</a></div>
+                    <div class="item"><a href="javascript:;">대한전문건설협회</a></div>
+                    <div class="item"><a href="javascript:;">대한기계설비건설협회</a></div>
+                </div>
+                <div class="t_mb">
+                    <div class="item">A 건설 업체명</div>
+                    <div class="item">홍길동</div>
+                </div>
+            </div>
+        </div>
+        <div class="hd_bottom">
+            <div class="hd_inner">
+                <div id="logo"><a href="javascript:;"><span>2023년</span><span>통합실적관리시스템</span></a></div>
+                <div class="nav_wrap">
+                    <ul id="nav">
+                        <li><a href="javascript:;">업체정보</a>
+                            <div class="li_child">
+                                <ul>
+                                    <li><a href="javascript:;">업체정보 관리</a></li>
+                                    <li><a href="javascript:;">대표자 관리</a></li>
+                                    <li><a href="javascript:;">담당자 관리</a></li>
+                                    <li><a href="javascript:;">건설기술 보유현황</a></li>
+                                    <li><a href="javascript:;">건설장비 보유현황</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">기술인정보</a>
+                            <div class="li_child">
+                                <ul>
+                                    <li><a href="javascript:;">건설기술인정보</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">신인도 평가정보</a>
+                            <div class="li_child">
+                                <ul>
+                                    <li><a href="javascript:;">신기술 지정관리</a></li>
+                                    <li><a href="javascript:;">건설업통계조사</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">실적신고(종합)</a>
+                            <div class="li_child">
+                                <div class="group">
+                                    <div class="tit">기성실적</div>
+                                    <ul>
+                                        <li><a href="javascript:;">당년도 기성실적 신고</a></li>
+                                        <li><a href="javascript:;">2021년 누락분 신고</a></li>
+                                        <li><a href="javascript:;">2020년 누락분 신고</a></li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <div class="tit">상호시장 기성실적</div>
+                                    <ul>
+                                        <li><a href="javascript:;">당년도 기성실적 신고</a></li>
+                                        <li><a href="javascript:;">2021년 누락분 신고</a></li>
+                                        <li><a href="javascript:;">2020년 누락분 신고</a></li>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li><a href="javascript:;">신고확정/ 결제</a></li>
+                                    <li><a href="javascript:;">기성액대비 매출별 금액확인표</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">실적신고(전문)</a>
+                            <div class="li_child">
+                                <div class="group">
+                                    <div class="tit">기성실적</div>
+                                    <ul>
+                                        <li><a href="javascript:;">당년도 기성실적 신고</a></li>
+                                        <li><a href="javascript:;">2021년 누락분 신고</a></li>
+                                        <li><a href="javascript:;">2020년 누락분 신고</a></li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <div class="tit">상호시장 기성실적</div>
+                                    <ul>
+                                        <li><a href="javascript:;">당년도 기성실적 신고</a></li>
+                                        <li><a href="javascript:;">2021년 누락분 신고</a></li>
+                                        <li><a href="javascript:;">2020년 누락분 신고</a></li>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li><a href="javascript:;">신고확정/ 결제</a></li>
+                                    <li><a href="javascript:;">기성액대비 매출별 금액확인표</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">실적신고(설비)</a>
+                            <div class="li_child">
+                                <div class="group">
+                                    <div class="tit">기성실적</div>
+                                    <ul>
+                                        <li><a href="javascript:;">당년도 기성실적 신고</a></li>
+                                        <li><a href="javascript:;">2021년 누락분 신고</a></li>
+                                        <li><a href="javascript:;">2020년 누락분 신고</a></li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <div class="tit">상호시장 기성실적</div>
+                                    <ul>
+                                        <li><a href="javascript:;">당년도 기성실적 신고</a></li>
+                                        <li><a href="javascript:;">2021년 누락분 신고</a></li>
+                                        <li><a href="javascript:;">2020년 누락분 신고</a></li>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li><a href="javascript:;">신고확정/ 결제</a></li>
+                                    <li><a href="javascript:;">기성액대비 매출별 금액확인표</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">재무제표</a>
+                            <div class="li_child">
+                                <ul>
+                                    <li><a href="javascript:;">재무제표 신고</a></li>
+                                    <li><a href="javascript:;">건설업통계조사</a></li>
+                                    <li><a href="javascript:;">신고확정</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">고용평가</a>
+                            <div class="li_child">
+                                <ul>
+                                    <li><a href="javascript:;">고용평가 신고</a></li>
+                                    <li><a href="javascript:;">신고 확정</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">서류출력</a>
+                            <div class="li_child">
+                                <ul>
+                                    <li><a href="javascript:;">서류출력</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">마이페이지</a>
+                            <div class="li_child">
+                                <ul>
+                                    <li><a href="javascript:;">서류접수증 현황</a></li>
+                                    <li><a href="javascript:;">검토 및 보완내역</a></li>
+                                    <li><a href="javascript:;">미납회비 결제</a></li>
+                                    <li><a href="javascript:;">평가표</a></li>
+                                    <li><a href="javascript:;">연도별 신고내역</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">게시판</a>
+                            <div class="li_child">
+                                <ul>
+                                    <li><a href="javascript:;">공지사항</a></li>
+                                    <li><a href="javascript:;">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <button type="button" class="nav_close"><span>닫기</span></button>
+                    </ul>
+                </div>
+                <button type="button" class="nav_all_btn">전체 메뉴 열기</button>
+            </div>
+        </div>
+	</div>
+	<!-- //header -->	
+
+    <div class="snb">
+        <div class="inner">
+            <div class="item home"><a href="javascript:;">홈으로</a></div>
+            <div class="item has_child">
+                <div class="box">
+                    <a href="javascript:;">통합파일관리</a>
+                    <ul>
+                        <li><a href="javascript:;">통합파일관리</a></li>
+                        <li><a href="javascript:;">통합파일관리</a></li>
+                    </ul>
+                </div>
+            </div>       
+            <div class="item has_child">
+                <div class="box">
+                    <a href="javascript:;">통합파일관리</a>
+                    <ul>
+                        <li><a href="javascript:;">통합파일관리</a></li>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- content -->
+    <div class="content_wrap">
+        <div id="content">
+            <h2 class="page_title">신고확정/결제</h2>
+            <button type="button" onclick="$('.layer1').show();">정회원 가입</button><br/><br/>
+            <button type="button" onclick="$('.layer3').show();">준회원 가입</button><br/>
+           
+        </div>
+    </div>
+    <!-- //content -->
+
+    <a href="javascript:;" class="to_top">TOP</a>
+
+	<div id="footer">
+        <div class="container">
+            <div class="ft_top">
+                <div class="ft_tbox info">
+                    <div class="ft_logo">통합실적관리시스템</div>
+                    <div class="ft_info">
+                        <div>주소. 06050 서울특별시 강남구 언주로 711 건설회관</div>
+                        <div class="devide">
+                            <div>이메일. webmaster@mail.co.kr</div>
+                            <div>팩스. 02-123-4567</div>
+                        </div>
+                    </div>
+                    <div class="ft_copy">COPYRIGHT 2023 CONSTRUCTION OF KOREA ALL RIGHTS RESERVED</div>
+                    <div class="ft_hosting">HOSTING BY TRIONSOFT</div>
+                </div>
+
+                <div class="ft_tbox cs">
+                    <div class="ft_tbox_tit">고객센터</div>
+                    <div class="cs_tel">1588-6912</div>
+                    <div class="tel_other">
+                        <div class="other">
+                            <span class="tit">문의처2</span>
+                            <span class="tel">1588-0002</span>
+                        </div>
+                        <div class="other">
+                            <span class="tit">문의처3</span>
+                            <span class="tel">1588-0003</span>
+                        </div>
+                    </div>
+                    <div class="link"><a href="javascript:;">문의처 전체보기</a></div>
+                </div>
+
+                <div class="ft_tbox time">
+                    <div class="ft_tbox_tit">고객센터 운영시간</div>
+                    <div class="time_box">
+                        <div class="time">
+                            <span class="tit">평일</span>
+                            <span class="cnt">오전 9시 - 오후 6시</span>
+                        </div>
+                        <div class="time">
+                            <span class="tit">토요일/공휴일</span>
+                            <span class="cnt">오전 9시 - 오후 2시</span>
+                        </div>
+                        <div class="time">
+                            <span class="tit">일요일</span>
+                            <span class="cnt">휴무</span>
+                        </div>
+                    </div>
+                    <div class="link"><a href="javascript:;">FAQ</a></div>
+                    <div class="link"><a href="javascript:;">이용안내</a></div>
+                </div>
+            </div>
+            <div class="ft_bottom clearfix">
+                <ul class="ft_links">
+                    <li><a href="javascript:;"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="javascript:;">이용약관</a></li>
+                    <li><a href="javascript:;">실적신고안내 동영상</a></li>
+                </ul>
+                <div class="family_sites">
+                    <button type="button" class="family_sites_open">관련 사이트</button>
+                    <ul class="sites">
+                        <li><a href="javascript:;">관련사이트명1</a></li>
+                        <li><a href="javascript:;">관련사이트명2</a></li>
+                        <li><a href="javascript:;">관련사이트명3</a></li>
+                        <li><a href="javascript:;">관련사이트명4</a></li>
+                        <li><a href="javascript:;">관련사이트명5</a></li>
+                        <li><a href="javascript:;">관련사이트명6</a></li>
+                        <li><a href="javascript:;">관련사이트명7</a></li>
+                        <li><a href="javascript:;">관련사이트명8</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+
+<!-- 협회 정회원 가입 안내 -->
+<div class="layer_form layer1" style="display:none;">
+    <div class="layer_box">
+        <div class="layer_cnt lg">
+            <div class="layer_title">협회 정회원 가입 안내</div>
+            <div class="num_section_wrap">
+                <div class="num_section">
+                    <div class="num_title"><span class="num">1</span>회원가입 혜택</div>
+                    <div class="full_member">
+                        <div class="row">
+                            <div class="l">
+                                <div class="box box1">
+                                    <div class="title"><span>01</span>공사수주에 큰 도움</div>
+                                    <ul>
+                                        <li>협회에 가입한 업체는 협회로부터 다양한 서비스를 받아 공사실적 증가</li>
+                                        <li>업체별 평균 실적금액 차이가 큼</li>
+                                    </ul>
+                                    <div class="img"><img src="../../assets/images/full_member_box1.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="r">
+                                <div class="box box2">
+                                    <div class="title"><span>02</span>대외공신력 제공</div>
+                                    <ul>
+                                        <li>우수 회원사에 대한 정보 및 지자체 포상 추천</li>
+                                        <li>종합건설업 협력업체 등록 추천서 발급</li>
+                                        <li>회원명부에 등재하여 발주기관 및 종합건설업체 배포</li>
+                                    </ul>
+                                </div>
+                                <div class="box box3">
+                                    <div class="title"><span>03</span>입찰서류 간소화 및 서류 실시간 발급</div>
+                                    <ul>
+                                        <li>적격심사 제반서류를 조달청(나라장터) On-Line 제공</li>
+                                        <li>입찰서류 인터넷 실시간 발급</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="l">
+                                <div class="box box4">
+                                    <div class="title"><span>04</span>회원사 불공정 및 건설부조리 신고 접수 처리</div>
+                                    <ul>
+                                        <li>불법하도급 신고센터 운영</li>
+                                        <li>회원사의 업역을 침해하는 무면허시공 등의 불법행위 조사 및 고발</li>
+                                        <li>발주기관의 불공정행위를 협회가 발주기관을 상대로 건의 해결</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="r">
+                                <div class="box box5">
+                                    <div class="title"><span>05</span>다양한 서비스 제공</div>
+                                    <ul>
+                                        <li>자문위원 무료자문(법률 및 노무분야)</li>
+                                        <li>각종 책자 무료 배부 (법령집, 업무수첩, 달력, 회원명부 등)</li>
+                                        <li>대한전문건설신훈(주간지)발간</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="num_section">
+                    <div class="num_title"><span class="num">2</span>회원가입 방법</div>
+                    <div class="form_wrap">
+                        <div class="form_box">
+                            <div class="form_title row">
+                                <h3>회비 종류 및 납부시기</h3>
+                            </div>
+                            <div class="form_content">
+                                <div class="form_table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>회비종류</th>
+                                                <th>횟수</th>
+                                                <th>내용</th>
+                                                <th>회비종류</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="center">
+                                            <tr>
+                                                <td><span class="font_500">입학비</span></td>
+                                                <td>최초 1회</td>
+                                                <td>300만원</td>
+                                                <td>정회원 가입 시</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="font_500">기본회비</span></td>
+                                                <td>매년 1회</td>
+                                                <td>업종당 일정액</td>
+                                                <td>정회원 가입 시</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="font_500">통상회비</span></td>
+                                                <td>매년 1회</td>
+                                                <td>총기성액의 일정비율</td>
+                                                <td>매년 실적신고 시</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_box">
+                            <div class="form_title row">
+                                <h3>협회 가입에 따른 비용절감 효과</h3>
+                                <div class="i_txt">예시) 보유업종이 1개이면서, 기성실적 10억을 신고한 경우</div>
+                            </div>
+                            <div class="form_content">
+                                <div class="form_table">
+                                    <table>
+                                        <thead class="line">
+                                            <tr>
+                                                <th rowspan="2">구분</th>
+                                                <th colspan="3" class="nbr">소요비용</th>
+                                            </tr>
+                                            <tr>
+                                                <th>정회원 회비</th>
+                                                <th>비회원 정보이용료</th>
+                                                <th class="nbr"><span class="blue_txt">차액</span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="center">
+                                            <tr>
+                                                <td><span class="font_500">1차년도</span></td>
+                                                <td><span class="font_700">3,500,000원</span><br/><span class="gray_txt">입회비 300만원 포함</span></td>
+                                                <td>1,300,000원</td>
+                                                <td><span class="font_700 blue_txt">2,200,000원</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="font_500">2차년도 누계</span></td>
+                                                <td><span class="font_700">4,000,000원</span></td>
+                                                <td>2,600,000원</td>
+                                                <td><span class="font_700 blue_txt">1,400,000원</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="font_500">3차년도 누계</span></td>
+                                                <td><span class="font_700">4,500,000원</span></td>
+                                                <td>3,900,000원</td>
+                                                <td><span class="font_700 blue_txt">600,000원</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="font_500">4차년도 누계</span></td>
+                                                <td><span class="font_700">5,200,000원</span></td>
+                                                <td>2,600,000원</td>
+                                                <td><span class="font_700 blue_txt">-200,000원</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="font_500">5차년도 누계</span></td>
+                                                <td><span class="font_700">5,500,000원</span></td>
+                                                <td>6,500,000원</td>
+                                                <td><span class="font_700 blue_txt">-1,500,000원</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="i_notice">3차년도까지 입회비가 상쇄되어 4년차도 이후부터는 절감효과 발생</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_btns">
+                    <a href="javascript:;" class="btn submit" onclick="$('.layer1').hide()$('.layer2').show();">회원가입</a>
+                    <a href="javascript:;" class="btn line" onclick="$('.layer1').hide()">닫기</a>
+                </div>
+            </div>
+            
+        </div>
+        <button type="button" class="layer_close" onclick="$('.layer1').hide()">닫기</button>
+    </div>
+    <span class="layer_bg" onclick="$('.layer1').hide()"></span>
+</div>
+<!-- //협회 정회원 가입 안내 -->
+
+
+<!-- 협회 정회원 가입 신청 -->
+<div class="layer_form layer2" style="display:none;">
+    <div class="layer_box">
+        <div class="layer_cnt lg">
+            <div class="layer_title">협회 정회원 가입 신청</div>
+            <div class="form_wrap">
+                <div class="form_box">
+                    <div class="form_content">
+                        <div class="form_table">
+                            <table>
+                                <colgroup>
+                                    <col style="width:170px;">
+                                    <col style="width:211px;">
+                                    <col style="width:170px;">
+                                    <col style="width:211px;">
+                                    <col style="width:170px;">
+                                    <col style="width:211px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>상호</th>
+                                        <td>(주)전문건설</td>
+                                        <th>대표자</th>
+                                        <td>홍길동</td>
+                                        <th>전화번호</th>
+                                        <td>02-0000-0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>팩스번호</th>
+                                        <td>02-0000-0000</td>
+                                        <th>사업자등록번호</th>
+                                        <td>211-82-06181</td>
+                                        <th>법인등록번호</th>
+                                        <td>114671-0001761</td>
+                                    </tr>
+                                    <tr>
+                                        <th>영업소재지</th>
+                                        <td colspan="5">서울특별시 동작구 보라매로5길 15 (신대방동) 전문건설회관 18층</td>
+                                    </tr>
+                                    <tr>
+                                        <th>업종</th>
+                                        <td colspan="2">지반조성·포장공사업</td>
+                                        <th>등록번호</th>
+                                        <td colspan="2">동작02-02-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th>업종</th>
+                                        <td colspan="2">지반조성·포장공사업</td>
+                                        <th>등록번호</th>
+                                        <td colspan="2">동작02-02-01</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="files_upload_box">
+                        <div class="upload_list">
+                            <div class="item">건설등록증</div>
+                            <div class="item">법인등기부등본<span class="sub">(개인은 사업자사본)</strong></div>
+                            <div class="item">대표자 이력서</div>
+                        </div>
+                        <div class="sup_btns">
+                            <a href="javascript:;" class="up"><span>통합파일 업로드</span></a>
+                            <a href="javascript:;" class="down"><span>양식 다운로드</span></a>
+                        </div>
+                    </div>
+
+                    <div class="join_layer_terms">
+                        <div class="item">
+                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>위 신청인은 대한전문건설협회 정관과 회비 규정을 숙지하였으며,<br/>
+                                정회원으로서의 의무를 성실히 이행할 것을 동의하면서 정관 제8조 제1항에 따라 귀 협회의 <strong>정회원 가입을 신청을 동의합니다.</strong></label>
+                        </div>
+                        <div class="item">
+                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span><strong>(필수or선택)</strong>개인정보의 수집 및 이용목적&개인정보 제3자 제공의 내용을 확인하였으며, <strong>동의 사항에 동의합니다.</strong></label>
+                            <div class="terms_cnt scroll_design">
+                                <div class="cnt">
+                                    <strong>[개인정보보호법 제15조, 제24조에 의한 수집 이용에 동의]</strong>
+                                    <strong>▣ 개인정보의 수집 및 이용목적</strong>
+                                    <p>○ 사이버 민원신고 및 답변 등의 업무수행을 위하여 필요한 최소한의 개인정보를 수집·이용</p>
+                                    <strong>▣ 개인정보의 수집·이용 항목</strong>
+                                    <p>○ 필수항목 : 대표자 성명, 생년월일<br/>
+                                    ○ 선택정보 : 휴대전화번호, 이메일</p>
+                                    <strong> ▣ 개인정보의 보유 및 이용기간</strong>
+                                    <p>○ 보유 기간 : 2년 또는 신청자의 요청에 의한 폐기</p>
+                                    <strong>▣ 개인정보 수집·이용 동의 거부의 권리</strong>
+                                    <p>○ 귀하는 개인정보의 수집·이용 동의를 거부할 수 있습니다. 필수항목 동의 거부시에는 민원 신고가 불가능합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span><strong>(필수or선택)</strong>개인정보 제3자 제공 동의의 내용을 확인하였으며, <strong>동의 사항에 동의합니다.</strong></label>
+                            <div class="terms_cnt scroll_design">
+                                <div class="cnt">
+                                    <strong>▣ 개인정보 제3자 제공 동의</strong>
+                                    <p>○ 협회는 원칙적 개인정보를 제3자에게 제공하지 않으며, 다만 다음의 경우는 예외로 하고 있습니다.<br/>
+                                    - 법원 등 국가기관이 법령에 근거하여 이용자의 개인정보를 제공하도록 강제하는 경우</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terms_info">
+                            <div class="company_info">
+                            <div class="date">2024년 01월 29일</div>
+                                <div class="info">
+                                    <span>신청인 상호 : <strong>(주)전문건설</strong></span>
+                                    <span>대표자 : <strong>홍길동</strong></span>
+                                    <span><strong>대한전문건설협회 서울특별시회 회장 귀하</strong></span>
+                                </div>
+                            </div>
+                            <div class="sido_info">
+                                <div class="tit">해당시도회 정보</div>
+                                <div class="info">
+                                    <span>전화번호 : <strong>1577-0215</strong></span>
+                                    <span>팩스번호 : <strong>02-3284-0601</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_btns">
+                <a href="javascript:;" class="btn submit">확인</a>
+                <a href="javascript:;" class="btn line" onclick="$('.layer2').hide()">닫기</a>
+            </div>
+        </div>
+        <button type="button" class="layer_close" onclick="$('.layer2').hide()">닫기</button>
+    </div>
+    <span class="layer_bg" onclick="$('.layer2').hide()"></span>
+</div>
+<!-- //협회 정회원 가입 신청 -->
+
+
+<!-- 협회 준회원 가입 신청 -->
+<div class="layer_form layer3" style="display:none;">
+    <div class="layer_box">
+        <div class="layer_cnt lg">
+            <div class="layer_title">준회원 가입 신청</div>
+            <div class="form_wrap">
+                <div class="form_box">
+                    <div class="form_content">
+                        <div class="form_table">
+                            <table>
+                                <colgroup>
+                                    <col style="width:170px;">
+                                    <col style="width:211px;">
+                                    <col style="width:170px;">
+                                    <col style="width:211px;">
+                                    <col style="width:170px;">
+                                    <col style="width:211px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>상호</th>
+                                        <td>(주)전문건설</td>
+                                        <th>대표자</th>
+                                        <td>홍길동</td>
+                                        <th>전화번호</th>
+                                        <td>02-0000-0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>팩스번호</th>
+                                        <td>02-0000-0000</td>
+                                        <th>사업자등록번호</th>
+                                        <td>211-82-06181</td>
+                                        <th>법인등록번호</th>
+                                        <td>114671-0001761</td>
+                                    </tr>
+                                    <tr>
+                                        <th>영업소재지</th>
+                                        <td colspan="5">서울특별시 동작구 보라매로5길 15 (신대방동) 전문건설회관 18층</td>
+                                    </tr>
+                                    <tr>
+                                        <th>업종</th>
+                                        <td colspan="2">지반조성·포장공사업</td>
+                                        <th>등록번호</th>
+                                        <td colspan="2">동작02-02-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th>업종</th>
+                                        <td colspan="2">지반조성·포장공사업</td>
+                                        <th>등록번호</th>
+                                        <td colspan="2">동작02-02-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th>준회원 존속기한</th>
+                                        <td colspan="5">통상회비 납부일부터 차기통상회비 납부 기한일까지 다만, 특별한 의사표시 없이 차기 통상회비를 납부한 경우에는 준회원 가입을 연장한 것으로 본다.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="files_upload_box">
+                        <div class="upload_list">
+                            <div class="item">건설등록증</div>
+                            <div class="item">법인등기부등본<span class="sub">(개인은 사업자사본)</strong></div>
+                            <div class="item">대표자 이력서</div>
+                        </div>
+                        <div class="sup_btns">
+                            <a href="javascript:;" class="up"><span>통합파일 업로드</span></a>
+                            <a href="javascript:;" class="down"><span>양식 다운로드</span></a>
+                        </div>
+                    </div>
+
+                    <div class="join_layer_terms">
+                        <div class="item">
+                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>위 신청인은 대한전문건설협회 정관(준회원은 선거권 및 피선거권 등 일정한 권리가 제한됨)과 회비 규정 등 제 규정을 숙지하였으며,<br/>
+                                준회원으로서의 의무를 성실히 이행할 것을 동의하면서 정관 제8조 제1항에 따라 귀 협회의 <strong>준회원 가입을 신청을 동의합니다.</strong></label>
+                        </div>
+                        <div class="item">
+                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span><strong>(필수or선택)</strong>개인정보의 수집 및 이용목적&개인정보 제3자 제공의 내용을 확인하였으며, <strong>동의 사항에 동의합니다.</strong></label>
+                            <div class="terms_cnt scroll_design">
+                                <div class="cnt">
+                                    <strong>[개인정보보호법 제15조, 제24조에 의한 수집 이용에 동의]</strong>
+                                    <strong>▣ 개인정보의 수집 및 이용목적</strong>
+                                    <p>○ 사이버 민원신고 및 답변 등의 업무수행을 위하여 필요한 최소한의 개인정보를 수집·이용</p>
+                                    <strong>▣ 개인정보의 수집·이용 항목</strong>
+                                    <p>○ 필수항목 : 대표자 성명, 생년월일<br/>
+                                    ○ 선택정보 : 휴대전화번호, 이메일</p>
+                                    <strong> ▣ 개인정보의 보유 및 이용기간</strong>
+                                    <p>○ 보유 기간 : 2년 또는 신청자의 요청에 의한 폐기</p>
+                                    <strong>▣ 개인정보 수집·이용 동의 거부의 권리</strong>
+                                    <p>○ 귀하는 개인정보의 수집·이용 동의를 거부할 수 있습니다. 필수항목 동의 거부시에는 민원 신고가 불가능합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span><strong>(필수or선택)</strong>개인정보 제3자 제공 동의의 내용을 확인하였으며, <strong>동의 사항에 동의합니다.</strong></label>
+                            <div class="terms_cnt scroll_design">
+                                <div class="cnt">
+                                    <strong>▣ 개인정보 제3자 제공 동의</strong>
+                                    <p>○ 협회는 원칙적 개인정보를 제3자에게 제공하지 않으며, 다만 다음의 경우는 예외로 하고 있습니다.<br/>
+                                    - 법원 등 국가기관이 법령에 근거하여 이용자의 개인정보를 제공하도록 강제하는 경우</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terms_info">
+                            <div class="company_info">
+                            <div class="date">2024년 01월 29일</div>
+                                <div class="info">
+                                    <span>신청인 상호 : <strong>(주)전문건설</strong></span>
+                                    <span>대표자 : <strong>홍길동</strong></span>
+                                    <span><strong>대한전문건설협회 서울특별시회 회장 귀하</strong></span>
+                                </div>
+                            </div>
+                            <div class="sido_info">
+                                <div class="tit">해당시도회 정보</div>
+                                <div class="info">
+                                    <span>전화번호 : <strong>1577-0215</strong></span>
+                                    <span>팩스번호 : <strong>02-3284-0601</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_btns">
+                <a href="javascript:;" class="btn submit">확인</a>
+                <a href="javascript:;" class="btn line" onclick="$('.layer3').hide()">닫기</a>
+            </div>
+        </div>
+        <button type="button" class="layer_close" onclick="$('.layer3').hide()">닫기</button>
+    </div>
+    <span class="layer_bg" onclick="$('.layer3').hide()"></span>
+</div>
+<!-- //협회 준회원 가입 신청 -->
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.5.7/perfect-scrollbar.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.5.7/perfect-scrollbar.min.js"></script>
+<script>
+     $(document).ready(function () {
+    $(".scroll_design").each(function () {
+      $(this).perfectScrollbar({
+        wheelSpeed: 1, // 스크롤 속도 설정
+        wheelPropagation: false, // 스크롤 이벤트 버블링 활성화
+        minScrollbarLength: 20, // 최소 스크롤바 길이 설정
+        suppressScrollX: true, // 가로 스크롤바 비활성화
+      });
+    });
+  });
+</script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>	
