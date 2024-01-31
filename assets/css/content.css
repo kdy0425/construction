@@ -868,6 +868,7 @@ background-position: center center;background-repeat: no-repeat;}
 .files_upload_box{padding:20px;margin-top:20px;background-color: #F9F9F9;}
 .files_upload_box .upload_list{margin:20px 0;display:flex;flex-wrap: wrap;justify-content: center;}
 .files_upload_box .upload_list .item{margin-right:30px;position: relative;color:#222;font-weight:700;font-size:16px;}
+.files_upload_box .upload_list .item .sub{font-weight:400;}
 .files_upload_box .upload_list .item:after{content:"";width:1px;height:10px;background-color: #222;position: absolute;right:-15px;top:4px;}
 .files_upload_box .upload_list .item:last-child{margin-right:0;}
 .files_upload_box .upload_list .item:last-child:after{display:none;}
