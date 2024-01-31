@@ -236,9 +236,9 @@
     <div class="content_wrap">
         <div id="content">
             <h2 class="page_title">신고확정/결제</h2>
-            <button type="button" onclick="$('.layer1').show();">정회원 가입</button><br/><br/>
-            <button type="button" onclick="$('.layer3').show();">준회원 가입</button><br/>
-           
+            <button type="button" onclick="$('.layer1').show();updateScrollbars();">정회원 가입 안내</button><br/><br/>
+            <button type="button" onclick="$('.layer2').show();updateScrollbars();">정회원 가입 신청</button><br/><br/>
+            <button type="button" onclick="$('.layer3').show();updateScrollbars();">준회원 가입 신청</button><br/>
         </div>
     </div>
     <!-- //content -->
@@ -486,7 +486,7 @@
                     </div>
                 </div>
                 <div class="form_btns">
-                    <a href="javascript:;" class="btn submit" onclick="$('.layer1').hide()$('.layer2').show();">회원가입</a>
+                    <a href="javascript:;" class="btn submit" onclick="$('.layer1').hide();$('.layer2').show();updateScrollbars();">회원가입</a>
                     <a href="javascript:;" class="btn line" onclick="$('.layer1').hide()">닫기</a>
                 </div>
             </div>
@@ -766,19 +766,22 @@
 </div>
 <!-- //협회 준회원 가입 신청 -->
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.5.7/perfect-scrollbar.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.5.7/perfect-scrollbar.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/perfect-scrollbar.min.css">
+<script src="../../assets/js/perfect-scrollbar.min.js"></script>
 <script>
-     $(document).ready(function () {
-    $(".scroll_design").each(function () {
-      $(this).perfectScrollbar({
+$(".scroll_design").each(function () {
+    $(this).perfectScrollbar({
         wheelSpeed: 1, // 스크롤 속도 설정
         wheelPropagation: false, // 스크롤 이벤트 버블링 활성화
         minScrollbarLength: 20, // 최소 스크롤바 길이 설정
         suppressScrollX: true, // 가로 스크롤바 비활성화
-      });
     });
-  });
+});
+function updateScrollbars() {
+    $('.scroll_design').each(function () {
+        $(this).perfectScrollbar('update');
+    });
+}
 </script>
 <script src="../../assets/js/common.js"></script>
 </body>
